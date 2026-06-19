@@ -1404,3 +1404,151 @@ header {
     }
 }
 
+/* ==================== PROGRES SYNC CARD ==================== */
+.sync-card {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin-top: auto;
+}
+
+.sync-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.sync-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.sync-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 8px !important;
+}
+
+/* ==================== CONFETTI CONTAINMENT ==================== */
+.result-card {
+    position: relative; /* Contains absolute confetti canvas */
+}
+
+/* ==================== INTERACTIVE FOCUS INDICATORS ==================== */
+button:focus-visible,
+select:focus-visible,
+.option-item:focus-visible,
+.grid-cell:focus-visible,
+.question-list-item:focus-visible,
+.filter-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* ==================== COLLAPSIBLE STUDY DRAWER ==================== */
+.mobile-sidebar-header {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .study-layout {
+        display: block; /* Stacks components vertically */
+        position: relative;
+    }
+    
+    .study-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 100vh;
+        z-index: 1000;
+        background: #0d0f1b; /* Opaque surface matching theme background */
+        border-right: 1px solid var(--border-color);
+        box-shadow: 20px 0 50px rgba(0, 0, 0, 0.8);
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 1.5rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .study-sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(4px);
+        z-index: 999;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+    
+    .mobile-sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 0.75rem;
+    }
+    
+    .mobile-sidebar-header h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin: 0;
+    }
+    
+    .btn-toggle-sidebar {
+        display: inline-flex !important;
+    }
+}
+
+/* ==================== ADDITIONAL RESPONSIVE ADJUSTMENTS ==================== */
+@media (max-width: 600px) {
+    .media-container {
+        max-height: 220px;
+    }
+    .media-container img {
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sync-card {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+        text-align: center;
+    }
+    .sync-actions {
+        justify-content: center;
+    }
+    .sync-actions .btn {
+        flex-grow: 1;
+    }
+    .nav-buttons .btn {
+        padding: 0.65rem 0.75rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+

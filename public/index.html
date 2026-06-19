@@ -99,11 +99,11 @@
                         </div>
 
                         <!-- Data Sync card -->
-                        <div class="card stat-card" style="padding: 1rem 1.5rem; justify-content: space-between;">
-                            <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">PROGRES SYNC</div>
-                            <div style="display: flex; gap: 0.5rem;">
-                                <button id="btn-export-progress" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">📦 Ekspor</button>
-                                <button id="btn-import-progress" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">📥 Impor</button>
+                        <div class="card sync-card">
+                            <div class="sync-title">PROGRES SYNC</div>
+                            <div class="sync-actions">
+                                <button id="btn-export-progress" class="btn btn-secondary sync-btn">📦 Ekspor</button>
+                                <button id="btn-import-progress" class="btn btn-secondary sync-btn">📥 Impor</button>
                                 <input type="file" id="input-import-file" style="display: none;" accept=".json">
                             </div>
                         </div>
@@ -130,8 +130,14 @@
             <!-- ==================== 2. STUDY VIEW ==================== -->
             <div id="study-view" class="view">
                 <div class="study-layout">
+                    <!-- Sidebar overlay -->
+                    <div class="sidebar-overlay" id="sidebar-overlay"></div>
                     <!-- Left Sidebar Filters and Question browser -->
-                    <div class="card study-sidebar">
+                    <div class="card study-sidebar" id="study-sidebar-panel">
+                        <div class="mobile-sidebar-header">
+                            <h3>Menu Belajar</h3>
+                            <button id="btn-close-sidebar" class="btn btn-secondary">✕</button>
+                        </div>
                         <div class="filter-section">
                             <h3>Filter Progres</h3>
                             <div class="filter-options">
@@ -179,6 +185,7 @@
                     <div class="card study-content">
                         <div class="study-card">
                             <div class="badge-row">
+                                <button id="btn-toggle-sidebar" class="btn btn-secondary btn-toggle-sidebar" style="display: none;">📁 Daftar Soal</button>
                                 <span id="study-badge-category" class="badge badge-pb">Persepsi Bahaya</span>
                                 <span id="study-badge-module" class="badge badge-module">Modul 1</span>
                                 <span id="study-badge-page" class="badge badge-module">Halaman 80</span>

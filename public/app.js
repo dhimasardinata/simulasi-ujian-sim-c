@@ -225,6 +225,23 @@ function playSound(type) {
             
             osc1.start(now);
             osc1.stop(now + 0.4);
+        } else if (type === 'click') {
+            // Soft UI click chime (sine wave, short duration)
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, now);
+            
+            gainNode.gain.setValueAtTime(0, now);
+            gainNode.gain.linearRampToValueAtTime(0.05, now + 0.01);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+            
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            osc.start(now);
+            osc.stop(now + 0.1);
         }
     } catch (e) {
         console.warn("Audio synthesis not supported or blocked by policy:", e);
@@ -299,24 +316,50 @@ function importProgress(event) {
 }
 
 // ==================== SETUP EVENT LISTENERS ====================
+function closeStudySidebar() {
+    const sidebar = document.getElementById('study-sidebar-panel');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar && overlay) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+    }
+}
+
 function setupEventListeners() {
     // Navigation click events
-    navButtons.home.addEventListener('click', () => switchView('home'));
+    navButtons.home.addEventListener('click', () => {
+        switchView('home');
+        playSound('click');
+    });
     navButtons.study.addEventListener('click', () => {
         switchView('study');
         renderStudyQuestion();
+        playSound('click');
     });
-    navButtons.reference.addEventListener('click', () => switchView('reference'));
-    navButtons.exam.addEventListener('click', () => startNewExam());
+    navButtons.reference.addEventListener('click', () => {
+        switchView('reference');
+        playSound('click');
+    });
+    navButtons.exam.addEventListener('click', () => {
+        startNewExam();
+        playSound('click');
+    });
     
-    document.getElementById('app-logo-title').addEventListener('click', () => switchView('home'));
+    document.getElementById('app-logo-title').addEventListener('click', () => {
+        switchView('home');
+        playSound('click');
+    });
     
     // Hero buttons
     document.getElementById('btn-hero-study').addEventListener('click', () => {
         switchView('study');
         renderStudyQuestion();
+        playSound('click');
     });
-    document.getElementById('btn-hero-exam').addEventListener('click', () => startNewExam());
+    document.getElementById('btn-hero-exam').addEventListener('click', () => {
+        startNewExam();
+        playSound('click');
+    });
     
     // Data sync
     document.getElementById('btn-export-progress').addEventListener('click', exportProgress);
@@ -335,6 +378,7 @@ function setupEventListeners() {
             btn.classList.add('active');
             
             applyStudyFilters();
+            playSound('click');
         });
     });
     
@@ -345,13 +389,39 @@ function setupEventListeners() {
             refTabs.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             renderReferenceMaterial(btn.getAttribute('data-ref-sec'));
+            playSound('click');
         });
     });
+    
+    // Study Sidebar Drawer Toggle (Mobile)
+    const toggleBtn = document.getElementById('btn-toggle-sidebar');
+    const closeBtn = document.getElementById('btn-close-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const sidebar = document.getElementById('study-sidebar-panel');
+    
+    if (toggleBtn && sidebar && overlay) {
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            overlay.classList.add('active');
+            playSound('click');
+        });
+    }
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            closeStudySidebar();
+            playSound('click');
+        });
+    }
+    if (overlay) {
+        overlay.addEventListener('click', closeStudySidebar);
+    }
     
     // Study Mode Actions
     document.getElementById('btn-reveal-answer').addEventListener('click', () => {
         const box = document.getElementById('study-answer-box');
         box.classList.toggle('active');
+        playSound('click');
     });
     
     document.getElementById('btn-mark-mastered').addEventListener('click', () => {
@@ -361,6 +431,7 @@ function setupEventListeners() {
             saveProgress();
             renderQuestionList(); // Update dots
             updateStudyButtonStates();
+            playSound('correct');
             showToast(`Soal No. ${currentQ.id} ditandai Paham`, "success");
         }
     });
@@ -372,6 +443,7 @@ function setupEventListeners() {
             saveProgress();
             renderQuestionList(); // Update dots
             updateStudyButtonStates();
+            playSound('incorrect');
             showToast(`Soal No. ${currentQ.id} ditandai Perlu Review`, "info");
         }
     });
@@ -380,6 +452,7 @@ function setupEventListeners() {
         if (state.currentStudyIndex > 0) {
             state.currentStudyIndex--;
             renderStudyQuestion();
+            playSound('click');
         }
     });
     
@@ -387,6 +460,7 @@ function setupEventListeners() {
         if (state.currentStudyIndex < state.filteredQuestions.length - 1) {
             state.currentStudyIndex++;
             renderStudyQuestion();
+            playSound('click');
         }
     });
     
@@ -395,6 +469,7 @@ function setupEventListeners() {
         if (state.currentExamIndex > 0) {
             state.currentExamIndex--;
             renderExamQuestion();
+            playSound('click');
         }
     });
     
@@ -403,27 +478,37 @@ function setupEventListeners() {
         if (state.currentExamIndex < totalExamQuestions - 1) {
             state.currentExamIndex++;
             renderExamQuestion();
+            playSound('click');
         }
     });
     
     document.getElementById('btn-exam-finish').addEventListener('click', () => {
         showConfirmModal();
+        playSound('click');
     });
     
     // Modal buttons
-    document.getElementById('btn-modal-cancel').addEventListener('click', hideConfirmModal);
+    document.getElementById('btn-modal-cancel').addEventListener('click', () => {
+        hideConfirmModal();
+        playSound('click');
+    });
     document.getElementById('btn-modal-confirm').addEventListener('click', () => {
         hideConfirmModal();
         finishExam();
+        playSound('click');
     });
     
     // Result View Action Buttons
     document.getElementById('btn-result-study').addEventListener('click', () => {
         switchView('study');
         renderStudyQuestion();
+        playSound('click');
     });
     
-    document.getElementById('btn-result-retry').addEventListener('click', startNewExam);
+    document.getElementById('btn-result-retry').addEventListener('click', () => {
+        startNewExam();
+        playSound('click');
+    });
 }
 
 // ==================== STUDY VIEW LOGIC ====================
@@ -497,6 +582,12 @@ function renderQuestionList() {
             
             document.querySelectorAll('.question-list-item').forEach(el => el.classList.remove('active'));
             item.classList.add('active');
+            playSound('click');
+            
+            // Auto close study sidebar drawer on mobile
+            if (window.innerWidth <= 900) {
+                closeStudySidebar();
+            }
         });
         
         listContainer.appendChild(item);
@@ -869,12 +960,8 @@ function renderExamQuestion() {
         item.addEventListener('click', () => {
             state.examAnswers[state.currentExamIndex] = index;
             
-            // Audio Feedback
-            if (opt.originalIndex === 0) {
-                playSound('correct');
-            } else {
-                playSound('incorrect');
-            }
+            // Neutral audio feedback for selecting an option in an exam
+            playSound('click');
             
             renderExamQuestion();
             renderExamGridMap();
