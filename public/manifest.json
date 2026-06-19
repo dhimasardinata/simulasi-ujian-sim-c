@@ -1,0 +1,18 @@
+{
+  "name": "Simulator Ujian Teori SIM C",
+  "short_name": "Simulator SIM C",
+  "description": "Simulasi Ujian Teori SIM C berdasarkan Buku Panduan Korlantas POLRI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090b16",
+  "theme_color": "#6366f1",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    
+    <!-- Shield/Gold Gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    
+    <!-- Primary Glow Gradient -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- PWA Icon Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+  
+  <!-- Subtle Outer Glowing Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="url(#primary-grad)" stroke-width="4" stroke-opacity="0.2" />
+
+  <!-- Road Diamond Sign -->
+  <g transform="translate(256, 230) rotate(45)">
+    <rect x="-110" y="-110" width="220" height="220" rx="20" fill="url(#gold-grad)" />
+    <!-- Inner Border -->
+    <rect x="-98" y="-98" width="196" height="196" rx="16" fill="none" stroke="#1e1b4b" stroke-width="8" />
+  </g>
+
+  <!-- Motorcycle Vector Graphic (inside diamond) -->
+  <g transform="translate(256, 230)" fill="#1e1b4b">
+    <!-- Rear Wheel -->
+    <circle cx="-50" cy="20" r="22" stroke="#1e1b4b" stroke-width="4" fill="none"/>
+    <circle cx="-50" cy="20" r="10" />
+    
+    <!-- Front Wheel -->
+    <circle cx="50" cy="20" r="22" stroke="#1e1b4b" stroke-width="4" fill="none"/>
+    <circle cx="50" cy="20" r="10" />
+
+    <!-- Chassis and Engine Area -->
+    <path d="M-50,20 L-20,-15 L20,-15 L50,20" stroke="#1e1b4b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <!-- Seat & Tank -->
+    <path d="M-40,-15 L-10,-15 C10,-15 15,-25 30,-25 L35,-15 Z" fill="#1e1b4b" />
+    
+    <!-- Handlebar & Front Fork -->
+    <path d="M50,20 L25,-35 L15,-35" stroke="#1e1b4b" stroke-width="8" stroke-linecap="round" fill="none" />
+    
+    <!-- Exhaust pipe -->
+    <path d="M-50,20 L-10,20 L-35,30" stroke="#1e1b4b" stroke-width="6" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- License Letter C -->
+  <g transform="translate(256, 400)">
+    <rect x="-40" y="-30" width="80" height="60" rx="12" fill="#e0e7ff" />
+    <text x="0" y="14" fill="#1e1b4b" font-family="'Outfit', sans-serif" font-weight="900" font-size="44" text-anchor="middle">C</text>
+  </g>
+</svg>

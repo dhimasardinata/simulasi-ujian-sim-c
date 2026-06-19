@@ -10,9 +10,10 @@ let state = {
     examShuffledOptions: [], // Array of arrays of { text, originalIndex }
     currentExamIndex: 0,
     examTimeRemaining: 1800, // 30 minutes in seconds
+    examTotalTime: 1800,
     examTimerInterval: null,
     
-    // Progress
+    // Progress tracking
     mastery: {} // Maps questionId (1-260) to 'mastered', 'review', or 'none'
 };
 
@@ -20,6 +21,7 @@ let state = {
 const views = {
     home: document.getElementById('home-view'),
     study: document.getElementById('study-view'),
+    reference: document.getElementById('reference-view'),
     exam: document.getElementById('exam-view'),
     result: document.getElementById('result-view')
 };
@@ -27,8 +29,18 @@ const views = {
 const navButtons = {
     home: document.getElementById('btn-nav-home'),
     study: document.getElementById('btn-nav-study'),
+    reference: document.getElementById('btn-nav-reference'),
     exam: document.getElementById('btn-nav-exam')
 };
+
+// ==================== PWA & REGISTER SERVICE WORKER ====================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('[PWA] Service Worker registered with scope:', reg.scope))
+            .catch(err => console.error('[PWA] Service Worker registration failed:', err));
+    });
+}
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', async () => {
@@ -49,7 +61,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Set default study list
         applyStudyFilters();
         
+        // Render Reference View Initial Tab
+        renderReferenceMaterial('peringatan');
+        
     } catch (error) {
+        showToast("Gagal memuat database soal. Jalankan dengan server HTTP.", "error");
         console.error("Error loading questions database:", error);
     }
 });
@@ -84,7 +100,6 @@ function updateDashboardStats() {
         ? Math.round((masteredCount / state.questions.length) * 100) 
         : 0;
         
-    // Update Home Progress elements
     const txtStatMastery = document.getElementById('txt-stat-mastery');
     const barStatMastery = document.getElementById('bar-stat-mastery');
     
@@ -114,7 +129,7 @@ function updateDashboardStats() {
     if (txtLastScore && txtLastStatus) {
         if (lastResult) {
             const res = JSON.parse(lastResult);
-            txtLastScore.textContent = `${res.score} / 30`;
+            txtLastScore.textContent = `${res.score} / ${res.total || 30}`;
             txtLastStatus.textContent = res.passed ? 'LULUS (Ujian Terakhir)' : 'TIDAK LULUS (Ujian Terakhir)';
             txtLastStatus.className = res.passed ? 'status-passed' : 'status-failed';
         } else {
@@ -127,18 +142,14 @@ function updateDashboardStats() {
 
 // Navigation / View Switching
 function switchView(viewName) {
-    // Deactivate all views
     Object.values(views).forEach(v => v.classList.remove('active'));
-    // Deactivate nav button active states
     Object.values(navButtons).forEach(b => b.classList.remove('btn-primary'));
     Object.values(navButtons).forEach(b => b.classList.add('btn-secondary'));
     
-    // Activate requested view
     if (views[viewName]) {
         views[viewName].classList.add('active');
     }
     
-    // Set active nav button color (except for results view which has no button)
     if (navButtons[viewName]) {
         navButtons[viewName].classList.remove('btn-secondary');
         navButtons[viewName].classList.add('btn-primary');
@@ -150,11 +161,144 @@ function switchView(viewName) {
         state.examTimerInterval = null;
     }
     
-    // Auto scroll to top
+    // Stop confetti loop if leaving result view
+    if (viewName !== 'result') {
+        stopConfetti();
+    }
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Setup Event Listeners
+// ==================== WEB AUDIO API (NO-ASSET SOUND ENGINE) ====================
+let audioCtx = null;
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+}
+
+function playSound(type) {
+    const isSoundOn = document.getElementById('toggle-sound').value === 'on';
+    if (!isSoundOn) return;
+    
+    try {
+        initAudio();
+        if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+        }
+        
+        const now = audioCtx.currentTime;
+        
+        if (type === 'correct') {
+            // High double-note chime (C5 to E5)
+            const osc1 = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc1.type = 'triangle';
+            osc1.frequency.setValueAtTime(523.25, now); // C5
+            osc1.frequency.setValueAtTime(659.25, now + 0.1); // E5
+            
+            gainNode.gain.setValueAtTime(0, now);
+            gainNode.gain.linearRampToValueAtTime(0.15, now + 0.05);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+            
+            osc1.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            osc1.start(now);
+            osc1.stop(now + 0.4);
+        } else if (type === 'incorrect') {
+            // Low descending slide (A3 to D3)
+            const osc1 = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc1.type = 'sawtooth';
+            osc1.frequency.setValueAtTime(220.00, now); // A3
+            osc1.frequency.linearRampToValueAtTime(146.83, now + 0.25); // D3
+            
+            gainNode.gain.setValueAtTime(0, now);
+            gainNode.gain.linearRampToValueAtTime(0.1, now + 0.05);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+            
+            osc1.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            osc1.start(now);
+            osc1.stop(now + 0.4);
+        }
+    } catch (e) {
+        console.warn("Audio synthesis not supported or blocked by policy:", e);
+    }
+}
+
+// ==================== TOAST NOTIFICATION SYSTEM ====================
+function showToast(message, type = 'info') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+    
+    const toast = document.createElement('div');
+    toast.className = `toast-message toast-${type}`;
+    
+    let icon = 'ℹ️';
+    if (type === 'success') icon = '✅';
+    else if (type === 'error') icon = '❌';
+    
+    toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
+    container.appendChild(toast);
+    
+    // Auto remove after animation completes
+    setTimeout(() => {
+        toast.remove();
+    }, 4000);
+}
+
+// ==================== DATA SYNC MANAGER (IMPORT/EXPORT) ====================
+function exportProgress() {
+    try {
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify({
+            mastery: state.mastery,
+            last_exam: localStorage.getItem('sim_c_last_exam')
+        }));
+        const dlAnchorElem = document.createElement('a');
+        dlAnchorElem.setAttribute("href", dataStr);
+        dlAnchorElem.setAttribute("download", `progres_sim_c_mastery.json`);
+        dlAnchorElem.click();
+        showToast("Progres belajar berhasil diekspor!", "success");
+    } catch (e) {
+        showToast("Gagal mengekspor progres.", "error");
+    }
+}
+
+function importProgress(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (data && data.mastery) {
+                state.mastery = data.mastery;
+                saveProgress();
+                
+                if (data.last_exam) {
+                    localStorage.setItem('sim_c_last_exam', data.last_exam);
+                }
+                
+                updateDashboardStats();
+                applyStudyFilters();
+                showToast("Progres belajar berhasil diimpor!", "success");
+            } else {
+                showToast("File tidak valid.", "error");
+            }
+        } catch (err) {
+            showToast("Gagal membaca file impor.", "error");
+        }
+    };
+    reader.readAsText(file);
+}
+
+// ==================== SETUP EVENT LISTENERS ====================
 function setupEventListeners() {
     // Navigation click events
     navButtons.home.addEventListener('click', () => switchView('home'));
@@ -162,9 +306,8 @@ function setupEventListeners() {
         switchView('study');
         renderStudyQuestion();
     });
-    navButtons.exam.addEventListener('click', () => {
-        startNewExam();
-    });
+    navButtons.reference.addEventListener('click', () => switchView('reference'));
+    navButtons.exam.addEventListener('click', () => startNewExam());
     
     document.getElementById('app-logo-title').addEventListener('click', () => switchView('home'));
     
@@ -173,15 +316,20 @@ function setupEventListeners() {
         switchView('study');
         renderStudyQuestion();
     });
-    document.getElementById('btn-hero-exam').addEventListener('click', () => {
-        startNewExam();
-    });
+    document.getElementById('btn-hero-exam').addEventListener('click', () => startNewExam());
+    
+    // Data sync
+    document.getElementById('btn-export-progress').addEventListener('click', exportProgress);
+    
+    const btnImport = document.getElementById('btn-import-progress');
+    const inputImport = document.getElementById('input-import-file');
+    btnImport.addEventListener('click', () => inputImport.click());
+    inputImport.addEventListener('change', importProgress);
     
     // Study Filter Buttons
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.study-sidebar .filter-btn');
     filterButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            // Find sibling buttons in same category
             const parentSection = btn.closest('.filter-section');
             parentSection.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
@@ -190,7 +338,17 @@ function setupEventListeners() {
         });
     });
     
-    // Study Mode Action Buttons
+    // Reference View Sidebar Tab buttons
+    const refTabs = document.querySelectorAll('.reference-sidebar .filter-btn');
+    refTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+            refTabs.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderReferenceMaterial(btn.getAttribute('data-ref-sec'));
+        });
+    });
+    
+    // Study Mode Actions
     document.getElementById('btn-reveal-answer').addEventListener('click', () => {
         const box = document.getElementById('study-answer-box');
         box.classList.toggle('active');
@@ -203,6 +361,7 @@ function setupEventListeners() {
             saveProgress();
             renderQuestionList(); // Update dots
             updateStudyButtonStates();
+            showToast(`Soal No. ${currentQ.id} ditandai Paham`, "success");
         }
     });
     
@@ -213,6 +372,7 @@ function setupEventListeners() {
             saveProgress();
             renderQuestionList(); // Update dots
             updateStudyButtonStates();
+            showToast(`Soal No. ${currentQ.id} ditandai Perlu Review`, "info");
         }
     });
     
@@ -239,7 +399,8 @@ function setupEventListeners() {
     });
     
     document.getElementById('btn-exam-next').addEventListener('click', () => {
-        if (state.currentExamIndex < 29) {
+        const totalExamQuestions = state.examQuestions.length;
+        if (state.currentExamIndex < totalExamQuestions - 1) {
             state.currentExamIndex++;
             renderExamQuestion();
         }
@@ -256,31 +417,38 @@ function setupEventListeners() {
         finishExam();
     });
     
-    // Result Action Buttons
+    // Result View Action Buttons
     document.getElementById('btn-result-study').addEventListener('click', () => {
         switchView('study');
         renderStudyQuestion();
     });
     
-    document.getElementById('btn-result-retry').addEventListener('click', () => {
-        startNewExam();
-    });
+    document.getElementById('btn-result-retry').addEventListener('click', startNewExam);
 }
 
-// ==================== STUDY MODE LOGIC ====================
-
-// Filter questions and reload the browser sidebar list
+// ==================== STUDY VIEW LOGIC ====================
 function applyStudyFilters() {
-    const activeCatBtn = document.querySelector('.filter-section:nth-of-type(1) .filter-btn.active');
-    const activeModBtn = document.querySelector('.filter-section:nth-of-type(2) .filter-btn.active');
+    const activeProgressBtn = document.querySelector('.filter-section:nth-of-type(1) .filter-btn.active');
+    const activeCatBtn = document.querySelector('.filter-section:nth-of-type(2) .filter-btn.active');
+    const activeModBtn = document.querySelector('.filter-section:nth-of-type(3) .filter-btn.active');
     
+    const progressFilter = activeProgressBtn ? activeProgressBtn.getAttribute('data-progress-filter') : 'all';
     const categoryFilter = activeCatBtn ? activeCatBtn.getAttribute('data-category') : 'all';
     const moduleFilter = activeModBtn ? activeModBtn.getAttribute('data-module') : 'all';
     
     state.filteredQuestions = state.questions.filter(q => {
         const catMatch = (categoryFilter === 'all' || q.category === categoryFilter);
         const modMatch = (moduleFilter === 'all' || q.module.toString() === moduleFilter);
-        return catMatch && modMatch;
+        
+        let progressMatch = true;
+        const status = state.mastery[q.id];
+        if (progressFilter === 'review') {
+            progressMatch = (status === 'review');
+        } else if (progressFilter === 'unstudied') {
+            progressMatch = (!status || status === 'none');
+        }
+        
+        return catMatch && modMatch && progressMatch;
     });
     
     state.currentStudyIndex = 0;
@@ -289,13 +457,12 @@ function applyStudyFilters() {
     renderStudyQuestion();
 }
 
-// Render Left Sidebar list of questions
 function renderQuestionList() {
     const listContainer = document.getElementById('study-question-list');
     listContainer.innerHTML = '';
     
     if (state.filteredQuestions.length === 0) {
-        listContainer.innerHTML = '<div style="padding: 1rem; color: var(--text-muted); text-align: center;">Tidak ada soal yang cocok dengan filter.</div>';
+        listContainer.innerHTML = '<div style="padding: 1.5rem; color: var(--text-muted); text-align: center; font-size: 0.9rem;">Tidak ada soal yang cocok dengan filter.</div>';
         return;
     }
     
@@ -306,13 +473,11 @@ function renderQuestionList() {
             item.classList.add('active');
         }
         
-        // Status dot class
         let dotClass = '';
         const status = state.mastery[q.id];
         if (status === 'mastered') dotClass = 'mastered';
         else if (status === 'review') dotClass = 'review';
         
-        // Get short title
         let shortText = q.question;
         if (shortText.length > 55) {
             shortText = shortText.substring(0, 52) + '...';
@@ -321,8 +486,8 @@ function renderQuestionList() {
         item.innerHTML = `
             <div class="status-dot ${dotClass}"></div>
             <div style="flex-grow: 1;">
-                <div style="font-weight: 600; font-size: 0.8rem; opacity: 0.7; margin-bottom: 0.1rem;">Modul ${q.module} - No. ${q.id}</div>
-                <div>${shortText}</div>
+                <div style="font-weight: 600; font-size: 0.78rem; opacity: 0.6; margin-bottom: 0.1rem;">Modul ${q.module} - No. ${q.id}</div>
+                <div style="line-height: 1.3;">${shortText}</div>
             </div>
         `;
         
@@ -330,7 +495,6 @@ function renderQuestionList() {
             state.currentStudyIndex = index;
             renderStudyQuestion();
             
-            // Highlight active item
             document.querySelectorAll('.question-list-item').forEach(el => el.classList.remove('active'));
             item.classList.add('active');
         });
@@ -338,29 +502,24 @@ function renderQuestionList() {
         listContainer.appendChild(item);
     });
     
-    // Auto scroll list item into view if possible
     const activeItem = listContainer.querySelector('.question-list-item.active');
     if (activeItem) {
         activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
 }
 
-// Render the currently active question details card
 function renderStudyQuestion() {
     const currentQ = state.filteredQuestions[state.currentStudyIndex];
     if (!currentQ) {
-        // Clear card details
-        document.getElementById('study-question-title').textContent = "Pilih soal dari daftar sidebar";
+        document.getElementById('study-question-title').textContent = "Filter ini kosong. Pilih filter lain di sidebar.";
         document.getElementById('study-question-image').style.display = 'none';
         document.getElementById('study-answer-box').classList.remove('active');
         document.getElementById('study-answer-text').textContent = '';
         return;
     }
     
-    // Set Badges
     const badgeCategory = document.getElementById('study-badge-category');
     badgeCategory.textContent = currentQ.category;
-    // Set badge style
     badgeCategory.className = 'badge';
     if (currentQ.category === "Persepsi Bahaya") badgeCategory.classList.add('badge-pb');
     else if (currentQ.category === "Wawasan") badgeCategory.classList.add('badge-wawasan');
@@ -369,10 +528,8 @@ function renderStudyQuestion() {
     document.getElementById('study-badge-module').textContent = `Modul ${currentQ.module}`;
     document.getElementById('study-badge-page').textContent = `Hal. ${currentQ.page}`;
     
-    // Set Question Title
     document.getElementById('study-question-title').textContent = currentQ.question;
     
-    // Set Image
     const imgEl = document.getElementById('study-question-image');
     if (currentQ.image) {
         imgEl.src = currentQ.image;
@@ -381,112 +538,234 @@ function renderStudyQuestion() {
         imgEl.style.display = 'none';
     }
     
-    // Set Answer Text
     document.getElementById('study-answer-text').textContent = currentQ.explanation;
-    
-    // Reset Answer Reveal box
     document.getElementById('study-answer-box').classList.remove('active');
     
-    // Update Button Highlights
     updateStudyButtonStates();
     
-    // Update list selection highlight
     document.querySelectorAll('.question-list-item').forEach((el, index) => {
         if (index === state.currentStudyIndex) el.classList.add('active');
         else el.classList.remove('active');
     });
     
-    // Enable/disable prev/next buttons
     document.getElementById('btn-study-prev').disabled = (state.currentStudyIndex === 0);
     document.getElementById('btn-study-next').disabled = (state.currentStudyIndex === state.filteredQuestions.length - 1);
 }
 
-// Highlight the mark states
 function updateStudyButtonStates() {
     const currentQ = state.filteredQuestions[state.currentStudyIndex];
     const btnMastered = document.getElementById('btn-mark-mastered');
     const btnReview = document.getElementById('btn-mark-review');
     
-    btnMastered.style.opacity = '0.6';
-    btnReview.style.opacity = '0.6';
+    btnMastered.style.opacity = '0.5';
+    btnReview.style.opacity = '0.5';
+    btnMastered.style.transform = '';
+    btnReview.style.transform = '';
     
     if (currentQ) {
         const status = state.mastery[currentQ.id];
         if (status === 'mastered') {
             btnMastered.style.opacity = '1';
+            btnMastered.style.transform = 'scale(1.05)';
         } else if (status === 'review') {
             btnReview.style.opacity = '1';
+            btnReview.style.transform = 'scale(1.05)';
         }
     }
 }
 
+// ==================== REFERENCE MATERIAL VIEW ====================
+const referenceData = {
+    peringatan: {
+        title: "Rambu Peringatan (Warning Signs)",
+        intro: "Rambu peringatan digunakan untuk memberikan informasi peringatan kepada pengguna jalan tentang adanya bahaya di jalan raya di depan mereka. Ciri khas rambu ini adalah berbentuk belah ketupat, dengan warna dasar kuning, garis tepi hitam, dan lambang atau huruf berwarna hitam.",
+        items: [
+            { icon: "⚠️", title: "Tikungan Tajam", desc: "Memberi peringatan kepada pengendara bahwa akan ada tikungan tajam ke arah tertentu di depan mereka. Kecepatan harus dikurangi." },
+            { icon: "⚠️", title: "Turunan Curam", desc: "Peringatan jalan menurun tajam di depan. Pengendara disarankan untuk menggunakan perseneling rendah untuk pengereman mesin (engine brake)." },
+            { icon: "⚠️", title: "Jalan Licin", desc: "Peringatan jalan di depan rawan licin saat basah atau musim hujan. Hindari pengereman mendadak untuk mencegah selip ban." },
+            { icon: "⚠️", title: "Penyempitan Jalan", desc: "Peringatan bahwa jalan di depan menyempit dari sisi kiri, kanan, atau kedua sisi. Bersiap mengurangi kecepatan dan mengalah." },
+            { icon: "⚠️", title: "Zebra Cross / Pejalan Kaki", desc: "Peringatan banyak pejalan kaki menyeberang jalan. Pengendara motor wajib memprioritaskan pejalan kaki di zebra cross." },
+            { icon: "⚠️", title: "Perlintasan Kereta Api", desc: "Peringatan perlintasan sebidang rel kereta api di depan. Kurangi kecepatan dan tengok kanan-kiri sebelum menyeberang." }
+        ]
+    },
+    larangan: {
+        title: "Rambu Larangan (Prohibition Signs)",
+        intro: "Rambu larangan melarang pengguna jalan melakukan tindakan tertentu untuk menjaga keselamatan bersama. Ciri khas rambu larangan adalah berbentuk lingkaran, dengan warna dasar putih, garis tepi berwarna merah, dan lambang atau kata-kata berwarna hitam/merah.",
+        items: [
+            { icon: "🚫", title: "Larangan Parkir (P Coret)", desc: "Dilarang memarkirkan kendaraan di sepanjang area setelah rambu ini terpasang hingga rambu pembatal terdekat." },
+            { icon: "🚫", title: "Larangan Berhenti (S Coret)", desc: "Dilarang menghentikan kendaraan bermotor sekecil apa pun di area jalan ini karena berpotensi memicu kemacetan parah." },
+            { icon: "🚫", title: "Larangan Masuk", desc: "Kendaraan bermotor dilarang melintasi atau masuk ke jalan ini (biasanya jalan satu arah / one-way)." },
+            { icon: "🚫", title: "Larangan Belok", desc: "Dilarang berbelok ke arah kiri, kanan, atau berputar balik pada simpang yang telah ditentukan rambu tersebut." },
+            { icon: "🚫", title: "Batas Kecepatan Maksimum", desc: "Dilarang berkendara melebihi kecepatan tertulis (misal: 40 km/jam di dalam wilayah perkotaan atau pemukiman padat)." }
+        ]
+    },
+    perintah: {
+        title: "Rambu Perintah (Mandatory Signs)",
+        intro: "Rambu perintah mewajibkan tindakan tertentu yang harus dilakukan oleh pengguna jalan demi kelancaran lalu lintas. Ciri khas rambu perintah adalah berbentuk lingkaran, berwarna dasar biru, garis tepi berwarna putih, dan lambang berwarna putih.",
+        items: [
+            { icon: "🔵", title: "Perintah Wajib Belok", desc: "Wajib berbelok ke kiri atau ke kanan pada simpang di depan sesuai dengan arah panah penunjuk." },
+            { icon: "🔵", title: "Lajur Sepeda Motor", desc: "Wajib menggunakan lajur atau jalan khusus sepeda motor yang telah ditentukan marka dan rambu tersebut." },
+            { icon: "🔵", title: "Kecepatan Minimum", desc: "Wajib melaju dengan kecepatan minimum tertulis (biasanya di jalan tol atau jalan layang cepat)." },
+            { icon: "🔵", title: "Perintah Mengikuti Arah", desc: "Pengendara wajib lurus terus atau berputar di bundaran sebelum melanjutkan perjalanan ke simpang cabang lainnya." }
+        ]
+    },
+    petunjuk: {
+        title: "Rambu Petunjuk (Directional & Info Signs)",
+        intro: "Rambu petunjuk memberikan arah jalan, batas daerah, letak fasilitas umum, atau informasi rute perjalanan bagi pengendara. Rambu petunjuk jalan arah rute biasanya berbentuk persegi/panjang berwarna hijau atau biru.",
+        items: [
+            { icon: "🟢", title: "Petunjuk Arah Rute", desc: "Memberi informasi arah kota, wilayah, atau jalan di simpang depan (warna hijau untuk tol/non-tol, biru untuk daerah administrasi)." },
+            { icon: "ℹ️", title: "Fasilitas Umum", desc: "Menunjukkan keberadaan SPBU, rumah sakit, tempat ibadah, tempat istirahat, atau pos polisi lalu lintas terdekat." },
+            { icon: "🟢", title: "Batas Wilayah", desc: "Menandakan pintu gerbang masuk kota, kabupaten, atau batas wilayah provinsi." }
+        ]
+    },
+    marka: {
+        title: "Marka Jalan (Road Markings)",
+        intro: "Marka jalan adalah tanda yang berada di permukaan jalan raya yang berfungsi mengatur dan menuntun pergerakan arus lalu lintas.",
+        items: [
+            { icon: "➖", title: "Garis Membujur Utuh", desc: "Berfungsi sebagai larangan bagi kendaraan melintasi garis tersebut. Dilarang mendahului kendaraan lain di area ini." },
+            { icon: "---", title: "Garis Membujur Putus-Putus", desc: "Berfungsi mengarahkan lalu lintas dan diperbolehkan melintasi garis tersebut untuk berpindah lajur atau mendahului jika aman." },
+            { icon: "🟨", title: "Yellow Box Junction (YBJ)", desc: "Marka kotak kuning di persimpangan. Dilarang masuk ke area kotak kuning jika kondisi jalan di depan macet, meskipun lampu hijau." },
+            { icon: "🦓", title: "Zebra Cross", desc: "Marka garis membujur warna putih-hitam sebagai fasilitas penyeberangan jalan bagi pejalan kaki." }
+        ]
+    },
+    apill: {
+        title: "APILL (Alat Pemberi Isyarat Lalu Lintas)",
+        intro: "APILL atau lampu lalu lintas adalah alat elektronik yang dipasang di simpang jalan untuk mengatur giliran gerak kendaraan secara tertib.",
+        items: [
+            { icon: "🔴", title: "Lampu Merah", desc: "Wajib berhenti penuh di belakang marka garis stop sebelum lampu menyala menjadi hijau kembali." },
+            { icon: "🟡", title: "Lampu Kuning", desc: "Pengendara bersiap untuk berhenti (jika masih jauh dari garis stop) atau berhati-hati melintasi simpang." },
+            { icon: "🟢", title: "Lampu Hijau", desc: "Kendaraan diperbolehkan jalan dengan tetap memperhatikan keselamatan dari arah persimpangan lainnya." }
+        ]
+    },
+    kendaraan: {
+        title: "Komponen Kendaraan Bermotor (SIM C)",
+        intro: "Sebelum berkendara, pengendara sepeda motor wajib memeriksa komponen kelengkapan kendaraan bermotor sesuai standar keselamatan jalan raya.",
+        items: [
+            { icon: "🛵", title: "Lampu Sein (Penunjuk Arah)", desc: "Berwarna kuning tua kelap-kelip. Wajib dinyalakan minimal 30 meter sebelum berbelok atau berpindah lajur." },
+            { icon: "🛵", title: "Kaca Spion", desc: "Membantu melihat area blind spot di belakang pengendara agar aman saat berpindah lajur atau memutar arah." },
+            { icon: "🛵", title: "Kondisi Ban Motor", desc: "Ketebalan alur ban minimal 1mm. Ban yang botak/halus dapat mengurangi daya cengkeram jalan dan memicu selip ban." },
+            { icon: "⚙️", title: "Indikator Check Engine", desc: "Lampu indikator di panel speedometer. Jika terus menyala, menunjukkan kerusakan pada sistem mesin/injeksi motor." }
+        ]
+    }
+};
+
+function renderReferenceMaterial(sectionKey) {
+    const panel = document.getElementById('reference-content-panel');
+    const data = referenceData[sectionKey];
+    if (!data) return;
+    
+    let html = `
+        <div class="ref-section">
+            <h2 class="ref-section-title">${data.title}</h2>
+            <p class="ref-intro">${data.intro}</p>
+            <div class="ref-grid">
+    `;
+    
+    data.items.forEach(item => {
+        html += `
+            <div class="ref-card">
+                <div class="ref-sign-icon">${item.icon}</div>
+                <h3 class="ref-sign-title">${item.title}</h3>
+                <p class="ref-sign-desc">${item.desc}</p>
+            </div>
+        `;
+    });
+    
+    html += `
+            </div>
+        </div>
+    `;
+    
+    panel.innerHTML = html;
+}
 
 // ==================== EXAM MODE LOGIC ====================
-
-// Start a new test drawing 30 random questions proportionally
 function startNewExam() {
-    // Stop old timer
     if (state.examTimerInterval) {
         clearInterval(state.examTimerInterval);
     }
     
-    // Filter questions by category
-    const pbPool = state.questions.filter(q => q.category === "Persepsi Bahaya");
-    const wawasanPool = state.questions.filter(q => q.category === "Wawasan");
-    const pengetahuanPool = state.questions.filter(q => q.category === "Pengetahuan");
+    const examType = document.getElementById('select-exam-type').value;
     
-    // Draw proportionally: 12 PB, 9 Wawasan, 9 Pengetahuan = 30 questions
-    const pbDrawn = getRandomElements(pbPool, 12);
-    const wawasanDrawn = getRandomElements(wawasanPool, 9);
-    const pengetahuanDrawn = getRandomElements(pengetahuanPool, 9);
+    let examPool = [];
+    let numQuestions = 30;
+    let durationSeconds = 1800; // default 30 min
     
-    // Combine and shuffle the drawn list
-    state.examQuestions = shuffleArray([...pbDrawn, ...wawasanDrawn, ...pengetahuanDrawn]);
+    if (examType === 'official') {
+        const pbPool = state.questions.filter(q => q.category === "Persepsi Bahaya");
+        const wawasanPool = state.questions.filter(q => q.category === "Wawasan");
+        const pengetahuanPool = state.questions.filter(q => q.category === "Pengetahuan");
+        
+        const pbDrawn = getRandomElements(pbPool, 12);
+        const wawasanDrawn = getRandomElements(wawasanPool, 9);
+        const pengetahuanDrawn = getRandomElements(pengetahuanPool, 9);
+        
+        examPool = [...pbDrawn, ...wawasanDrawn, ...pengetahuanDrawn];
+        numQuestions = 30;
+        durationSeconds = 1800;
+    } else if (examType === 'sprint') {
+        const pbPool = state.questions.filter(q => q.category === "Persepsi Bahaya");
+        const wawasanPool = state.questions.filter(q => q.category === "Wawasan");
+        const pengetahuanPool = state.questions.filter(q => q.category === "Pengetahuan");
+        
+        const pbDrawn = getRandomElements(pbPool, 6);
+        const wawasanDrawn = getRandomElements(wawasanPool, 5);
+        const pengetahuanDrawn = getRandomElements(pengetahuanPool, 4);
+        
+        examPool = [...pbDrawn, ...wawasanDrawn, ...pengetahuanDrawn];
+        numQuestions = 15;
+        durationSeconds = 900; // 15 min
+    } else if (examType === 'focus-pb') {
+        examPool = getRandomElements(state.questions.filter(q => q.category === "Persepsi Bahaya"), 15);
+        numQuestions = 15;
+        durationSeconds = 900;
+    } else if (examType === 'focus-wawasan') {
+        examPool = getRandomElements(state.questions.filter(q => q.category === "Wawasan"), 15);
+        numQuestions = 15;
+        durationSeconds = 900;
+    } else if (examType === 'focus-pengetahuan') {
+        examPool = getRandomElements(state.questions.filter(q => q.category === "Pengetahuan"), 15);
+        numQuestions = 15;
+        durationSeconds = 900;
+    }
     
-    // Reset answers
-    state.examAnswers = Array(30).fill(null);
+    state.examQuestions = shuffleArray(examPool);
+    state.examAnswers = Array(numQuestions).fill(null);
     state.currentExamIndex = 0;
+    state.examTimeRemaining = durationSeconds;
+    state.examTotalTime = durationSeconds;
     
-    // Generate and store stable shuffled options for each exam question
+    // Setup stable options
     state.examShuffledOptions = [];
     state.examQuestions.forEach(q => {
-        // Options in questions are: index 0 is Correct answer, index 1 & 2 are distractors.
-        // We create option objects: { text, originalIndex }
         const opts = q.options.map((optText, index) => ({ text: optText, originalIndex: index }));
-        // Shuffle the array of option objects
-        const shuffled = shuffleArray(opts);
-        state.examShuffledOptions.push(shuffled);
+        state.examShuffledOptions.push(shuffleArray(opts));
     });
     
-    // Reset Timer: 30 minutes = 1800 seconds
-    state.examTimeRemaining = 1800;
+    // Timer Loop
     updateExamTimerDisplay();
     state.examTimerInterval = setInterval(() => {
         state.examTimeRemaining--;
         updateExamTimerDisplay();
         if (state.examTimeRemaining <= 0) {
             clearInterval(state.examTimerInterval);
-            finishExam(); // Automatically submit
+            finishExam();
+            showToast("Waktu ujian habis! Hasil ujian dikirim otomatis.", "error");
         }
     }, 1000);
     
-    // Render the grid map
     renderExamGridMap();
-    
-    // Go to view
     switchView('exam');
-    
-    // Render first question
     renderExamQuestion();
+    
+    showToast(`Ujian dimulai! Terdiri dari ${numQuestions} soal.`, "info");
 }
 
-// Draw N random elements from pool
 function getRandomElements(arr, n) {
     const shuffled = shuffleArray([...arr]);
     return shuffled.slice(0, Math.min(n, arr.length));
 }
 
-// Durstenfeld shuffle algorithm
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -495,7 +774,6 @@ function shuffleArray(array) {
     return array;
 }
 
-// Update Timer Text
 function updateExamTimerDisplay() {
     const minutes = Math.floor(state.examTimeRemaining / 60);
     const seconds = state.examTimeRemaining % 60;
@@ -504,8 +782,7 @@ function updateExamTimerDisplay() {
     const timerEl = document.getElementById('exam-txt-timer');
     timerEl.textContent = formatted;
     
-    // Warning state
-    if (state.examTimeRemaining < 120) { // 2 minutes left
+    if (state.examTimeRemaining < 120) { // 2 mins warning
         timerEl.style.color = 'var(--accent-rose)';
         timerEl.style.animation = 'pulse 1s infinite';
     } else {
@@ -514,17 +791,16 @@ function updateExamTimerDisplay() {
     }
 }
 
-// Render the sidebar list of 30 navigation cells
 function renderExamGridMap() {
     const grid = document.getElementById('exam-grid-map');
     grid.innerHTML = '';
     
-    for (let i = 0; i < 30; i++) {
+    const totalExamQuestions = state.examQuestions.length;
+    for (let i = 0; i < totalExamQuestions; i++) {
         const cell = document.createElement('div');
         cell.className = 'grid-cell';
         cell.textContent = i + 1;
         
-        // Classes
         if (i === state.currentExamIndex) cell.classList.add('active');
         else if (state.examAnswers[i] !== null) cell.classList.add('answered');
         
@@ -537,13 +813,12 @@ function renderExamGridMap() {
     }
 }
 
-// Render the active quiz question page
 function renderExamQuestion() {
     const currentQ = state.examQuestions[state.currentExamIndex];
     if (!currentQ) return;
     
-    // Update Header Row
-    document.getElementById('exam-txt-progress').textContent = `Soal ${state.currentExamIndex + 1} dari 30`;
+    const totalExamQuestions = state.examQuestions.length;
+    document.getElementById('exam-txt-progress').textContent = `Soal ${state.currentExamIndex + 1} dari ${totalExamQuestions}`;
     
     const catBadge = document.getElementById('exam-badge-category');
     catBadge.textContent = currentQ.category;
@@ -552,15 +827,12 @@ function renderExamQuestion() {
     else if (currentQ.category === "Wawasan") catBadge.classList.add('badge-wawasan');
     else if (currentQ.category === "Pengetahuan") catBadge.classList.add('badge-pengetahuan');
     
-    // Set Question Text
-    // Note: For Persepsi Bahaya, we parsed the title as the question. Let's make it look like a real exam question:
     let qTextText = currentQ.question;
     if (currentQ.category === "Persepsi Bahaya") {
         qTextText = `Situasi: ${currentQ.question}. Tindakan apa yang paling tepat dilakukan pengendara sepeda motor?`;
     }
     document.getElementById('exam-txt-question').textContent = qTextText;
     
-    // Set Image
     const imgEl = document.getElementById('exam-question-image');
     if (currentQ.image) {
         imgEl.src = currentQ.image;
@@ -569,12 +841,11 @@ function renderExamQuestion() {
         imgEl.style.display = 'none';
     }
     
-    // Render Options List
     const optionsContainer = document.getElementById('exam-options-list');
     optionsContainer.innerHTML = '';
     
     const shuffledOpts = state.examShuffledOptions[state.currentExamIndex];
-    const selectedAnswerIndex = state.examAnswers[state.currentExamIndex]; // index (0-2) of selected options in the shuffled list
+    const selectedAnswerIndex = state.examAnswers[state.currentExamIndex];
     
     shuffledOpts.forEach((opt, index) => {
         const item = document.createElement('div');
@@ -583,27 +854,29 @@ function renderExamQuestion() {
             item.classList.add('selected');
         }
         
-        const letter = String.fromCharCode(65 + index); // A, B, C
+        const letter = String.fromCharCode(65 + index);
         item.innerHTML = `
             <div class="option-circle">${letter}</div>
             <div class="option-text">${opt.text}</div>
         `;
         
         item.addEventListener('click', () => {
-            // Select this option
             state.examAnswers[state.currentExamIndex] = index;
             
-            // Re-render options to show highlight
-            renderExamQuestion();
+            // Audio Feedback
+            if (opt.originalIndex === 0) {
+                playSound('correct');
+            } else {
+                playSound('incorrect');
+            }
             
-            // Update grid cell
+            renderExamQuestion();
             renderExamGridMap();
         });
         
         optionsContainer.appendChild(item);
     });
     
-    // Update navigation grid active highlight
     const cells = document.querySelectorAll('.grid-cell');
     cells.forEach((cell, idx) => {
         cell.classList.remove('active');
@@ -613,14 +886,11 @@ function renderExamQuestion() {
         else if (state.examAnswers[idx] !== null) cell.classList.add('answered');
     });
     
-    // Enable/disable prev/next buttons
     document.getElementById('btn-exam-prev').disabled = (state.currentExamIndex === 0);
-    document.getElementById('btn-exam-next').disabled = (state.currentExamIndex === 29);
+    document.getElementById('btn-exam-next').disabled = (state.currentExamIndex === totalExamQuestions - 1);
 }
 
-// Modal handling
 function showConfirmModal() {
-    // Count unanswered questions
     const unansweredCount = state.examAnswers.filter(ans => ans === null).length;
     const modalDesc = document.getElementById('modal-desc');
     
@@ -637,70 +907,72 @@ function hideConfirmModal() {
     document.getElementById('confirm-modal').classList.remove('active');
 }
 
-// End exam, grade, and display results
 function finishExam() {
-    // Stop Timer
     if (state.examTimerInterval) {
         clearInterval(state.examTimerInterval);
         state.examTimerInterval = null;
     }
     
-    // Grade exam
+    const totalExamQuestions = state.examQuestions.length;
     let correctCount = 0;
+    
     state.examQuestions.forEach((q, idx) => {
         const userSelectedShuffledIndex = state.examAnswers[idx];
         if (userSelectedShuffledIndex !== null) {
             const selectedOpt = state.examShuffledOptions[idx][userSelectedShuffledIndex];
-            // The correct option in our parsed DB originally had index 0
             if (selectedOpt.originalIndex === 0) {
                 correctCount++;
             }
         }
     });
     
-    const passed = correctCount >= 21; // 70% threshold
-    const percentage = Math.round((correctCount / 30) * 100);
+    // Passing score criteria: >= 70%
+    const threshold = Math.ceil(totalExamQuestions * 0.7);
+    const passed = correctCount >= threshold;
+    const percentage = Math.round((correctCount / totalExamQuestions) * 100);
     
-    // Save to localStorage
     const examResult = {
         score: correctCount,
+        total: totalExamQuestions,
         percentage: percentage,
         passed: passed,
         timestamp: new Date().toISOString()
     };
     localStorage.setItem('sim_c_last_exam', JSON.stringify(examResult));
     
-    // Update stats on Home
+    // Update dashboard stats
     updateDashboardStats();
     
-    // Render Results View
+    // Render Results View details
     const txtStatus = document.getElementById('txt-result-status');
     const circleScore = document.getElementById('circle-result-score');
     const txtScore = document.getElementById('txt-result-score');
     const txtDetails = document.getElementById('txt-result-details');
     
     txtScore.textContent = correctCount;
+    document.querySelector('#circle-result-score .score-total').textContent = `dari ${totalExamQuestions} benar`;
     
     if (passed) {
         txtStatus.textContent = "LULUS";
         txtStatus.className = "result-status status-passed";
         circleScore.className = "result-score-circle passed";
-        txtDetails.innerHTML = `Selamat! Anda <strong>LULUS</strong> ujian teori SIM C dengan skor <strong>${percentage}%</strong> (${correctCount} dari 30 soal benar). Pertahankan pemahaman Anda dan bersiaplah untuk ujian praktik!`;
+        txtDetails.innerHTML = `Selamat! Anda <strong>LULUS</strong> ujian simulasi teori SIM C dengan skor <strong>${percentage}%</strong> (${correctCount} dari ${totalExamQuestions} soal benar). Anda siap menghadapi ujian teori asli!`;
+        
+        // Run Confetti celebration
+        startConfetti();
     } else {
         txtStatus.textContent = "TIDAK LULUS";
         txtStatus.className = "result-status status-failed";
         circleScore.className = "result-score-circle failed";
-        txtDetails.innerHTML = `Maaf, Anda <strong>BELUM LULUS</strong> ujian teori SIM C. Skor Anda <strong>${percentage}%</strong> (${correctCount} dari 30 soal benar). Standar kelulusan minimum adalah <strong>70% (21 soal benar)</strong>. Pelajari kembali materi di Mode Belajar.`;
+        txtDetails.innerHTML = `Maaf, Anda <strong>BELUM LULUS</strong>. Skor Anda <strong>${percentage}%</strong> (${correctCount} dari ${totalExamQuestions} soal benar). Standar kelulusan minimum adalah <strong>70% (${threshold} soal benar)</strong>. Latih kembali di Mode Belajar.`;
+        
+        stopConfetti();
     }
     
-    // Render Review List
     renderResultReviewList();
-    
-    // Switch View
     switchView('result');
 }
 
-// Render the final exam review questions listing
 function renderResultReviewList() {
     const list = document.getElementById('result-review-list');
     list.innerHTML = '';
@@ -720,13 +992,11 @@ function renderResultReviewList() {
             }
         }
         
-        // Find correct option text (originalIndex === 0)
         const correctOptText = shuffledOpts.find(o => o.originalIndex === 0).text;
         
         const reviewItem = document.createElement('div');
         reviewItem.className = `card review-item ${isCorrect ? 'correct' : 'incorrect'}`;
         
-        // Header
         const statusBadge = isCorrect 
             ? `<span class="badge badge-pengetahuan">Benar</span>` 
             : `<span class="badge badge-danger">Salah</span>`;
@@ -769,4 +1039,93 @@ function renderResultReviewList() {
         
         list.appendChild(reviewItem);
     });
+}
+
+// ==================== CONFETTI ENGINE (PURE JAVASCRIPT) ====================
+let confettiCanvas = null;
+let confettiCtx = null;
+let confettiActive = false;
+let confettiParticles = [];
+let confettiAnimationId = null;
+
+function startConfetti() {
+    confettiCanvas = document.getElementById('confetti-canvas');
+    if (!confettiCanvas) return;
+    
+    confettiCtx = confettiCanvas.getContext('2d');
+    
+    // Set size
+    const resizeCanvas = () => {
+        const rect = confettiCanvas.parentElement.getBoundingClientRect();
+        confettiCanvas.width = rect.width;
+        confettiCanvas.height = rect.height;
+    };
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    confettiActive = true;
+    confettiParticles = [];
+    
+    // Generate particles
+    const colors = ['#6366f1', '#8b5cf6', '#10b981', '#fbbf24', '#f43f5e', '#3b82f6'];
+    for (let i = 0; i < 150; i++) {
+        confettiParticles.push({
+            x: Math.random() * confettiCanvas.width,
+            y: Math.random() * -100 - 20,
+            r: Math.random() * 6 + 4,
+            d: Math.random() * confettiCanvas.height,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            tilt: Math.random() * 10 - 5,
+            tiltAngleIncremental: Math.random() * 0.07 + 0.02,
+            tiltAngle: 0,
+            speedY: Math.random() * 3 + 2,
+            speedX: Math.random() * 2 - 1
+        });
+    }
+    
+    function drawConfetti() {
+        if (!confettiActive) return;
+        
+        confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        
+        let remaining = 0;
+        confettiParticles.forEach(p => {
+            p.tiltAngle += p.tiltAngleIncremental;
+            p.y += p.speedY;
+            p.x += p.speedX;
+            p.tilt = Math.sin(p.tiltAngle) * 12;
+            
+            if (p.y <= confettiCanvas.height) {
+                remaining++;
+            } else {
+                // reset to top
+                p.y = -20;
+                p.x = Math.random() * confettiCanvas.width;
+            }
+            
+            confettiCtx.beginPath();
+            confettiCtx.lineWidth = p.r;
+            confettiCtx.strokeStyle = p.color;
+            confettiCtx.moveTo(p.x + p.tilt + p.r / 2, p.y);
+            confettiCtx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
+            confettiCtx.stroke();
+        });
+        
+        if (remaining > 0 && confettiActive) {
+            confettiAnimationId = requestAnimationFrame(drawConfetti);
+        }
+    }
+    
+    drawConfetti();
+}
+
+function stopConfetti() {
+    confettiActive = false;
+    if (confettiAnimationId) {
+        cancelAnimationFrame(confettiAnimationId);
+        confettiAnimationId = null;
+    }
+    if (confettiCtx && confettiCanvas) {
+        confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    }
 }

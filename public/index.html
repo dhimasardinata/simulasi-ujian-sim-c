@@ -6,8 +6,19 @@
     <title>Simulator Ujian Teori SIM C - Korlantas POLRI</title>
     <meta name="description" content="Simulasi Ujian Teori SIM C online berdasarkan materi dan soal resmi buku panduan latihan Korlantas POLRI. Lengkap dengan pembahasan dan tracking progres belajar.">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA Meta Tags & Icons -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
     <div class="app-container">
         <!-- Header -->
         <header>
@@ -16,24 +27,50 @@
                 <p>Panduan Latihan Ujian Teori SIM C Korlantas POLRI</p>
             </div>
             <div class="nav-buttons">
-                <button id="btn-nav-home" class="btn btn-secondary">Beranda</button>
+                <button id="btn-nav-home" class="btn btn-primary">Beranda</button>
                 <button id="btn-nav-study" class="btn btn-secondary">Mode Belajar</button>
-                <button id="btn-nav-exam" class="btn btn-primary">Simulasi Ujian</button>
+                <button id="btn-nav-reference" class="btn btn-secondary">Buku Referensi</button>
+                <button id="btn-nav-exam" class="btn btn-success">Mulai Ujian</button>
             </div>
         </header>
 
         <!-- Main content viewports -->
         <main>
-            <!-- 1. HOME VIEW -->
+            <!-- ==================== 1. HOME VIEW ==================== -->
             <div id="home-view" class="view active">
                 <div class="dashboard-grid">
                     <!-- Hero card -->
                     <div class="card hero-card">
-                        <h2>Kuasai 100% Materi<br>Ujian Teori SIM C</h2>
-                        <p>Persiapkan diri Anda dengan simulator interaktif yang mencakup seluruh 260 soal resmi dari Buku Panduan Korlantas POLRI terbaru. Berlatihlah di Mode Belajar dan uji kesiapan Anda di Mode Simulasi Ujian.</p>
-                        <div class="action-buttons">
-                            <button id="btn-hero-study" class="btn btn-primary hero-btn">Mulai Belajar</button>
-                            <button id="btn-hero-exam" class="btn btn-success hero-btn">Ikuti Simulasi Ujian</button>
+                        <h2>Kuasai 100% Materi Ujian SIM C</h2>
+                        <p>Persiapkan diri Anda dengan simulator interaktif berdasarkan 260 soal resmi Korlantas POLRI. Berlatihlah di Mode Belajar, buka materi Rambu di Buku Referensi, dan uji kesiapan Anda di Mode Ujian Kustom.</p>
+                        
+                        <!-- Exam Customizer Box -->
+                        <div class="exam-customizer" id="exam-customizer-box">
+                            <h3>Pengaturan Simulasi Ujian</h3>
+                            <div class="customizer-grid">
+                                <div class="customizer-option">
+                                    <label for="select-exam-type">Tipe Ujian</label>
+                                    <select id="select-exam-type">
+                                        <option value="official">Ujian Resmi (30 Soal - 30 Menit)</option>
+                                        <option value="sprint">Sprint Practice (15 Soal - 15 Menit)</option>
+                                        <option value="focus-pb">Fokus: Persepsi Bahaya (15 Soal)</option>
+                                        <option value="focus-wawasan">Fokus: Wawasan (15 Soal)</option>
+                                        <option value="focus-pengetahuan">Fokus: Rambu & Pengetahuan (15 Soal)</option>
+                                    </select>
+                                </div>
+                                <div class="customizer-option">
+                                    <label for="toggle-sound">Efek Suara</label>
+                                    <select id="toggle-sound">
+                                        <option value="on">Aktif (Chime)</option>
+                                        <option value="off">Mute</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons" style="margin-top: 1.5rem;">
+                            <button id="btn-hero-study" class="btn btn-primary hero-btn">Mulai Belajar 📚</button>
+                            <button id="btn-hero-exam" class="btn btn-success hero-btn">Mulai Simulasi ⏱️</button>
                         </div>
                     </div>
 
@@ -44,7 +81,7 @@
                             <div class="stat-icon">📊</div>
                             <div class="stat-info" style="flex-grow: 1;">
                                 <h4>Progres Belajar</h4>
-                                <p id="txt-stat-mastery">0% <span style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">(0 / 260)</span></p>
+                                <p id="txt-stat-mastery">0% <span style="font-size: 0.95rem; font-weight: normal; color: var(--text-secondary);">(0 / 260)</span></p>
                                 <div class="progress-track">
                                     <div id="bar-stat-mastery" class="progress-fill"></div>
                                 </div>
@@ -54,10 +91,20 @@
                         <!-- Stat 2: Last Exam Result -->
                         <div class="card stat-card">
                             <div class="stat-icon">🏆</div>
-                            <div class="stat-info">
-                                <h4>Hasil Ujian Terakhir</h4>
+                            <div class="stat-info" style="flex-grow: 1;">
+                                <h4>Ujian Terakhir</h4>
                                 <p id="txt-stat-last-score">Belum Ujian</p>
                                 <p id="txt-stat-last-status" style="font-size: 0.9rem; margin-top: 0.25rem; font-weight: 500;"></p>
+                            </div>
+                        </div>
+
+                        <!-- Data Sync card -->
+                        <div class="card stat-card" style="padding: 1rem 1.5rem; justify-content: space-between;">
+                            <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">PROGRES SYNC</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <button id="btn-export-progress" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">📦 Ekspor</button>
+                                <button id="btn-import-progress" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">📥 Impor</button>
+                                <input type="file" id="input-import-file" style="display: none;" accept=".json">
                             </div>
                         </div>
                     </div>
@@ -67,24 +114,33 @@
                 <div class="features-grid">
                     <div class="card feature-item">
                         <h3>⚠️ Persepsi Bahaya</h3>
-                        <p>100 Soal Analisis situasi berkendara. Melatih kepekaan mendeteksi potensi bahaya di jalan raya secara real-time.</p>
+                        <p>Analisis situasi berkendara. Melatih kepekaan mendeteksi potensi bahaya di jalan raya secara cepat dan tepat.</p>
                     </div>
                     <div class="card feature-item">
                         <h3>💡 Wawasan</h3>
-                        <p>80 Soal Pemahaman etika berkendara, tata tertib lalu lintas, keselamatan jalan, dan hak-hak pengguna jalan.</p>
+                        <p>Pemahaman etika berkendara, tata tertib lalu lintas, keselamatan jalan, dan hak-hak pengguna jalan lainnya.</p>
                     </div>
                     <div class="card feature-item">
-                        <h3>🚦 Pengetahuan</h3>
-                        <p>80 Soal Arti rambu lalu lintas, marka jalan, alat pemberi isyarat lalu lintas (APILL), dan undang-undang lalu lintas.</p>
+                        <h3>🚦 Rambu & Pengetahuan</h3>
+                        <p>Arti rambu-rambu lalu lintas, marka jalan, alat pemberi isyarat lalu lintas (APILL), dan dasar-dasar hukum lalu lintas.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. STUDY VIEW -->
+            <!-- ==================== 2. STUDY VIEW ==================== -->
             <div id="study-view" class="view">
                 <div class="study-layout">
                     <!-- Left Sidebar Filters and Question browser -->
                     <div class="card study-sidebar">
+                        <div class="filter-section">
+                            <h3>Filter Progres</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-progress-filter="all">Semua Soal</button>
+                                <button class="filter-btn" data-progress-filter="review">Perlu Review (Belum Paham)</button>
+                                <button class="filter-btn" data-progress-filter="unstudied">Belum Dipelajari</button>
+                            </div>
+                        </div>
+
                         <div class="filter-section">
                             <h3>Kategori Soal</h3>
                             <div class="filter-options">
@@ -150,12 +206,12 @@
 
                             <div class="study-actions">
                                 <div class="status-controls">
-                                    <button id="btn-mark-mastered" class="btn btn-success">Kuasai (Paham)</button>
-                                    <button id="btn-mark-review" class="btn btn-danger">Tandai Belum Paham</button>
+                                    <button id="btn-mark-mastered" class="btn btn-success">Kuasai (Paham) ✓</button>
+                                    <button id="btn-mark-review" class="btn btn-danger">Tandai Perlu Review ✕</button>
                                 </div>
                                 <div class="nav-controls">
-                                    <button id="btn-study-prev" class="btn btn-secondary">◀ Sebelumnya</button>
-                                    <button id="btn-study-next" class="btn btn-secondary">Berikutnya ▶</button>
+                                    <button id="btn-study-prev" class="btn btn-secondary">◀</button>
+                                    <button id="btn-study-next" class="btn btn-secondary">▶</button>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +219,29 @@
                 </div>
             </div>
 
-            <!-- 3. EXAM VIEW -->
+            <!-- ==================== 3. REFERENCE VIEW ==================== -->
+            <div id="reference-view" class="view">
+                <div class="reference-layout">
+                    <div class="card reference-sidebar">
+                        <h3>Materi Buku</h3>
+                        <div class="filter-options">
+                            <button class="filter-btn active" data-ref-sec="peringatan">Rambu Peringatan</button>
+                            <button class="filter-btn" data-ref-sec="larangan">Rambu Larangan</button>
+                            <button class="filter-btn" data-ref-sec="perintah">Rambu Perintah</button>
+                            <button class="filter-btn" data-ref-sec="petunjuk">Rambu Petunjuk</button>
+                            <button class="filter-btn" data-ref-sec="marka">Marka Jalan</button>
+                            <button class="filter-btn" data-ref-sec="apill">APILL (Lampu Lalu Lintas)</button>
+                            <button class="filter-btn" data-ref-sec="kendaraan">Komponen Kendaraan</button>
+                        </div>
+                    </div>
+
+                    <div class="card reference-content" id="reference-content-panel">
+                        <!-- Populated dynamically by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== 4. EXAM VIEW ==================== -->
             <div id="exam-view" class="view">
                 <div class="exam-layout">
                     <!-- Main Quiz Area -->
@@ -208,9 +286,12 @@
                 </div>
             </div>
 
-            <!-- 4. RESULT VIEW -->
+            <!-- ==================== 5. RESULT VIEW ==================== -->
             <div id="result-view" class="view">
                 <div class="card result-card">
+                    <!-- Confetti Canvas -->
+                    <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+                    
                     <h2 class="result-status" id="txt-result-status">LULUS</h2>
                     <div class="result-score-circle" id="circle-result-score">
                         <span class="score-num" id="txt-result-score">25</span>
