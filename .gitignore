@@ -23,3 +23,6 @@ tmp_extract/
 extracted_images_test/
 extracted_images_all_test/
 test_img/
+
+# Local Netlify folder
+.netlify
