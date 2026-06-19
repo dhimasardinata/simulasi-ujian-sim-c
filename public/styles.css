@@ -1195,47 +1195,73 @@ header {
 
 .ref-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
 .ref-card {
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(16, 20, 38, 0.45);
     border: 1px solid var(--border-color);
-    border-radius: 14px;
-    padding: 1.25rem;
+    border-radius: 16px;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     transition: var(--transition-smooth);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 .ref-card:hover {
-    border-color: rgba(99, 102, 241, 0.25);
-    background: rgba(255, 255, 255, 0.02);
-    transform: translateY(-2px);
+    border-color: rgba(99, 102, 241, 0.35);
+    background: rgba(16, 20, 38, 0.7);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
 }
 
-/* Styled road warning sign */
-.ref-sign-icon {
-    width: 64px;
-    height: 64px;
+.ref-sign-icon-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 0.75rem auto;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.ref-card:hover .ref-sign-icon-container {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: scale(1.03);
+}
+
+.ref-sign-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: var(--transition-smooth);
+}
+
+.ref-card:hover .ref-sign-image {
+    transform: scale(1.05);
 }
 
 .ref-sign-title {
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     font-weight: 700;
     color: var(--text-primary);
+    margin-top: 0.25rem;
 }
 
 .ref-sign-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.5;
     color: var(--text-secondary);
+    text-align: justify;
 }
 
 /* Grid layout for vehicles components list */
@@ -1299,5 +1325,82 @@ header {
     font-size: 0.95rem;
     line-height: 1.5;
     color: var(--text-secondary);
+}
+
+/* ==================== RESPONSIVE OVERRIDES ==================== */
+@media (max-width: 900px) {
+    .filter-options {
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        padding-bottom: 0.5rem !important;
+        gap: 0.5rem !important;
+        scrollbar-width: none;
+    }
+    .filter-options::-webkit-scrollbar {
+        display: none;
+    }
+    .filter-btn {
+        flex-shrink: 0;
+        text-align: center;
+        justify-content: center;
+        padding: 0.5rem 0.88rem !important;
+        font-size: 0.88rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 1rem 0.75rem !important;
+    }
+    header {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1.25rem !important;
+        padding-bottom: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    .logo-section h1 {
+        font-size: 1.5rem !important;
+        justify-content: center !important;
+    }
+    .logo-section p {
+        font-size: 0.8rem !important;
+    }
+    .nav-buttons {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-buttons {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.4rem !important;
+        width: 100% !important;
+    }
+    .nav-buttons .btn {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.82rem !important;
+        border-radius: 8px !important;
+        width: 100% !important;
+    }
+    .card {
+        padding: 1.25rem !important;
+        border-radius: 16px !important;
+    }
+    .hero-card {
+        padding: 1.5rem !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .hero-card h2 {
+        font-size: 1.7rem !important;
+    }
+    .hero-card p {
+        font-size: 0.95rem !important;
+    }
 }
 

@@ -575,52 +575,51 @@ function updateStudyButtonStates() {
 }
 
 // ==================== REFERENCE MATERIAL VIEW ====================
-// ==================== REFERENCE MATERIAL VIEW ====================
 const referenceData = {
     peringatan: {
         title: "Rambu Peringatan (Warning Signs)",
         intro: "Rambu peringatan digunakan untuk memberikan informasi peringatan kepada pengguna jalan tentang adanya bahaya di jalan raya di depan mereka. Ciri khas rambu ini adalah berbentuk belah ketupat, dengan warna dasar kuning, garis tepi hitam, dan lambang atau huruf berwarna hitam.",
         items: [
-            { image: "images/m1_p107_2.png", title: "Tikungan Tajam Ke Kanan", desc: "Memberi peringatan kepada pengendara bahwa akan ada tikungan tajam ke arah kanan di depan. Pengendara wajib mengurangi kecepatan sebelum memasuki belokan." },
-            { image: "images/m1_p102_1.png", title: "Penyempitan Badan Jalan", desc: "Peringatan bahwa jalan di depan akan menyempit dari sisi kiri, sisi kanan, atau kedua sisi. Bersiap mengurangi kecepatan dan berbagi lajur." },
-            { image: "images/m1_p105_0.png", title: "Permukaan Jalan Licin", desc: "Peringatan bahwa permukaan jalan di depan rawan licin (terutama saat basah/hujan). Pengendara harus memperlambat motor dan menghindari pengereman mendadak." },
-            { image: "images/m1_p87_1.png", title: "Perlintasan Kereta Api", desc: "Peringatan bahwa di depan terdapat perlintasan sebidang rel kereta api (dengan atau tanpa pintu perlintasan). Kurangi kecepatan dan berhati-hati." },
-            { image: "images/m1_p106_0.png", title: "Persimpangan Empat Lengan", desc: "Peringatan bahwa di depan terdapat persimpangan jalan bersilang empat. Pengendara wajib memperlambat kendaraan dan meningkatkan kewaspadaan." },
-            { image: "images/m3_p107_0.png", title: "Jalan Menurun Curam", desc: "Peringatan bahwa jalan di depan memiliki turunan yang curam. Pengendara wajib bersiap mengendalikan laju sepeda motor dengan rem depan-belakang dan engine brake." },
-            { image: "images/m2_p103_1.png", title: "Persimpangan Bundaran", desc: "Peringatan bahwa terdapat persimpangan yang dilengkapi bundaran lalu lintas di depan. Pengendara wajib mendahulukan kendaraan yang sudah berada di dalam bundaran." }
+            { image: "images/ref_clean/m1_p11_1.png", title: "Tikungan Tajam Ke Kanan", desc: "Memberi peringatan kepada pengendara bahwa akan ada tikungan tajam ke arah kanan di depan. Pengendara wajib mengurangi kecepatan sebelum memasuki belokan." },
+            { image: "images/ref_clean/m1_p12_4.png", title: "Penyempitan Badan Jalan", desc: "Peringatan bahwa jalan di depan akan menyempit dari sisi kiri, sisi kanan, atau kedua sisi. Bersiap mengurangi kecepatan dan berbagi lajur." },
+            { image: "images/ref_clean/m1_p14_0.png", title: "Permukaan Jalan Licin", desc: "Peringatan bahwa permukaan jalan di depan rawan licin (terutama saat basah/hujan). Pengendara harus memperlambat motor dan menghindari pengereman mendadak." },
+            { image: "images/ref_clean/m1_p21_0.png", title: "Perlintasan Kereta Api", desc: "Peringatan bahwa di depan terdapat perlintasan sebidang rel kereta api (dengan atau tanpa pintu perlintasan). Kurangi kecepatan dan berhati-hati." },
+            { image: "images/ref_clean/m1_p15_3.png", title: "Persimpangan Empat Lengan", desc: "Peringatan bahwa di depan terdapat persimpangan jalan bersilang empat. Pengendara wajib memperlambat kendaraan dan meningkatkan kewaspadaan." },
+            { image: "images/ref_clean/m1_p13_3.png", title: "Jalan Menurun Curam", desc: "Peringatan bahwa jalan di depan memiliki turunan yang curam. Pengendara wajib bersiap mengendalikan laju sepeda motor dengan rem depan-belakang dan engine brake." },
+            { image: "images/ref_clean/m1_p15_2.png", title: "Persimpangan Bundaran", desc: "Peringatan bahwa terdapat persimpangan yang dilengkapi bundaran lalu lintas di depan. Pengendara wajib mendahulukan kendaraan yang sudah berada di dalam bundaran." }
         ]
     },
     larangan: {
         title: "Rambu Larangan (Prohibition Signs)",
         intro: "Rambu larangan melarang pengguna jalan melakukan tindakan tertentu untuk menjaga keselamatan bersama. Ciri khas rambu larangan adalah berbentuk lingkaran, dengan warna dasar putih, garis tepi berwarna merah, dan lambang atau kata-kata berwarna hitam/merah.",
         items: [
-            { image: "images/m1_p102_0.png", title: "Larangan Parkir", desc: "Dilarang memarkirkan kendaraan bermotor di area sepanjang jalan setelah rambu ini dipasang hingga rambu pembatal terdekat." },
-            { image: "images/m1_p85_0.png", title: "Larangan Berhenti", desc: "Dilarang menghentikan kendaraan bermotor sekecil apa pun di sepanjang area jalan setelah rambu ini terpasang." },
-            { image: "images/m2_p102_0.png", title: "Larangan Putar Balik", desc: "Dilarang memutar balik arah kendaraan bermotor pada persimpangan atau bukaan median jalan di area setelah rambu ini." },
-            { image: "images/m1_p106_2.png", title: "Larangan Belok Kanan", desc: "Dilarang membelokkan kendaraan ke arah kanan pada persimpangan di depan demi kelancaran lalu lintas." },
-            { image: "images/m1_p107_1.png", title: "Larangan Masuk Sepeda Motor", desc: "Dilarang masuk bagi semua kendaraan bermotor roda dua (sepeda motor) pada lajur atau kawasan jalan tertentu." },
-            { image: "images/m1_p108_1.png", title: "Larangan Masuk Kendaraan Bermotor", desc: "Dilarang masuk bagi semua kendaraan bermotor baik roda dua maupun roda empat dari arah rambu ini dipasang." },
+            { image: "images/ref_clean/m1_p29_2.png", title: "Larangan Parkir", desc: "Dilarang memarkirkan kendaraan bermotor di area sepanjang jalan setelah rambu ini dipasang hingga rambu pembatal terdekat." },
+            { image: "images/ref_clean/m1_p29_0.png", title: "Larangan Berhenti", desc: "Dilarang menghentikan kendaraan bermotor sekecil apa pun di sepanjang area jalan setelah rambu ini terpasang." },
+            { image: "images/ref_clean/m1_p29_6.png", title: "Larangan Putar Balik", desc: "Dilarang memutar balik arah kendaraan bermotor pada persimpangan atau bukaan median jalan di area setelah rambu ini." },
+            { image: "images/ref_clean/m1_p29_4.png", title: "Larangan Belok Kanan", desc: "Dilarang membelokkan kendaraan ke arah kanan pada persimpangan di depan demi kelancaran lalu lintas." },
+            { image: "images/ref_clean/m1_p24_1.png", title: "Larangan Masuk Sepeda Motor", desc: "Dilarang masuk bagi semua kendaraan bermotor roda dua (sepeda motor) pada lajur atau kawasan jalan tertentu." },
+            { image: "images/ref_clean/m1_p24_2.png", title: "Larangan Masuk Kendaraan Bermotor", desc: "Dilarang masuk bagi semua kendaraan bermotor baik roda dua maupun roda empat dari arah rambu ini dipasang." },
             { image: "images/m1_p103_2.png", title: "Larangan Kecepatan Maksimum 60 km/jam", desc: "Dilarang melajukan kendaraan bermotor melebihi kecepatan maksimum 60 kilometer per jam demi keselamatan di area tersebut." },
-            { image: "images/m1_p103_1.png", title: "Batas Akhir Larangan Kecepatan", desc: "Menandakan batas akhir berlakunya larangan kecepatan maksimum sebelumnya, pengendara kembali ke batas kecepatan umum." }
+            { image: "images/ref_clean/m1_p31_0.png", title: "Batas Akhir Larangan Kecepatan", desc: "Menandakan batas akhir berlakunya larangan kecepatan maksimum sebelumnya, pengendara kembali ke batas kecepatan umum." }
         ]
     },
     perintah: {
         title: "Rambu Perintah (Mandatory Signs)",
         intro: "Rambu perintah mewajibkan tindakan tertentu yang harus dilakukan oleh pengguna jalan demi kelancaran lalu lintas. Ciri khas rambu perintah adalah berbentuk lingkaran, berwarna dasar biru, garis tepi berwarna putih, dan lambang berwarna putih.",
         items: [
-            { image: "images/m1_p107_0.png", title: "Perintah Batas Kecepatan Minimum", desc: "Perintah bagi pengguna jalan untuk melaju dengan kecepatan minimal sesuai angka tertulis (misal: 30 km/jam) demi kelancaran." },
-            { image: "images/m1_p108_0.png", title: "Perintah Memasuki Lajur Kiri", desc: "Perintah wajib bagi pengendara untuk berjalan di lajur atau sebelah kiri rambu ini (menghindari pulau jalan atau median)." },
-            { image: "images/m3_p103_0.png", title: "Perintah Wajib Mengikuti Arah", desc: "Pengendara wajib mengikuti salah satu arah yang ditunjuk oleh panah perintah (misalnya berbelok ke arah kiri atau kanan)." }
+            { image: "images/ref_clean/m1_p34_0.png", title: "Perintah Batas Kecepatan Minimum", desc: "Perintah bagi pengguna jalan untuk melaju dengan kecepatan minimal sesuai angka tertulis (misal: 30 km/jam) demi kelancaran." },
+            { image: "images/ref_clean/m1_p33_1.png", title: "Perintah Memasuki Lajur Kiri", desc: "Perintah wajib bagi pengendara untuk berjalan di lajur atau sebelah kiri rambu ini (menghindari pulau jalan atau median)." },
+            { image: "images/ref_clean/m1_p32_0.png", title: "Perintah Wajib Mengikuti Arah", desc: "Pengendara wajib mengikuti salah satu arah yang ditunjuk oleh panah perintah (misalnya berbelok ke arah kiri atau kanan)." }
         ]
     },
     petunjuk: {
         title: "Rambu Petunjuk (Directional & Info Signs)",
         intro: "Rambu petunjuk memberikan arah jalan, batas daerah, letak fasilitas umum, atau informasi rute perjalanan bagi pengendara. Rambu petunjuk jalan arah rute biasanya berbentuk persegi/panjang berwarna hijau atau biru.",
         items: [
-            { image: "images/m2_p105_1.png", title: "Petunjuk Rumah Sakit", desc: "Menunjukkan keberadaan rumah sakit atau fasilitas pelayanan kesehatan darurat di dekat jalan raya tersebut." },
-            { image: "images/m3_p102_2.png", title: "Petunjuk Batas Wilayah", desc: "Menunjukkan batas administratif wilayah kota atau kabupaten yang sedang dimasuki oleh pengendara (misal: Batas Kota Kediri)." },
-            { image: "images/m3_p103_1.png", title: "Petunjuk Jalan Buntu", desc: "Memberikan informasi kepada pengendara bahwa lajur jalan di depan merupakan jalan buntu (tidak dapat ditembus/dilalui terus)." },
-            { image: "images/m1_p105_1.png", title: "Petunjuk Prioritas Arah Depan", desc: "Menunjukkan bahwa kendaraan dari arah Anda berhak mendapatkan prioritas utama saat melewati jalan menyempit." }
+            { image: "images/ref_clean/m1_p46_1.png", title: "Petunjuk Rumah Sakit", desc: "Menunjukkan keberadaan rumah sakit atau fasilitas pelayanan kesehatan darurat di dekat jalan raya tersebut." },
+            { image: "images/ref_clean/m1_p42_0.png", title: "Petunjuk Batas Wilayah", desc: "Menunjukkan batas administratif wilayah kota atau kabupaten yang sedang dimasuki oleh pengendara (misal: Batas Kota Kediri)." },
+            { image: "images/ref_clean/m1_p50_6.png", title: "Petunjuk Jalan Buntu", desc: "Memberikan informasi kepada pengendara bahwa lajur jalan di depan merupakan jalan buntu (tidak dapat ditembus/dilalui terus)." },
+            { image: "images/ref_clean/m1_p50_1.png", title: "Petunjuk Prioritas Arah Depan", desc: "Menunjukkan bahwa kendaraan dari arah Anda berhak mendapatkan prioritas utama saat melewati jalan menyempit." }
         ]
     },
     marka: {
@@ -668,11 +667,11 @@ function renderReferenceMaterial(sectionKey) {
     data.items.forEach(item => {
         html += `
             <div class="ref-card">
-                <div class="ref-sign-icon" style="width: 120px; height: 120px; margin: 0 auto 0.5rem auto; background: rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color);">
-                    <img src="${item.image}" alt="${item.title}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                <div class="ref-sign-icon-container">
+                    <img src="${item.image}" alt="${item.title}" class="ref-sign-image">
                 </div>
-                <h3 class="ref-sign-title" style="text-align: center; margin-top: 0.5rem;">${item.title}</h3>
-                <p class="ref-sign-desc" style="text-align: justify; font-size: 0.88rem; line-height: 1.4; color: var(--text-secondary);">${item.desc}</p>
+                <h3 class="ref-sign-title">${item.title}</h3>
+                <p class="ref-sign-desc">${item.desc}</p>
             </div>
         `;
     });
