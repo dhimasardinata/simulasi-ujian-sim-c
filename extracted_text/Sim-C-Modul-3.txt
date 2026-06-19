@@ -1,0 +1,3304 @@
+Buku Panduan Latihan
+Ujian
+Teori Sim C
+Modul 3
+
+edisi 1
+
+Buku Panduan Latihan
+Ujian Teori Sim C
+Copyright © 2023.
+Penerbit:
+Korlantas POLRI
+Penulis:
+Tim Pokja Materi Uji SIM
+Editor:
+Tim Pokja Materi Uji SIM
+Cetakan Pertama, Edisi 1, 2023.
+Dilarang keras mengutip, menjiplak, memperbanyak, memfotokopi dalam
+bentuk apapun baik sebagian atau keseluruhan isi buku ini serta memperjualbelikannya tanpa seizin penerbit.
+© Hak Cipta Dilindungi Undang-Undang
+
+Buku Panduan Latihan
+Ujian Teori Sim C
+
+edisi 1
+
+﻿
+
+IV
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+Daftar Isi
+2
+
+Kata Pengantar
+
+6
+
+I. Instrumen Jalan Raya
+
+70
+
+II. Pengenalan Kendaraan
+Materi Uji Teori Sim
+Persepsi Bahaya
+Modul 3
+
+75
+
+Wawasan
+Modul 3
+
+89
+
+Pengetahuan
+Modul 3
+
+97
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+1
+
+Kata Pengantar
+
+Kata Pengantar
+
+Kepala Kepolisian Negara Republik Indonesia
+
+Assalamu’alaikum Wr. Wb.,
+Shalom, Salam Sejahtera bagi kita semua,
+Om Swastiastu, Namo Buddhaya, Salam kebajikan
+Puji syukur ke hadirat Allah SWT, Tuhan Yang Maha
+Kuasa, dengan telah diterbitkannya ’’BUKU PANDUAN
+LATIHAN UJIAN TEORI SIM’’ yang merupakan salah satu
+bentuk inovasi dari Kepolisian Negara Republik Indonesia
+melalui Korps Lalu Lintas Polri sebagai sarana belajar bagi
+masyarakat yang akan mengikuti ujian teori SIM.
+Surat izin mengemudi adalah bukti legitimasi kompetensi
+pengemudi yang merepresentasikan kemampuan
+berkendara dan kepatuhan masyarakat dalam berlalu
+lintas, dimana keberhasilannya ditandai dengan rendahnya tingkat pelanggaran dan
+fatalitas kecelakaan di jalan raya sehingga keamanan, keselamatan, ketertiban dan
+kelancaran lalu lintas dapat terwujud.
+Sebagai langkah percepatan dalam mewujudkan hal tersebut, Polri melakukan upaya
+nyata dengan menciptakan terobosan inovatif yang telah diwujudkan dalam bentuk buku
+panduan lengkap mengenai pengetahuan, tata cara dan etika berlalu lintas.
+Saya mengucapkan terima kasih kepada Kepala Korps Lalu Lintas Polri, Irjen Pol
+Drs. Firman Shantyabudi, M.Si., beserta seluruh jajaran atas terobosan kreatif dalam
+mendukung peningkatan kualitas pelayanan publik. Harapan saya, dengan diterbitkannya
+buku ini dapat memberikan manfaat positif bagi masyarakat dan memiliki kontribusi
+
+2
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+Kata Pengantar
+
+nyata terhadap meningkatnya kualitas pengemudi di jalan. Semoga Allah SWT senantiasa
+membimbing dan melindungi kita dalam melanjutkan pengabdian terbaik kepada
+masyarakat, bangsa dan negara.
+
+Wassalamualaikum wr.wb,
+Shalom, Om Shanti Shanti Shanti Om.
+
+Jakarta, … Maret 2023
+KEPALA KEPOLISIAN NEGARA REPUBLIK
+INDONESIA
+
+Drs. Listyo Sigit Prabowo, M.Si.
+JENDERAL POLISI
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+3
+
+Kata Pengantar
+
+Kata Pengantar
+
+Kepala Korps Lalu Lintas Kepolisian Negara
+Republik Indonesia
+
+Assalamu’alaikum Wr. Wb.,
+Shalom, Salam Sejahtera bagi kita semua,
+Om Swastiastu, Namo Buddhaya, Salam kebajikan
+Bismillahirrahmanirrahim.
+Atas berkat dan rahmat Allah SWT, Korps Lalu Lintas Polri
+dapat meluncurkan salah satu inovasi pelayanan publik di
+bidang registrasi dan identifikasi pengemudi, yaitu BUKU
+PANDUAN LATIHAN UJIAN TEORI SIM.
+Polri menempatkan kepuasan masyarakat sebagai salah
+satu indikator keberhasilan pelaksanaan tugas dalam
+memberikan pengayoman dan pelayanan masyarakat
+sesuai tugas pokok fungsi kepolisian yang tercantum dalam Pasal 13 Undang Undang
+Republik Indonesia Nomor 2 tahun 2002. Peluncuran Buku Panduan Latihan Ujian Teori
+SIM ini menindaklanjuti program PRESISI (Prediktif, Responsibilitas dan Transparansi
+Berkeadilan) Kapolri dalam peningkatan kualitas pelayanan dan pemantapan komunikasi
+publik.
+Fenomena permasalahan lalu lintas yang kerap menjadi sorotan yakni pelanggaran,
+kemacetan dan kecelakaan lalu lintas di jalan merupakan dampak dari rendahnya kualitas
+pengemudi. Salah satu penyebabnya adalah kurangnya media pembelajaran tentang
+pengetahuan, tata cara dan etika berlalu lintas. Hal ini menjadi perhatian serius bagi
+Korlantas Polri guna mewujudkan keamanan, keselamatan, ketertiban dan kelancaran
+lalu lintas.
+
+4
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+Kata Pengantar
+
+Guna menjawab tantangan tersebut, Korlantas Polri melakukan terobosan dengan
+menerbitkan buku panduan latihan ujian teori SIM yang terdiri dari pengenalan terhadap
+instrumen perlengkapan jalan raya, yang meliputi rambu, marka dan Alat Pemberi Isyarat
+Lalu Lintas (APILL); pengenalan kendaraan yang menjelaskan tentang komponen dan
+perlengkapan kendaraan; serta mengulas tentang pertanyaan berikut pembahasan ujian
+teori SIM yang berisi materi persepsi bahaya, wawasan dan pengetahuan dalam berlalu
+lintas.
+Dengan hadirnya buku ini diharapkan dapat menjawab harapan masyarakat dan menjadi
+solusi akan kurangnya sarana pembelajaran dalam berlalu lintas yang baik dan benar
+sehingga dapat membentuk karakter pengemudi yang berkeselamatan. Semoga
+ikhtiar ini dapat memberikan kontribusi nyata sebagai wujud pengabdian Polri kepada
+masyarakat, bangsa dan negara.
+Sekian dan Terima kasih, Wassalamualaikum wr.wb,
+Shalom, Om Shanti Shanti Shanti Om.
+
+Jakarta, … Maret 2023
+KEPALA KORPS LALU LINTAS POLRI
+
+Drs. Firman Santhyabudi, M.Si
+INSPEKTUR JENDERAL POLISI
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+5
+
+I. Instrumen Perlengkapan Jalan Raya
+
+I. Instrumen Perlengkapan Jalan Raya
+Rambu Lalu Lintas
+1.1
+Rambu Lalu Lintas
+Rambu lalu lintas adalah bagian perlengkapan Jalan yang berupa lambang, huruf, angka, kalimat, dan/
+atau perpaduan yang berfungsi sebagai peringatan, larangan, perintah, atau petunjuk bagi Pengguna
+Jalan. Rambu lalu lintas pada umumnya terdiri atas daun rambu dan tiang rambu. Rambu lalu lintas
+terdiri atas rambu konvensional dan rambu elektronik. Agar rambu lalu lintas dapat memiliki tingkat
+visibilitas yang baik bagi pengguna jalan, baik pada saat intensitas cahaya matahari yang tinggi
+maupun pada intensitas cahaya matahari yang rendah, maka rambu harus terbuat dari bahan yang
+memiliki sifat retroreflektif (memantulkan cahaya dengan arah pantulan cahaya relatif sejajar dengan
+arah datangnya cahaya).
+
+Jenis Rambu
+Rambu lalu lintas secara keseluruhan dapat dikelompokkan menjadi
+beberapa jenis yang meliputi;
+Rambu Peringatan adalah rambu lalu lintas yang digunakan untuk
+memberi peringatan kemungkinan ada bahaya di jalan atau tempat
+berbahaya pada jalan dan menginformasikan tentang sifat bahaya.
+Rambu Larangan adalah rambu yang digunakan untuk menyatakan
+perbuatan yang dilarang dilakukan oleh pemakai jalan.
+Rambu Perintah adalah rambu yang digunakan untuk menyatakan
+perintah yang wajib dilakukan oleh pemakai jalan.
+Rambu Petunjuk adalah rambu yang digunakan untuk menyatakan
+petunjuk mengenai jurusan, jalan, situasi, kota, tempat, pengaturan,
+fasilitas dan lain-lain bagi pemakai jalan.
+Papan tambahan adalah papan yang dipasang di bawah daun
+rambu yang memberikan penjelasan lebih lanjut dari suatu rambu.
+
+6
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Rambu Peringatan
+Rambu Peringatan Perubahan Kondisi
+Alinyemen Horizontal
+
+Peringatan Tikungan
+ke Kiri
+
+Peringatan Tikungan
+Tajam ke Kanan
+
+Peringatan Tikungan
+ke Kanan
+
+Peringatan Tikungan
+Tajam Ganda dengan
+Tikungan Pertama
+ke Kiri
+
+Peringatan
+Tikungan Ganda
+dengan Tikungan
+Pertama ke Kiri
+
+Peringatan Tikungan
+Tajam Ganda dengan
+Tikungan Pertama
+ke Kiri
+
+Peringatan
+Tikungan Ganda
+dengan Tikungan
+Pertama ke Kanan
+
+Peringatan Banyak
+Tikungan dengan
+Tikungan Pertama
+ke Kiri
+
+Peringatan Tikungan
+Tajam ke Kiri
+
+Peringatan Banyak
+Tikungan dengan
+Tikungan Pertama
+ke Kanan
+Buku Panduan Latihan Ujian Teori Sim C
+
+7
+
+I. Instrumen Perlengkapan Jalan Raya
+
+8
+
+Peringatan Tikungan
+Memutar ke Kiri
+
+Peringatan
+Penyempitan
+Badan Jalan di
+Bagian Kanan
+
+Peringatan Tikungan
+Memutar ke Kanan
+
+Peringatan Pelebaran
+Badan Jalan di
+Bagian Kiri
+
+Peringatan
+Penyempitan Badan
+Jalan di Bagian Kiri
+dan Kanan
+
+Peringatan Pelebaran
+Badan Jalan di Bagian
+Kanan
+
+Peringatan Pelebaran
+Badan Jalan di Bagian
+Kiri dan Kanan
+
+Peringatan
+Pengurangan Lajur Kiri
+
+Peringatan
+Penyempitan
+Badan Jalan di
+Bagian Kiri
+
+Peringatan
+Pengurangan Lajur
+Kanan
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Perubahan Kondisi
+Alinyemen Vertikal
+
+Peringatan
+Penambahan Lajur Kiri
+
+Peringatan Turunan
+Landai
+
+Peringatan
+Penambahan Lajur
+Kanan
+
+Peringatan Turunan
+Curam
+
+Peringatan Jembatan
+Peringatan
+Penyempitan Bagan
+Jalinan Jalan
+Tertentu
+
+Peringatan Tanjakan
+Landai
+
+Peringatan Tanjakan
+Curam
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+9
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Kondisi Jalan yang
+Berbahaya
+
+Peringatan Permukaan
+Jalan yang Licin
+
+Peringatan Permukaan
+Jalan yang Cembung
+Peringatan Alat
+Pembatas Kecepatan
+
+Peringatan Bagian
+Tepi Jalan yang tidak
+SamaTinggi dengan
+Badan Jalan
+
+Peringatan Jalan
+Bergelombang
+
+Peringatan Jurang
+
+Peringatan Lontaran
+Kerikil
+
+Peringatan Tepi Air
+
+Peringatan Bagian Tepi
+Jalan Sebelah Kiri
+yang Rawan Runtuh
+
+Peringatan Permukaan
+Jalan yang Cekung
+atau Berlubang
+
+Peringatan Bagian Tepi
+Jalan Sebelah Kanan
+yang Rawan Runtuh
+
+10 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Pengaturan Lalu Lintas
+Rambu Peringatan Pengaturan Persinyalan
+
+Rambu Peringatan Persimpangan Prioritas
+
+Peringatan Alat
+Pemberi Isyarat Lalu
+Lintas
+
+Peringatan Simpang
+Empat Prioritas
+(Ditempatkan pada
+Lengan Minor)
+
+Peringatan Lampu
+Isyarat Penyeberang
+Jalan
+
+Peringatan Simpang
+Empat Prioritas
+(Ditempatkan pada
+Lengan Mayor)
+
+Peringatan Bundaran
+dengan Prioritas
+
+Peringatan
+Persimpangan
+Tiga Serong Kiri
+(Ditempatkan pada
+Lengan Minor)
+
+Peringatan
+Persimpangan
+Tiga Serong Kanan
+(Ditempatkan pada
+Lengan Minor)
+Buku Panduan Latihan Ujian Teori Sim C
+
+11
+
+I. Instrumen Perlengkapan Jalan Raya
+
+12
+
+Peringatan
+Persimpangan
+Tiga Serong Kiri
+(Ditempatkan pada
+Lengan Mayor)
+
+Peringatan
+Persimpangan Tiga
+Berganda Sisi Kanan
+dan Kiri (Ditempatkan
+pada Lengan Mayor)
+
+Peringatan
+Persimpangan
+Tiga Serong Kanan
+(Ditempatkan pada
+Lengan Mayor)
+
+Peringatan
+Persimpangan Tiga
+Serong Kiri
+
+Peringatan
+Persimpangan Tiga
+Sisi Kiri (Ditempatkan
+pada Lengan Minor)
+
+Peringatan
+Persimpangan Tiga
+Serong Kanan
+
+Peringatan
+Persimpangan
+Tiga Sisi Kanan
+(Ditempatkan pada
+Lengan Minor)
+
+Peringatan
+Persimpangan Tiga
+Berganda Sisi Kiri
+(Ditempatkan pada
+Lengan Mayor)
+
+Peringatan
+Persimpangan Tiga
+Berganda Sisi Kiri dan
+Kanan (Ditempatkan
+pada Lengan Mayor)
+
+Peringatan
+Persimpangan Tiga
+Berganda Sisi Kanan
+(Ditempatkan pada
+Lengan Mayor)
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Konstruksi Pemisah Jalur
+Lalu Lintas
+
+Peringatan
+Persimpangan Tiga
+Sisi Kiri (Ditempatkan
+pada Lengan Mayor)
+
+Peringatan Awal
+Pembatas Konstruksi
+Fisik Pemisah Jalur
+Lalu Lintas Dua Arah
+
+Peringatan
+Persimpangan
+Tiga Sisi Kanan
+(Ditempatkan pada
+Lengan Mayor)
+
+Peringatan Akhir
+Pembatas Konstruksi
+Fisik Pemisah Jalur
+Lalu Lintas Dua Arah
+
+Peringatan
+Persimpangan Tiga
+Tipe T (Ditempatkan
+pada Lengan Minor)
+
+Peringatan Awal
+Pembatas Konstruksi
+Fisik Pemisah Jalur
+Lalu Lintas Satu Arah
+Peringatan Awal
+Pembatas Konstruksi
+Fisik Pemisah Lajur
+Lalu Lintas
+
+Peringatan
+Persimpangan
+Tiga Tipe Y
+
+Peringatan Akhir
+Pembatas Konstruksi
+Fisik Pemisah Jalur
+Lalu Lintas Satu Arah
+Peringatan Akhir
+Pembatas Konstruksi
+Fisik Pemisah Lajur
+Lalu Lintas
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+13
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Lalu Lintas
+Kendaraan Bermotor
+
+Peringatan Banyak
+Lalu Lintas Angkutan
+Barang
+
+Peringatan Banyak
+Lalu Lintas Angkutan
+Barang Mudah
+Terbakar
+
+Peringatan Banyak
+Lalu Lintas Angkutan
+Barang tipe Curah/Cair
+
+PeringatanBanyak
+Lalu Lintas Angkutan
+Umum
+
+Peringatan Banyak
+Lalu Lintas Angkutan
+Barang Berbahaya dan
+Beracun
+
+PeringatanBanyak
+Lalu Lintas Kendaraan
+Berat
+
+14 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Selain Lalu Lintas
+Kendaraan Bermotor
+
+Peringatan Banyak
+Lalu Lintas Pejalan
+Kaki Menggunakan
+Fasilitas
+Penyeberangan
+
+Peringatan Banyak
+Hewan Ternak
+Melintas
+
+Peringatan Banyak
+Lalu Lintas Pejalan
+Kaki
+
+Peringatan Banyak
+Hewan Liar Melintas
+
+Peringatan Banyak
+Lalu Lintas Pejalan
+Kaki Anak-anak
+
+Peringatan
+Banyak Lalu Lintas
+Penyandang
+Berkebutuhan Khusus
+
+Peringatan Banyak
+Lalu Lintas Sepeda
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+15
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Kawasan Rawan Bencana
+
+Rambu Peringatan Lainnya
+
+Peringatan Kawasan
+Rawan Bencana
+Tsunami
+
+Peringatan (ditegaskan
+penjelasan jenis
+peringatan dengan
+menggunakan papan
+tambahan)
+
+Peringatan Kawasan
+Rawan Bencana
+Gempa Bumi
+
+Peringatan Pekerjaan
+di Jalan
+
+Peringatan Kawasan
+Rawan Bencana
+Gunung Api
+
+Peringatan Tinggi
+Ruang Bebas (... m)
+
+Peringatan Lebar
+Ruang Bebas (... m)
+
+Peringatan Lebar
+Ruang Bebas (... m)
+
+16 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan dengan Kata-kata
+
+Peringatan
+Perlintasan
+Sebidang Kereta
+Api tanpa Pintu
+Keterangan Tambahan tentang Jarak Lokasi
+Kritis
+PeringatanLalu
+Lintas Pesawat
+Terbang yang
+Terbang Rendah
+
+a
+Peringatan
+Hembusan Angin
+Kencang
+
+Peringatan Lalu
+Lintas Dua Arah
+
+Peringatan
+Jembatan Angkat
+
+b
+
+c
+
+a. Peringatan yang
+Menerangkan
+bahwa Lokasi Kritis
+Berjarak 450m dari
+Lokasi Rambu (Jenis
+Peringatan Dijelaskan
+dengan Rambu
+Peringatan)
+
+b. Peringatan yang
+Menerangkan
+bahwa Lokasi Kritis
+Berjarak 300m dari
+Lokasi Rambu (Jenis
+Peringatan Dijelaskan
+dengan Rambu
+Peringatan)
+
+c. Peringatan yang
+Menerangkan
+bahwa Lokasi Kritis
+Berjarak 150m dari
+Lokasi Rambu (Jenis
+Peringatan Dijelaskan
+dengan Rambu
+Peringatan)
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+17
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Pengarah Gerakan
+alu Lintas
+
+Peringatan Rintangan
+atau Objek Berbahaya
+Pada Sisi Jalan
+Sebelah Kiri (Hanya
+dapat melakukan
+gerakan lalu lintas
+pada sisi sebelah
+kanan)
+
+Pengarah Tikungan
+ke Kiri
+
+Peringatan Rintangan
+atau Objek Berbahaya
+Pada Sisi Jalan
+Sebelah Kanan (Hanya
+dapat melakukan
+gerakan lalu lintas
+pada sisi sebelah kiri )
+
+Pengarah Tikungan
+ke Kanan
+
+Peringatan Rintangan
+atau Objek Berbahaya
+Pada Pemisal Lajur
+atau Jalur (Dapat
+melakukan gerakan
+lalu lintas pada
+kedua sisi)
+
+18
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Rambu Larangan
+Rambu Larangan Berjalan Terus
+
+Larangan Berjalan
+Terus karena Wajib
+Berhenti Sesaat dan/
+atau Melanjutkan
+Perjalanan Setelah
+Dipastikan Selamat
+dari Konflik Lalu Lintas
+dari Arah Lainnya
+
+Larangan Berjalan
+Terus pada Perlintasan
+Sebidang Lintasan
+Kereta Api Jalur
+Tunggal Sebelum
+Mendapatkan
+Kepastian Selamat
+dari Konflik
+
+Larangan Berjalan
+Terus karena Wajib
+Memberi Prioritas
+Kepada Arus Lalu
+Lintas dari Arah yang
+Diberi Prioritas
+
+Larangan Berjalan
+Terus pada Perlintasan
+Sebidang Lintasan
+Kereta Api Jalur
+Ganda Sebelum
+Mendapatkan
+Kepastian Selamat
+dari Konflik
+
+Larangan Berjalan
+Terus Sebelum
+Melaksanakan
+Kegiatan Tertentu,
+contoh: Larangan
+Melanjutkan
+Perjalanan Sebelum
+Membayar Tarif Tol
+Larangan Berjalan
+Terus pada
+Bagian Jalan
+Tertentu Sebelum
+Mendahulukan Arus
+Lalu Lintas yang
+Datang dari Arah
+Berlawanan
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+19
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Larangan Masuk
+Larangan Masuk Bagi Kendaraan Bermotor
+dan Tidak Bermotor
+
+Larangan Masuk Bagi Kendaraan Bermotor
+Jenis Tertentu
+
+Larangan Masuk
+Bagi Kendaraan
+Bermotor dan Tidak
+Bermotor dari Kedua
+Arah
+
+Larangan Masuk bagi
+Sepeda Motor
+
+Larangan Masuk
+Bagi Kendaraan
+Bermotor dan Tidak
+Bermotor
+
+Larangan Masuk
+bagi Kendaraan
+Bermotor Roda Tiga
+
+Larangan Masuk
+bagi Mobil
+Penumpang
+
+Larangan Masuk bagi
+Mobil Barang
+
+Larangan Masuk bagi
+Mobil Bus
+
+20 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Larangan Masuk
+bagi Kendaraan
+Khusus
+
+Larangan Masuk
+bagi Mobil Barang
+dan Kendaraan
+Bermotor Umum
+
+Larangan Masuk
+bagi Kendaraan
+Bermotor dengan
+Kereta Tempel
+
+Larangan Masuk bagi
+Sepeda Motor,
+Mobil Penumpang
+Perseorangan dan
+Mobil Barang
+
+Larangan Masuk
+bagi Kendaraan
+Bermotor dengan
+Kereta Gandeng
+
+Larangan Masuk bagi
+Mobil Penumpang
+Perseorangan, Mobil
+Barang dan Kendaraan
+Bermotor Umum
+
+Larangan Masuk
+bagi Sepeda Motor
+dan Mobil Penumpang
+
+Larangan Masuk
+bagi Mobil Penumpang
+Perseorangan dan
+Mobil Barang
+Buku Panduan Latihan Ujian Teori Sim C
+
+21
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Larangan Masuk bagi Kendaraan Tidak
+Bermotor Jenis Tertentu
+
+Larangan Masuk
+bagi Pejalan Kaki
+
+Larangan Masuk
+bagi Delman/Dokar
+
+Larangan Masuk bagi
+Gerobak Dorong
+dan Sejenisnya
+
+Larangan Masuk bagi
+Sepeda dan Becak
+
+Larangan Masuk
+bagi Sepeda
+
+Larangan Masuk bagi
+Delman dan Pedati
+
+Larangan Masuk
+bagi Becak
+
+Larangan Masuk bagi
+Semua Jenis
+Kendaraan Tidak
+Bermotor
+
+Larangan Masuk
+bagi Pedati
+
+22 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+dengan Panjang Lebih
+dari ... m
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+Roda Tunggal dengan
+Muatan Sumbu
+Terberat (MST) Sama
+atau Lebih dari 8 ton
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+dengan Tinggi Lebih
+dari ...m
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+Roda Ganda atau
+Lebihdengan Muatan
+Sumbu Terberat (MST)
+Sama atau Lebih dari
+8 ton
+
+Larangan Masuk
+bagi Kendaraan
+Bermotor dengan
+Lebar Lebih dari ...m
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+dengan Roda Tunggal
+pada Ujung Sumbu
+dengan Berat Muatan
+Sama atau Lebih dari
+8 ton
+
+Larangan Masuk bagi
+Kendaraan Tidak
+Bermotor dengan
+Panjang Lebih dari ...m
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+dengan Roda Ganda
+atau Lebih pada Ujung
+Sumbu dengan Berat
+Muatan Sama atau
+Lebih dari 8 ton
+
+Larangan Masuk bagi
+Kendaraan Bermotor
+dengan Jumlah Berat
+Yang Diizinkan (JBI)
+Sama atau Lebih dari
+5 ton
+Buku Panduan Latihan Ujian Teori Sim C 23
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Larangan Masuk bagi Kendaraan dengan Ukuran
+Lebar Melebihi 2.500 (dua ribu lima ratus)
+milimeter, Ukuran Panjang melebihi 18.000
+(delapan belas ribu) milimeter, Ukuran Paling
+Tinggi 4.200 (empatribu dua ratus) milimeter, dan
+Muatansumbu terberat 10 (sepuluh) ton
+
+Larangan Masuk bagi Kendaraan dengan Ukuran
+Lebar Melebihi 2.500 (dua ribu lima ratus)
+milimeter, Ukuran Panjang melebihi 12.000 (dua
+belas ribu) milimeter, Ukuran Paling Tinggi
+4.200 (empatribu dua ratus) milimeter, dan
+Muatansumbu terberat 8 (delapan) ton
+
+Larangan Masuk bagi Kendaraan dengan Ukuran
+Lebar Melebihi 2.100 (dua ribu seratus)milimeter,
+Ukuran Panjang melebihi 9.000 (sembilan ribu)
+milimeter, Ukuran Paling Tinggi 3.500 (tiga ribu
+lima ratus) milimeter, dan Muatansumbu terberat
+8 (delapan) ton
+
+24 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Larangan Parkir dan Berhenti
+
+Rambu Larangan Pergerakan Lalu
+Lintas Tertentu
+
+Larangan Berhenti
+
+Larangan Berjalan
+Terus
+
+Larangan Parkir
+
+Larangan Belok Kiri
+
+Larangan Belok Kanan
+
+Larangan Menyalip
+Kendaraan Lain
+
+Larangan Memutar
+Balik
+
+Buku Panduan Latihan Ujian Teori Sim C 25
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Larangan Membunyikan
+Isyarat Suara
+
+Larangan Memutar
+Balik dan Belok Kanan
+
+Larangan
+Membunyikan Isyarat
+Suara
+
+Rambu Larangan dengan Kata-kata
+Larangan Mendekati
+Kendaraan di Depan
+dengan Jarak Sama
+atau Kurang dari ...m
+
+Larangan Menjalankan
+Kendaraan dengan
+Kecepatan Lebih dari
+yang Tertulis,
+contoh : Kecepatan
+Maksimum Kendaraan
+yang Dilarang adalah
+50km/jam
+
+26 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Batas Akhir Larangan
+Tertentu
+Batas Akhir Larangan
+TertentuSimbol
+pada Batas Akhir
+Larangan tersebut
+Menggunakan
+Lambang, Huruf,
+Angka, Kalimat dan/
+atau Perpaduan
+Diantaranya untuk
+Menunjukkan Jenis
+Larangan tersebut,
+contoh
+
+Batas Akhir Larangan
+Kecepatan Maksimum
+50km/jam
+
+Batas Akhir
+Larangan Menyalip
+KendaraanLain
+
+Batas Akhir Larangan
+Membunyikan Isyarat
+Suara
+
+Rambu Batas Akhir Seluruh
+Larangan
+
+Batas Akhir Seluruh
+Larangan yang
+Dinyatakan oleh Satu
+atau Lebih Rambu
+Larangan
+
+Buku Panduan Latihan Ujian Teori Sim C 27
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Rambu Perintah
+Rambu Perintah Mematuhi Arah yang Ditunjuk
+
+Perintah Mengikuti ke
+Arah Kiri
+
+Perintah Belok ke Arah
+Kanan
+
+Perintah Mengikuti ke
+Arah Kanan
+
+Perintah Berjalan
+Lurus
+
+Perintah Belok ke Arah
+Kiri
+
+Perintah Mengikuti
+Arah yang Ditunjukkan
+saat Memasuki
+Bundaran
+
+28 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Perintah Memilih Salah Satu Arah
+yang Ditunjuk
+
+Rambu Perintah Memasuki Bagian Jalan
+Tertentu
+
+Perintah Memilih
+Lurus atau Belok Kiri
+
+Perintah Memasuki
+Jalur atau Lajur yang
+Ditunjuk
+
+Perintah Memilih
+Lurus atau Belok
+Kanan
+
+Perintah Memasuki
+Jalur atau Lajur yang
+Ditunjuk
+
+Perintah Pilihan
+Memasuki Salah Satu
+Jalur atau Lajur yang
+Ditunjuk
+
+Buku Panduan Latihan Ujian Teori Sim C 29
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Perintah Batas Minimum Kecepatan
+
+Kecepatan Minimum
+yang Diperintahkan,
+contoh: Kecepatan
+Minimum Kendaraan
+yang Diperintahkan
+adalah 50km/jam
+
+Rambu Perintah Penggunaan Rantai Ban
+
+Perintah
+Menggunakan Rantai
+Khusus Ban
+
+Rambu Perintah Menggunakan Jalur atau
+Lajur Lalu Lintas Khusus
+Perintah Menggunakan Jalur atau Lajur Lalu
+Lintas Khusus Kendaraan Bermotor
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Sepeda Motor
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Mobil Bus
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Mobil Barang
+
+30 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Perintah Menggunakan Jalur atau Lajur Lalu
+Lintas Khusus Kendaraan Tidak Bermotor
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Pejalan Kaki
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Delman
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Penunggang
+Kuda
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Kendaraan
+Tidak Bermotor
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Sepeda
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Becak
+
+Perintah
+Menggunakan Jalur
+atau Lajur Lalu Lintas
+Khusus Pedati
+Buku Panduan Latihan Ujian Teori Sim C
+
+31
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Batas Akhir Perintah Tertentu
+
+Batas Akhir Kecepatan
+Minimum yang
+Diperintahkan,
+contoh: Batas Akhir
+Pemberlakuan
+Kecepatan Minimum
+Kendaraan Bermotor
+
+Rambu Perintah dengan Kata-Kata
+
+32 Buku Panduan Latihan Ujian Teori Sim C
+
+Batas Akhir Perintah
+Menggunakan Rantai
+Khusus Ban
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Rambu Petunjuk
+Rambu Petunjuk Pendahulu Jurusan
+
+Pendahulu Petunjuk
+Jurusan pada
+Persimpangan di
+Depan
+
+Buku Panduan Latihan Ujian Teori Sim C 33
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Pendahulu Jurusan
+
+Pendahulu Petunjuk
+Jurusan yang
+Menunjukkan Jurusan
+yang Dituju
+
+34 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Pendahulu Petunjuk Jurusan
+yang Menunjukkan Jalur atau
+Lajur untuk Mencapai
+Jurusan yang Dituju pada
+Pintu Keluar Jalan Tol
+
+Pendahulu Petunjuk Jurusan
+yang Menunjukkan Jalur atau
+Lajur Sebelah Kiri untuk
+Mencapai Jurusan yang
+Dituju
+
+Pendahulu Petunjuk Jurusan
+yang Menunjukkan Jalur atau
+Lajur Sebelah Kanan untuk
+Mencapai Jurusan yang
+Dituju
+
+Pendahulu Petunjuk Jurusan
+yang Menunjukkan Jarak
+Jurusan yang Dituju
+
+Buku Panduan Latihan Ujian Teori Sim C 35
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Jurusan
+Rambu Petunjuk Jurusan Wilayah dan Lokasi
+Tertentu
+
+Petunjuk Jurusan Arah Menuju Kota
+Ujung Pandang yang Berjarak 30km
+dari Lokasi Rambu.
+
+Petunjuk Jurusan Arah Menuju Pintu
+Tol Jagorawi yang Berjarak
+10km dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Terminal Bus Baranang Siang yang
+Berjarak 7km dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Stasiun Kereta Api Gambir yang
+Berjarak 5km dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Pelabuhan Tanjung Perak yang
+Berjarak 20km dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Bandar Udara Soekarno - Hatta yang
+Berjarak 25km dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Lokasi
+Evakuasi Gunung Sinabung yang
+Berjarak 750m dari Lokasi Rambu
+
+36 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Jurusan Khusus Lokasi dan
+Kawasan Wisata
+
+Petunjuk Jurusan Arah Menuju
+Kawasan Wisata Tangkuban Parahu
+yang Berjarak 10km dari Lokasi
+Rambu
+
+Petunjuk Jurusan Arah Menuju
+Lokasi Wisata Kebur Raya Bogor
+
+Petunjuk Jurusan Arah Menuju
+Lokasi Perkemahan yang Berjarak
+500m dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Kawasan Vila yang Berjarak 250m
+dari Lokasi Rambu
+
+Petunjuk Jurusan Arah Menuju
+Kawasan Wisata Pantai Kuta
+
+Buku Panduan Latihan Ujian Teori Sim C 37
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Batas Wilayah
+
+Rambu Petunjuk Batas
+Awal Wilayah
+Kabupaten Toli-Toli
+Rambu Petunjuk Batas
+Akhir Wilayah
+Kabupaten Toli-Toli
+
+Rambu Petunjuk Batas Jalan Tol
+Rambu Petunjuk
+Batas Awal Jalan Tol
+
+Peringatan
+Persimpangan Tiga
+Serong Kanan
+
+Rambu Petunjuk
+Batas Akhir Jalan Tol
+
+Rambu Petunjuk
+Batas Akhir Jalan Tol
+Lingkar Dalam
+
+38 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Lokasi Utilitas Umum
+Petunjuk Lokasi Simpul Transportasi
+
+Petunjuk Lokasi Fasilitas Kebersihan
+
+Petunjuk Lokasi
+Terminal Kendaraan
+Bermotor Umum
+
+Petunjuk Lokasi
+Tempat Penampungan
+Sampah
+
+Petunjuk Lokasi
+Stasiun Kereta Api
+
+Petunjuk Lokasi
+Tempat Pembuangan
+Sampah
+
+Petunjuk Lokasi
+Pelabuhan
+
+Petunjuk Lokasi Fasilitas Komunikasi
+Petunjuk Lokasi
+Kantor Pos
+
+Petunjuk Lokasi
+Bandar Udara
+Peringatan
+Persimpangan Tiga
+Berganda Sisi Kiri
+(Ditempatkan pada
+Lengan Mayor)
+
+Buku Panduan Latihan Ujian Teori Sim C 39
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Petunjuk Lokasi Fasilitas Pemberhentian
+Angkutan Umum
+
+Petunjuk
+Lokasi Fasilitas
+Pemberhentian
+Mobil Bus Umum
+
+Petunjuk Lokasi
+Fasilitas Pangkalan
+Taksi
+
+Petunjuk Lokasi Fasilitas Penyeberangan
+Pejalan Kaki
+
+Petunjuk
+Lokasi Fasilitas
+Penyeberangan
+Pejalan Kaki
+
+Petunjuk Lokasi Fasilitas Penyeberangan
+Pejalan Kaki
+
+Petunjuk Lokasi
+Fasilitas Parkir
+Petunjuk
+Lokasi Fasilitas
+Pemberhentian dan/
+atau Pangkalan
+Angkutan Umum
+Selain Mobil Bus
+Umum dan Taksi
+(ditegaskan penjelasan
+jenis angkutan umum
+dimaksud dengan
+menggunakan papan
+tambahan)
+
+40 Buku Panduan Latihan Ujian Teori Sim C
+
+Petunjuk Lokasi
+Fasilitas Parkir
+tertentu, contoh:
+Petunjuk Lokasi
+Fasilitas Parkir
+Penyandang Cacat
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Petunjuk Terowongan
+
+Petunjuk Awal
+Terowongan
+
+Petunjuk Akhir
+Terowongan
+
+Petunjuk Fasilitas Tanggap Bencana
+
+Petunjuk Jalur
+Evakuasi Tsunami
+
+Petunjuk Lokasi
+Tempat Berkumpul
+Darurat
+
+Petunjuk Jalur
+Evakuasi Gempa Bumi
+
+Petunjuk Lokasi
+Tempat Kemah
+Pengungsian
+
+Petunjuk
+Jalur Evakuasi
+GunungMeletus
+
+Petunjuk Lokasi
+Tempat Bangunan
+Pengungsian
+
+Buku Panduan Latihan Ujian Teori Sim C 41
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Lokasi Fasilitas Sosial
+Petunjuk Lokasi Peribadatan
+
+Petunjuk Lokasi Pemerintahan dan Pelayanan
+Umum
+
+Petunjuk Lokasi Masjid
+
+Petunjuk Lokasi
+Rumah Sakit
+
+Petunjuk Lokasi Gereja
+
+Petunjuk Lokasi Balai
+Kesehatan,
+Puskesmas, Balai
+Pertolongan Pertama
+dan yang Sejenis
+
+Petunjuk Lokasi
+Wihara
+
+Petunjuk Lokasi
+Apotek
+
+Petunjuk Lokasi Pura
+
+Petunjuk Lokasi Unit
+Pelaksana Pengujian
+Berkala Kendaraan
+Bermotor
+
+42 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Petunjuk Lokasi Perbelanjaan dan Niaga
+
+Petunjuk Lokasi Unit
+Pelaksana Pengujian
+Berkala Kendaraan
+Bermotort
+
+Petunjuk Lokasi Pusat
+Perbelanjaan dan
+Pasar
+
+Petunjuk Lokasi Unit
+Pelaksana Pengujian
+dan/atau Pemeriksaan
+Salah Satu Unsur
+Laik Jalan Kendaraan
+Bermotor, contoh : Unit
+Pelaksana Pengujian
+dan/atau Pemeriksaan
+Emisi Kendaraan
+Bermotor 6b7
+
+Petunjuk Lokasi
+Rumah Makan
+
+Petunjuk Lokasi
+Unit Pelaksana
+Penimbangan
+Kendaraan Bermotor
+
+Petunjuk Lokasi
+Tempat Penjualan
+Minuman
+
+Petunjuk Lokasi
+Penginapan
+
+Petunjuk Lokasi
+Museum
+Petunjuk Lokasi
+Bengkel Kendaraan
+Bermotor
+
+Buku Panduan Latihan Ujian Teori Sim C 43
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Petunjuk Lokasi Rekreasi dan Kebudayaan
+
+Petunjuk Lokasi
+Taman
+
+Petunjuk Lokasi
+Perkemahan dan
+Perkemahan
+Menggunakan Kereta
+Kemah
+
+Petunjuk Lokasi Rute
+Lintas Alam
+
+Petunjuk Lokasi Vila
+
+Petunjuk Lokasi
+Perkemahan
+
+Petunjuk Lokasi Pantai
+
+Petunjuk Lokasi
+Perkemahan
+Menggunakan Kereta
+Kemah
+
+44 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Petunjuk Lokasi Sarana Olahraga dan
+Lapangan Terbuka
+
+Petunjuk Lokasi
+Lapangan Terbuka
+
+Petunjuk Lokasi Kolam
+Renang
+
+Petunjuk Lokasi
+Gedung Olah Raga
+
+Petunjuk Lokasi
+Stadium Olah Raga
+
+Petunjuk Lokasi Fasilitas Pendidikan
+
+Petunjuk Lokasi
+Sekolah
+
+Petunjuk Lokasi
+Perpustakaan
+
+Buku Panduan Latihan Ujian Teori Sim C 45
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Petunjuk Pengaturan Lalu Lintas
+
+Petunjuk Sistem Satu
+Arah
+
+Petunjuk
+Mendapatkan Prioritas
+Melanjutkan
+Perjalanan dari Arah
+Berlawanan
+
+Petunjuk Sistem Satu
+Arah ke Kiri
+
+Petunjuk Lokasi Putar
+Balik
+
+Petunjuk Sistem Satu
+Arah ke Kanan
+
+Petunjuk Awal Bagian
+Jalan untuk Kendaraan
+Bermotor
+
+Petunjuk Jalan Buntu
+di Depan
+
+Petunjuk Akhir Bagian
+Jalan untuk
+Kendaraan Bermotor
+
+Petunjuk Jalan Buntu
+pada Belokan Sebelah
+Kanan
+
+46 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Papan Nama Jalan
+
+Rambu Petunjuk dengan Kata-kata
+
+Buku Panduan Latihan Ujian Teori Sim C 47
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk Nomor Rute
+
+Menyatakan Nomor
+Rute Asian Highway
+
+Menyatakan Nomor
+Rute Jalan Nasional
+
+Menyatakan Nomor
+Rute Jalan Provinsi
+
+Menyatakan Nomor
+Rute Jalan Kabupaten
+
+Menyatakan Nomor
+Rute Jalan Kota
+
+48 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Rambu
+Peringatan Sementara
+Rambu Peringatan Perubahan Kondisi Alinyemen Horizontal
+
+Peringatan Gerakan
+Belok Kiri
+
+Peringatan
+Penyempitan Badan
+Jalan di Bagian Kanan
+
+Peringatan Gerakan
+Belok Kanan
+
+Peringatan Pelebaran
+Badan Jalan di Bagian
+Kiri
+
+Peringatan
+Penyempitan Badan
+Jalan di Bagian Kiri
+dan Kanan
+
+Peringatan Pelebaran
+Badan Jalan di Bagian
+Kanan
+
+Peringatan Pelebaran
+Badan Jalan di Bagian
+Kiri dan Kanan
+
+Peringatan
+Pengurangan Lajur Kiri
+
+Peringatan
+Penyempitan Badan
+Jalan di Bagian Kiri
+
+Peringatan
+Pengurangan Lajur
+Kanan
+
+Buku Panduan Latihan Ujian Teori Sim C 49
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Kondisi Jalan yang
+Berbahaya
+
+Peringatan
+Penambahan Lajur Kiri
+
+Peringatan Permukaan
+Jalan yang Licin
+
+Peringatan
+Penambahan Lajur
+Kanan
+
+Peringatan Bagian
+Tepi Jalan yang tidak
+Sama Tinggi dengan
+Badan Jalan
+
+Peringatan
+Penyempitan Bagan
+Jalinan Jalan
+Tertentu
+
+Peringatan Lontaran
+Kerikil
+
+50 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Rintangan di Jalan
+
+Peringatan Bagian
+Awal Rintangan pada
+Sisi Kiri Jalan
+
+Peringatan Bagian
+Akhir Rintangan yang
+Memisahkan Lajur
+
+Peringatan Bagian
+Awal Rintangan pada
+Sisi Kanan Jalan
+
+Peringatan Bagian
+Awal Rintangan yang
+Memisahkan Jalur
+
+Peringatan Bagian
+Akhir Rintangan pada
+Sisi Kiri Jalan
+
+Peringatan Bagian
+Akhir Rintangan yang
+Memisahkan Jalur
+
+Peringatan Bagian
+Akhir Rintangan pada
+Sisi Kanan Jalan
+
+Peringatan Bagian
+Awal Rintangan yang
+Memisahkan Lajur
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+51
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan Lainnya
+
+Peringatan (ditegaskan
+penjelasan jenis
+peringatan dengan
+menggunakan papan
+tambahan)
+
+Peringatan Lebar
+Ruang Bebas (... m)
+
+Peringatan Pekerjaan
+di Jalan
+
+Peringatan Lalu Lintas
+Dua Arah
+
+Peringatan Tinggi
+Ruang Bebas (... m)
+
+Peringatan Pengaturan
+Lalu Lintas oleh
+Petugas Peringatan
+Pelaksanaan Inspeksi
+di Jalan Peringatan
+Pelaksanaan Survey
+di Jalan
+
+52 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Rambu Peringatan dengan Kata-Kata
+
+Keterangan Tambahan tentang Jarak Lokasi
+Kritis
+
+Peringatan yang Menerangkan bahwa Lokasi
+Kritis Berjarak 450m dari Lokasi Rambu
+(Jenis Peringatan Dijelaskan dengan Rambu
+Peringatan)
+
+Peringatan yang Menerangkan bahwa Lokasi
+Kritis Berjarak 300m dari Lokasi Rambu
+(Jenis Peringatan Dijelaskan dengan Rambu
+Peringatan)
+
+Peringatan yang Menerangkan bahwa Lokasi
+Kritis Berjarak 150m dari Lokasi Rambu
+(Jenis Peringatan Dijelaskan dengan Rambu
+Peringatan)
+
+Buku Panduan Latihan Ujian Teori Sim C 53
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Bentuk, Lambang, Warna, dan Arti Papan Tambahan
+Papan Tambahan yang Menambahkan Penjelasan Nilai Tertentu
+ke Dalam Arti Rambu, Contoh:
+
+Menambahkan Penjelasan:
+- Nilai Jangkauan Jarak Pemberlakuan Rambu
+Dimulai dari Jarak 200m dari Lokasi Rambu
+- Nilai Jarak Lokasi yang Dimaksud dalam
+Rambu Dimulai dari 200m dari Lokasi Rambu
+
+Menambahkan Penjelasan: Waktu
+Pemberlakuan Rambu yang Dijelaskan
+Dimulai Pukul 06.00 Sampai 18.00
+
+Papan Tambahan yang Menambahkan Penjelasan Nilai Tertentu
+ke Dalam Arti Rambu, Contoh:
+
+Menambahkan
+Penjelasan: Arah ke
+Kiri dan ke Kanan
+
+Menambahkan
+Penjelasan: Arah
+ke Kiri
+
+54 Buku Panduan Latihan Ujian Teori Sim C
+
+Menambahkan
+Penjelasan: Arah ke
+Kanan
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Menambahkan
+Penjelasan: Arah
+ke Depan dan ke
+Belakang
+
+Menambahkan
+Penjelasan: Arah ke
+Depan
+
+Menambahkan
+Penjelasan: Arah ke
+Belakang
+
+Papan Tambahan yang Menambahkan Penjelasan Arah dan Nilai
+Tertentu ke Dalam Arti Rambu, Contoh:
+
+Menambahkan
+Penjelasan: 100m ke
+Kiri dan ke Kanan
+
+Menambahkan
+Penjelasan: 10m
+ke Kanan
+
+Menambahkan
+Penjelasan: 10m ke Kiri
+dan 19m ke Kanan
+
+Menambahkan
+Penjelasan: ...km
+ke Depan
+
+Menambahkan
+Penjelasan: 10m ke Kiri
+
+Menambahkan
+Penjelasan: Serong
+60 derajat Radian
+
+Buku Panduan Latihan Ujian Teori Sim C 55
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Papan Tambahan yang Menambahkan Penjelasan Hal-Hal Tertentu
+dengan Kata-Kata, Contoh:
+
+Menambahkan
+Penjelasan: Rambu
+yang Berlaku
+Khusus untuk Mobil
+Bus
+
+Menambahkan
+Penjelasan: Rambu
+yang Tidak
+Berlaku Khusus untuk
+Mobil Bus
+
+Menambahkan
+Penjelasan: Kondisi
+Licin Saat
+Basah
+
+Menambahkan
+Penjelasan: Waspada
+Longsor
+
+56 Buku Panduan Latihan Ujian Teori Sim C
+
+Menambahkan Penjelasan Pemberlakuan
+Rambu untuk
+Sepanjang Jalan
+Tempat Rambu
+Dipasang
+
+Menambahkan Penjelasan: Pemberlakuan
+Rambu untuk Sepanjang Jalan Tol
+Tempat Rambu
+Dipasang
+
+Menambahkan
+Penjelasan: Posisi
+Paralel
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Papan Tambahan yang Menambahkan Penjelasan Hal-Hal Tertentu
+dengan Kata-Kata dan Nilai, Contoh:
+
+Menambahkan Penjelasan: Rambu yang
+Berlaku Khusus MobilBarang Dimulai Pukul
+06.00 Sampai 18.00
+
+Menambahkan Penjelasan: Rambu
+Menunjukkan Arah Keluar KM. 30
+(Hanya Berlaku pada Rambu Pendahulu
+Petunjuk Jurusan pada Jalan Tol)
+
+Buku Panduan Latihan Ujian Teori Sim C 57
+
+I. Instrumen Perlengkapan Jalan Raya
+
+I.2 Marka Jalan
+Marka Jalan adalah suatu tanda yang berada di permukaan jalan atau
+di atas permukaan jalan yang meliputi peralatan atau tanda yang
+membentuk garis meambujur, garis melintang, garis serong, serta
+lambang yang berfungsi untuk mengarahkan arus lalu lintas dan
+membatasi daerah kepentingan lalu lintas.
+
+Bentuk Marka Jalan
+Marka membujur
+Marka membujur adalah tanda yang sejajar dengan sumbu jalan.
+berfungsi sebagai pengarah lalu lintas, pembatas dan pembagi lajur
+dan larangan bagi kendaraan untuk melintasi garis tersebut.
+Marka membujur dengan garis utuh berfungsi sebagai larangan bagi
+kendaraan untuk melintasi garis tersebut dan sebagai pembatas lajur.
+Marka membujur dengan garis putus putus berfungsi sebagai
+pembatas/ pembagi lajur, pengarah lalu lintas, dan/ atau peringatan
+akan adanya marka membujur garis utuh di depan.
+Pada marka membujur dengan garis ganda, lalu lintas yang berada
+pada sisi garis putus-putus dapat melintasi garis ganda, lalu lintas
+yang berada pada sisi garis utuh dilarang melintasi garis ganda. Pada
+marka membujur garis ganda dengan dua garis utuh, pengendara dari
+kedua sisi dilarang melintasi garis tersebut.
+Marka membujur yang dihubungkan dengan garis melintang yang
+dipergunakan untuk membatasi ruang parkir pada jalur lalu lintas
+kendaraan, tidak dianggap sebagai marka jalan membujur.
+
+58 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka putus-putus
+
+Marka utuh
+
+Marka garis ganda
+putus-putus dan utuh
+
+Marka garis ganda
+dua garis utuh
+
+Buku Panduan Latihan Ujian Teori Sim C 59
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka Melintang
+Marka Melintang adalah Marka Jalan yang tegak lurus terhadap
+sumbu jalan.
+Marka berupa garis utuh, menyatakan tanda batas berhenti kendaraan
+terhadap rambu, APILL, tempat penyeberangan. Contoh: Stop line di
+persimpangan, zebra cross.
+Marka berupa garis putus-putus, sebagai batas yang tidak dapat
+dilampaui kendaraan sewaktu memberi kesempatan kepada kendaraan
+yang mendapat hak utama pada persimpangan.
+
+Marka garis utuh
+
+60 Buku Panduan Latihan Ujian Teori Sim C
+
+Marka garis putus
+putus
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka Serong
+Marka Serong adalah Marka Jalan yang membentuk garis utuh yang tidak
+termasuk dalam pengertian Marka Membujur atau Marka Melintang,
+untuk menyatakan daerah yang tidak boleh dimasuki kendaraan,
+suatu daerah permukaan jalan yang bukan merupakan jalur lalu lintas
+kendaraan, pemberitahuan awal akan ada pemisahan atau percabangan
+jalan, dan larangan bagi kendaraan untuk melintas.
+
+Marka Serong berpola chevron menghadap
+arah lalu lintas (pada lalu lintas satu arah)
+
+Marka Serong berpola garis miring (pada lalu
+lintas dua arah)
+
+Buku Panduan Latihan Ujian Teori Sim C 61
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka Lambang
+Marka Lambang adalah Marka Jalan berupa panah, gambar, segitiga, atau
+tulisan yang dipergunakan untuk mengulangi maksud rambu lalu lintas
+atau untuk memberitahu pengguna jalan yang tidak dapat dinyatakan
+dengan rambu lalu lintas.
+Marka lambang panah digunakan untuk memberi petunjuk pemisahan
+arus lalu lintas sebelum mendekati persimpangan. Marka lambang berupa
+gambar digunakan untuk memberi petunjuk misalnya untuk lajur
+sepeda, sepeda motor, atau mobil bus. digunakan untuk memberikan hak
+utama kepada arus lalu lintas dari arah jalan utama. Marka lambang
+tulisan digunakan untuk memberi petunjuk arti tulisan pada Marka
+Lambang tersebut.
+
+Marka lambang panah
+
+Marka lambang
+gambar
+
+62 Buku Panduan Latihan Ujian Teori Sim C
+
+Marka lambang
+segitiga
+
+Marka lambang Tulisan
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka Kotak Kuning
+Marka Kotak Kuning adalah Marka Jalan berbentuk segi empat berwarna
+kuning yang berfungsi melarang kendaraan berhenti di suatu area.
+
+Marka kotak kuning
+pada persimpangan
+
+Marka kotak kuning
+pada ruas jalan
+
+Bentuk Marka Jalan Lainnya
+Tempat penyebrangan jalan untuk pejalan kaki
+
+Penyebrangan jalan
+(zebracross)
+
+Buku Panduan Latihan Ujian Teori Sim C 63
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Penyebrangan jalan
+dengan APILL (Pelican
+Crossing)
+
+Penyebrangan jalan
+(Zebra Cross) tanpa
+Pelican Crossing
+
+Tempat penyebrangan
+jalan untuk pesepeda
+
+64 Buku Panduan Latihan Ujian Teori Sim C
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka Jalan Larangan
+Parkir atau Berhenti
+
+Marka Jalan pada
+perlintasan sebidang
+dengan jalan
+kereta api
+
+Lajur khusus sepeda
+
+Lajur khusus bus
+
+Buku Panduan Latihan Ujian Teori Sim C 65
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Lajur khusus
+pariwisata
+
+66 Buku Panduan Latihan Ujian Teori Sim C
+
+Lajur khusus sepeda
+motor
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Marka jalur evakuasi
+
+Buku Panduan Latihan Ujian Teori Sim C 67
+
+I. Instrumen Perlengkapan Jalan Raya
+
+I.3 Alat pemberi isyarat lalu lintas (APILL)
+
+Alat pemberi isyarat lalu lintas atau APILL adalah lampu yang mengendalikan arus lalu lintas yang
+terpasang di persimpangan jalan, tempat penyeberangan pejalan kaki (zebra cross), dan tempat
+arus lalu lintas lainnya. Lampu ini yang menandakan kapan kendaraan harus berjalan dan berhenti
+secara bergantian dari berbagai arah lalu lintas.
+Pengaturan lalu lintas di persimpangan jalan dimaksudkan untuk mengatur pergerakan kendaraan
+pada masing-masing kelompok pergerakan kendaraan agar dapat bergerak secara bergantian
+sehingga tidak saling mengganggu antar-arus yang ada.
+Lampu ini menggunakan warna yang diakui secara universal; untuk menandakan berhenti adalah
+warna merah, hati-hati yang ditandai dengan warna kuning, dan hijau yang berarti dapat berjalan.
+
+Lampu hijau menyatakan
+Kendaraan berjalan
+
+Lampu berwarna kuning
+yang menyala sesudah
+lampu berwarna hijau
+padam, menyatakan lampu
+berwarna merah akan
+segera menyala, Kendaraan
+bersiap untuk berhenti
+Lampu berwarna kuning yang
+menyala bersama dengan
+lampu berwarna merah,
+menyatakan lampu berwarna
+hijau akan segera menyala,
+Kendaraan bersiap untuk
+bergerak.
+
+68 Buku Panduan Latihan Ujian Teori Sim C
+
+Lampu merah menyatakan kendaraan
+harus berhenti dan
+tidak boleh melewati
+marka melintang yang
+berfungsi sebagai garis
+henti.
+
+I. Instrumen Perlengkapan Jalan Raya
+
+Jenis APILL
+
+Alat Pemberi Isyarat Lalu Lintas dengan
+lampu tiga warna; untuk mengatur kendaraan.
+Tersusun secara vertikal dengan warna dari atas
+ke bawah: Merah-kuning-hijau, dan horizontal
+dari kanan ke kiri: merah-kuning-hijau.
+Susunan
+Vertikal
+
+Susunan
+Horizontal
+
+Alat Pemberi Isyarat Lalu Lintas dengan lampu
+dua warna; untuk mengatur kendaraan dan /
+atau pejalan kaki. Susunan lampu dua warna
+adalah cahaya berwarna merah dan hijau.
+
+Alat Pemberi Isyarat Lalu Lintas dengan lampu
+satu warna; untuk memberikan peringatan
+bahaya kepada pemakai jalan. Lampu itu
+berwarna kuning secara kelap kelip atau merah.
+
+Kondisi lalu lintas di jalan selalu dinamis. Meskipun sudah dipasang APILL, tidak menutup
+kemungkinan suatu saat di simpang tersebut terjadi ketimpangan jumlah kendaraan di
+salah satu ruas jalan. Dampak yang mungkin akan terjadi adalah kemacetan. Jika suatu
+simpang terjadi kemacetan atau ketimpangan volume lalu lintas di salah satu ruas
+jalan, sementara ada polisi pengatur lalu lintas, Berdasarkan Undang-Undang Nomor
+22 Tahun 2009 Tentang Lalu Lintas dan Angkutan Jalan (LLAJ) Pasal 104 ayat (2)
+menyatakan bahwa polisi pengatur lalu lintas lebih wajib dipatuhi daripada perintah
+APILL, rambu lalu lintas, dan/atau marka jalan.
+
+Buku Panduan Latihan Ujian Teori Sim C 69
+
+II. Pengenalan Kendaraan
+
+II. Pengenalan Kendaraan
+II.1 Syarat dan ketentuan untuk komponen
+sepeda motor
+Demi keselamatan dalam berkendara, beberapa komponen dalam kendaraan harus dalam keadaan
+baik dan layak. Komponen tersebut juga perlu memenuhi standar kelayakan tertentu. Komponen
+yang harus diperhatikan sebelum mengendarai sepeda motor adalah sebagai berikut.
+Rem
+Rem memiliki fungsi untuk mengurangi kecepatan kendaraan dan membantu kendaraan untuk
+berhenti. Sepeda motor dibawah berat 400 kilogram tidak memerlukan rem parkir. Pastikan rem
+sepeda motor dapat memberhentikan kendaraan dengan sempurna.
+Periksa tuas rem depan dan belakang satu per satu. Pastikan masing-masing terasa kokoh dan
+dapat menahan sepeda motor saat rem diaplikasikan secara penuh.
+
+Lampu
+Lampu pada kendaraan berfungsi sebagai penerang bagi pengendara yang melintas di jalur gelap
+terutama pada malam hari dan juga sebagai indikator bagi pengendara yang lain.
+Lampu pada sepeda motor meliputi;
+Lampu utama dekat berwarna putih atau
+kuning muda; berjumlah maksimal dua buah dan
+ditempatkan pada bagian depan sepeda motor.
+Lampu utama dekat harus dapat memancarkan
+cahaya paling sedikit 40 meter ke arah depan.
+
+Lampu utama jauh berwarna putih atau
+kuning muda; berjumlah maksimal dua buah
+ditempatkan pada bagian depan sepeda motor.
+Lampu utama dekat harus dapat memancarkan
+cahaya paling sedikit 100 meter ke arah depan.
+
+70 Buku Panduan Latihan Ujian Teori Sim C
+
+II. Pengenalan Kendaraan
+
+Lampu penunjuk arah berwarna kuning tua
+dengan sinar kelap-kelip; dapat dilihat pada
+waktu siang dan malam hari oleh pengguna
+jalan lain dan dipasang di sisi kiri dan kanan pada
+bagian depan dan belakang sepeda motor.
+
+Lampu rem berwarna merah; berjumlah
+paling banyak dua buah, dipasang pada sisi
+kiri dan kanan bagian belakang sepeda motor,
+mempunyai kekuatan cahaya lebih besar dari
+lampu posisi belakang tetapi tidak menyilaukan
+bagi pengguna jalan lain.
+Lampu posisi belakang berwarna merah;
+berjumlah genap.
+
+Periksa lampu sesering mungkin, pastikan lampu berfungsi dengan baik, ganti bohlam yang
+mati dan jaga lensa tetap bersih. Pengendara motor wajib menyalakan lampu utama di siang hari
+ataupun malam hari.
+
+Alat pemantul cahaya
+Alat pemantul cahaya pada kendaraan berfungsi untuk memantulkan cahaya yang dipancarkan
+sehingga memudahkan pengendara lain melihat kendaraan. Alat pemantul cahaya harus dipasang
+berpasangan dan dapat dilihat oleh pengemudi Kendaraan lain yang berada di belakang Kendaraan
+pada malam hari dari jarak paling sedikit 100 meter apabila pemantul cahaya tersebut disinari
+lampu utama Kendaraan di belakangnya.
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+71
+
+II. Pengenalan Kendaraan
+
+Ban
+Kerusakan pada ban dapat mengakibatkan kendaraan tidak dapat berjalan dengan baik dan juga
+berpotensi menyebabkan kecelakaan. Ban harus memiliki adhesi yang cukup, baik pada jalan kering
+maupun jalan basah. Pastikan ban kendaraan tidak mengalami kebocoran, memiliki tekanan cukup,
+tidak aus dan alur ban memiliki kedalaman yang cukup. kedalaman alur ban tidak boleh kurang dari
+1 millimeter.
+
+Selalu periksa ban untuk kerusakan, sobek atau
+kebocoran.
+
+Ban yang aus dapat membahayakan saat berkendara,
+segera ganti ban kendaraan yang sudah aus.
+
+Alat penunjuk kecepatan (speedometer)
+Alat penunjuk kecepatan dapat berupa alat penunjuk kecepatan mekanik maupun alat penunjuk
+kecepatan elektronik. harus dilengkapi dengan pengukur jarak dan dipasang pada tempat yang
+mudah dilihat oleh pengemudi. Alat penunjuk kecepatan merupakan salah satu persyaratan teknis
+dan laik jalan sebuah kendaraan.
+1.
+2.
+3.
+4.
+5.
+
+72 Buku Panduan Latihan Ujian Teori Sim C
+
+Penunjuk kecepatan
+(Speedometer)
+Penunjuk putaran mesin
+(Tachyometer)
+Penunjuk Bahan Bakar
+Pengukur Jarak (Odometer)
+Lampu indikator
+
+II. Pengenalan Kendaraan
+
+Spion
+Spion berfungsi untuk membantu pengendara
+agar dapat melihat keaadan dibelakang kendara­an. Spion harus berjumlah dua atau lebih
+dibuat dari kaca atau bahan lain yang dipasang
+pada posisi yang dapat memberikan pandangan
+ke arah samping dan belakang dengan jelas
+tanpa mengubah jarak dan bentuk objek yang
+terlihat.
+
+Klakson
+Klakson berfungsi untuk memberikan isyarat kepada orang lain seperti penyeberang jalan, pejalan
+kaki, maupun pengendara lain. Dalam bentuk suara, Klakson memiliki persyaratan suara paling
+rendah 83 Db (desibel) dan paling tinggi 118 Db (desibel).
+Untuk menjaga kondisi komponen sepeda motor, baca manual pemilik kendaraan Anda! Ini
+adalah sumber yang bagus untuk informasi khusus kendaraan Anda, seperti: jenis cairan apa
+yang dibutuhkan sepeda motor Anda, apa arti lampu peringatan, interval servis sepeda motor
+Anda, dan lainnya.
+II.2 Perlengkapan Kendaraan sepeda motor
+Menurut undang undang no 22 tahun 2009 Tentang lalu lintas dan angkutan jalan, Setiap Kendaraan Bermotor yang dioperasikan di Jalan wajib dilengkapi dengan perlengkapan Kendaraan
+Bermotor. Perlengkapan kendaraan untuk kendaraan sepeda motor meliputi;
+Helm
+Setiap pengendara dan penumpang sepeda
+motor diharuskan memakai helm berstandar
+nasional indonesia.
+
+Buku Panduan Latihan Ujian Teori Sim C 73
+
+II. Pengenalan Kendaraan
+
+II.3 Lampu Indikator Sepeda motor
+Lampu indikator dapat ditemukan pada sepeda motor. Posisi lampu indikator tepat di depan
+pengendara. Fungsi lampu indikator adalah untuk menunjukkan informasi penting mengenai
+sepeda motor yang sedang dikendarai. Lampu indikator dapat berbeda beda tergantung sepeda
+motor. Beberapa lampu indikator juga memiliki bentuk yang universal, berikut indikator yang umum
+ditemui pada sepeda motor.
+Check engine
+Lampu indikator sepeda motor check engine berfungsi untuk
+mengindikasikan jika ada permasalahan pada mesin sepeda motor.
+Indikator lampu sein
+Indikator ini menun­jukkan bahwa salah satu lampu sein me­nyala.
+
+Indikator lampu jauh
+Indikator ini menun­jukkan bahwa lampu utama jauh sedang me­nyala.
+
+Indikator posisi gear
+Indikator ini menun­jukkan posisi gear (Indikator ini tidak terdapat pada
+motor dengan transmisi otomatis.)
+
+74 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Materi Uji Teori Sim
+
+Persepsi
+Bahaya
+Modul 3
+
+Buku Panduan Latihan Ujian Teori Sim C 75
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat rambu
+petunjuk di sebelah
+kiri kendaraan Anda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan
+adanya persimpangan jalan dan lampu sein yang menyatakan bahwa
+kendaraan akan berbelok ke kiri. Pengendara harus mengurangi
+kecepatan sebelum memasuki tikungan.
+
+Terdapat pesepeda
+melaju di jalur sepeda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat pesepeda pada jalur sepeda.
+Pengendara tidak melakukan apapun karena keduanya dapat
+melintas berdampingan dengan jarak yang aman.
+
+76 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat bus pada
+jalur busway.
+
+Pengendara sedang mengendarai motor dengan kecepatan 40 km/
+jam di wilayah perkotaan. Terdapat bus pada jalur busway. Pengendara
+tidak harus melakukan apapun karena masing-masing kendaraan
+berada pada jalur yang semestinya dengan jarak yang aman.
+
+Terdapat pengendara
+sepeda motor di
+depan kendaraan
+Anda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat motor pada sisi kiri kendaraan.
+Pengendara menyalakan lampu sein ke kiri dengan jarak cukup dekat
+dari pertigaan sehingga harus mengurangi kecepatan.
+
+Buku Panduan Latihan Ujian Teori Sim C 77
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat pengendara
+sepeda motor di
+lajur sebelah kiri
+kendaraan Anda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat pengendara sepeda motor di lajur
+sebelah kiri. Pengendara tidak perlu melakukan apapun karena tidak
+ada kendaraan lain di depan yang menghambat lalu lintas.
+
+Terdapat tikungan
+di depan kendaraan
+Anda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam
+di wilayah perkotaan. Terdapat rambu yang menyatakan jalan berbelok
+ke kiri. Pengendara hendak berbelok ke kiri dan mengantisipasi lalu
+lintas dari arah lain sehingga harus melakukan pengereman.
+
+78 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat rambu
+petunjuk.
+
+Pengendara sedang mengendarai motor dengan kecepatan 60 km/
+jam di wilayah permukiman. Terdapat rambu yang menyatakan adanya
+bundaran. Pengendara harus mengurangi kecepatan saat memasuki
+bundaran untuk menjaga jarak aman dengan kendaraan lain.
+
+Terdapat Pejalan kaki
+akan menyebrang
+jalan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam
+di wilayah perkotaan. Terdapat pejalan kaki yang menyeberang jalan
+sehingga pengendara harus melakukan pengereman untuk menjaga
+jarak aman.
+
+Buku Panduan Latihan Ujian Teori Sim C 79
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Pejalan
+kaki sedang berlari
+menyebrang jalan
+secara tiba-tiba.
+
+Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam
+di wilayah perkotaan. Terdapat Pejalan kaki yang menyeberang jalan
+dan jarak terlalu dekat sehingga harus melakukan pengereman.
+
+Terdapat Jalan
+Bercabang.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam
+di wilayah perkotaan. Terdapat persimpangan jalan bercabang di depan
+kendaraan. Pengendara harus mengurangi kecepatan saat memasuki
+jalur untuk mengatur jarak aman dengan kendaraan lain.
+
+80 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Traffic Light
+atau Lampu Lalu
+Lintas.
+
+Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam
+di wilayah perkotaan. Kendaraan anda akan mendekati Lampu merah
+sehingga anda harus melakukan pengereman dan berhenti dibelakang
+marka garis.
+
+Terdapat rambu di
+sebelah kiri Anda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 55 km/jam
+di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan batas
+kecepatan. Pengendara harus mengurangi kecepatan karena telah
+melebihi kecepatan yang ditentukan.
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+81
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Truk yang
+datang dari arah
+berlawanan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 60 km/jam
+di wilayah perkotaan. Terdapat truk dari arah berlawanan. Pengendara
+harus melakukan pengereman untuk menjaga jarak aman.
+
+Terdapat Kemacetan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 40 km/
+jam di wilayah perkotaan. Terdapat kemacetan di depan kendaraan.
+Pengendara harus melakukan pengereman untuk mengantisipasi
+situasi lalu lintas dan menjaga jarak agar tetap aman.
+
+82 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Kendaraan
+yang keluar dari
+parkiran.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat kendaraan yang akan keluar
+dari parkiran. Pengendara harus melakukan pengereman untuk
+menghindari terjadinya tabrakan.
+
+Terdapat Truk
+dari arah yang
+berlawanan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 40 km/
+jam di wilayah perkotaan. Terdapat truk dari arah yang berlawanan.
+Pengendara tidak harus melakukan apapun karena kendaraan berada
+dalam jalur masing-masing dengan jarak yang aman.
+
+Buku Panduan Latihan Ujian Teori Sim C 83
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat pejalan kaki
+akan menyebrang
+jalan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam
+di wilayah permukiman. Terdapat pejalan kaki yang akan menyeberang
+jalan. Pengendara harus melakukan pengereman dan memberikan
+prioritas kepada pejalan kaki.
+
+Terdapat Pengendara
+sepeda motor.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam
+di wilayah perkotaan. Terdapat motor di sisi kiri yang akan memasuki
+lajur. Pengendara harus melakukan pengereman untuk memberikan
+jarak yang aman.
+
+84 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Pesepeda.
+
+Pengendara sedang mengendarai motor dengan kecepatan 25 km/
+jam di wilayah perkotaan. Terdapat pesepeda di depan kendaraan.
+Pengendara harus mengurangi kecepatan untuk memberikan
+prioritas jalan kepada pesepeda.
+
+Terdapat
+Persimpangan jalan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 40 km/
+jam di wilayah perkotaan. Terdapat peseda yang akan melewati
+persimpangan. Pengendara tidak harus melakukan apapun karena
+berada pada jarak yang aman.
+
+Buku Panduan Latihan Ujian Teori Sim C 85
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat Pesepeda
+dan Bus.
+
+Pengendara sedang mengendarai motor dengan kecepatan 30 km/
+jam di wilayah perkotaan. Terdapat pesepeda di sisi kiri dan bus dari
+arah berlawanan. Pengendara harus melakukan pengereman untuk
+memberikan prioritas kepada pesepeda.
+
+Terdapat Pesepeda
+dan Bus.
+
+Pengendara sedang mengendarai motor dengan kecepatan 50 km/
+jam di wilayah perkotaan. Terdapat pesepeda di sisi kiri dan bus dari
+arah berlawanan. Pengendara harus melakukan pengereman untuk
+memberikan prioritas kepada pesepeda.
+
+86 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat rambu
+petunjuk di sisi kiri
+jalan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 60 km/
+jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan
+adanya belokkan ke kanan. Pengendara harus mengurangi kecepatan
+untuk menjaga keseimbangan dan kendali motor saat berbelok.
+
+Terdapat Perbaikan
+jalan
+
+Pengendara sedang mengendarai motor dengan kecepatan 60 km/
+jam di wilayah perkotaan. Terdapat perbaikan pada sisi kiri jalan.
+Pengendara harus mengurangi kecepatan untuk mengantisipasi sisa
+material yang dapat mengganggu keseimbangan motor saat melintas.
+
+Buku Panduan Latihan Ujian Teori Sim C 87
+
+Modul 3 - Persepsi Bahaya
+
+Terdapat rambu
+petunjuk di sisi kiri
+jalan.
+
+Pengendara sedang mengendarai motor dengan kecepatan 60 km/
+jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan
+adanya belokkan ke kiri. Pengendara harus mengurangi kecepatan
+untuk menjaga keseimbangan dan kendali motor saat berbelok.
+
+88 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Wawasan
+
+Materi Uji Teori Sim
+
+Wawasan
+Modul 3
+
+Buku Panduan Latihan Ujian Teori Sim C 89
+
+Modul 3 - Wawasan
+
+Kendaran mana yang duluan jalan?
+Pada situasi di video, kendaraan yang jalan
+duluan adalah kendaraan no.1.
+
+scan QR untuk melihat video
+
+Speed gun dan speed camera adalah alat yang
+digunakan oleh polri dalam melaksanakan
+penegakan hukum batas kecepatan, Benar
+atau Salahkan pernyataan tersebut?
+Speed gun dan speed camera adalah alat yang
+digunakan oleh polri dalam melaksanakan
+penegakan hukum batas kecepatan.
+
+scan QR untuk melihat video
+
+Teknik pengereman yang baik dan efektif
+pada jalan licin dan berair adalah?
+Teknik pengereman yang baik dan efektif
+pada jalan licin dan berair adalah pengereman
+kombinasi, dengan Rem Depan 80% dan
+belakang 20% secara bersamaan.
+
+scan QR untuk melihat video
+
+90 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Wawasan
+
+Pengendara motor 1 sedang melaju dari arah
+barat pengendara motor 2 sedang melaju
+dari arah timur lalu pengendara motor 1 dan
+2 berpapasan dan 2 kendaraan tersebut
+memberi ruang cukup pada saat berpapasan
+dan memperlambat kendaraan, Benarkah
+pengendara motor tersebut?
+Pengendara motor 1 sedang melaju dari arah
+barat pengendara motor 2 sedang melaju
+dari arah timur lalu pengendara motor 1 dan
+2 berpapasan. Dalam situasi tersebut, kedua
+pengendara harus memberi ruang cukup
+pada saat berpapasan dan memperlambat
+kendaraan.
+
+scan QR untuk melihat video
+
+Dalam hal terjadi kondisi kemacetan lalu lintas
+yang tidak memungkinkan gerak kendaraan
+dipersimpangan empat fungsi mana yang
+harus diutamakan dari pada alat pemberi
+isyarat lalu lintas yang bersifat perintah atau
+larangan?
+Dalam kondisi kemacetan lalu lintas yang
+tidak memungkinkan gerak kendaraan
+dipersimpangan, pengendara harus mengikuti
+penggunaan dari marka kotak kuning (yellow
+box)
+
+scan QR untuk melihat video
+
+Teknik mengemudi sepeda motor yang baik
+pada saat gerakan membelok adalah?
+Teknik mengemudi sepeda motor yang
+baik pada saat gerakan berbelok adalah
+memiringkan posisi sepeda motor dan
+pengemudi ke arah pusat tikungan yang
+sesuai dengan kecepatan dan ketajaman
+tikungan.
+
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C
+
+91
+
+Modul 3 - Wawasan
+
+Siapa yang melaksanakan penindakan
+menggunakan e-tilang dan ETLE?
+Yang berhak melaksanakan penindakan
+menggunakan e-tilang dan ETLE adalah
+Kepolisian Negara Republik Indonesia.
+
+scan QR untuk melihat video
+
+Kendaraan mana yang diperintah kan untuk
+berhenti atas isyarat gerakan tangan yang
+dilakukan oleh polisi lalu lintas seperti video
+dibawah ini?
+Kendaraan 1,2,3 harus berhenti atas isyarat
+gerakan tangan yang dilakukan oleh polisi lalu
+lintas pada video.
+
+scan QR untuk melihat video
+
+Pengemudi sepeda motor wajib memberikan
+tanda klakson kepada sesama pengguna jalan
+saat akan mendahului , Benarkah pengemudi
+sepeda motor kuning tersebut?
+Salah, Klakson bukan tanda untuk mendahului.
+
+scan QR untuk melihat video
+
+92 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Wawasan
+
+Penerimaan negara bukan pajak atau PNBP
+tilang dikelola oleh kejaksaan agung, Benar
+atau Salahkan pernyataan tersebut?
+Salah, PNBP tilang dikelola pantera
+pengadilan.
+
+scan QR untuk melihat video
+
+Pengemudi kendaraan bermotor wajib
+menggunakan jalur sebelah kanan jika
+melewati atau mendahului kendaraan
+didepannya pengemudi sepeda motor merah
+menggunakan jalur kanan untuk mendahului
+sepeda motor kuning, Benarkah pengemudi
+sepeda motor tersebut?
+Pada situasi di video, hal yang harus di lakukan
+pengendara motor merah untuk menyalip
+pengendara motor kuning adalah dengan
+menggunakan lajur kanan.
+
+scan QR untuk melihat video
+
+Pengemudi dan penumpang sepeda motor
+wajib menggunakan helm yang aman
+berstandar sni Benarkah pengemudi sepeda
+motor tersebut?
+Pengemudi dan penumpang sepeda motor
+wajib menggunakan helm yang aman
+berstandar SNI.
+
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C 93
+
+Modul 3 - Wawasan
+
+Pemilik sim akan diuji teori dan praktik
+kembali bila masa berlaku sim yang dimilikinya
+telah habis masa berlakunya dan tidak
+diperpanjang dalam batas waktu?
+Pemilik sim akan diuji teori dan praktik
+kembali bila masa berlaku sim yang dimilikinya
+telah habis masa berlakunya dan tidak
+diperpanjang dalam batas waktu lebih dari 1
+(satu) hari.
+scan QR untuk melihat video
+
+Benarkah yang dilakukan pengendara
+tersebut?
+Pada situasi di video, yang di lakukan
+pengendara salah.
+
+scan QR untuk melihat video
+
+Dari sebelah mana seharusnya anda melewati
+kendaraan yang sedang membelok ke kanan?
+Pada situasi di video, pengendara mobil
+berbelok ke kanan, yang harus di lakukan
+pengendara motor adalah tetap di belakang
+kendaraan yang di depan.
+
+scan QR untuk melihat video
+
+94 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Wawasan
+
+Apabila traffic light tidak berfungsi dengan
+baik seluruh kendaraan akan berjalan lurus
+seperti video di bawah ini maka urut-urutan
+prioritas adalah?
+Pada situasi di video, traffic light tidak berfungsi
+dengan baik seluruh kendaraan akan berjalan
+lurus maka urutan kendaraan yang menjadi
+prioritas adalah kendaraan 2, 3, dan 1.
+
+scan QR untuk melihat video
+
+Penggunaan perseneling yang baik pada saat
+berkendara dijalan menurun yang panjang dan
+curam adalah?
+Penggunaan perseneling yang baik pada saat
+berkendara dijalan menurun yang panjang dan
+curam adalah menggunakan perseneling 2.
+
+scan QR untuk melihat video
+
+Benarkah yang dilakukan oleh pengendara
+motor tersebut?
+Hal yang dilakukan oleh pengendara motor
+tersebut pada situasi di video adalah salah,
+karena suara knalpot yang bising dapat
+mengganggu ketertiban umum.
+
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C 95
+
+Modul 3 - Wawasan
+
+Batas kecepatan maksimal untuk kawasan
+perkotaan adalah?
+Batas kecepatan maksimal untuk kawasan
+perkotaan paling tinggi 50 km/jam.
+
+scan QR untuk melihat video
+
+Apa yang anda lakukan ketika ada mobil
+pemadam kebakaran yang akan melintas?
+Yang harus anda lakukan ketika ada mobil
+pemadam kebakaran yang akan melintas adalah
+memberikan prioritas dengan memperlambat
+kendaraan kemudian bergeser ke lajur kiri/
+kanan untuk memberikan jalan bagi prioritas.
+
+scan QR untuk melihat video
+
+96 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Pengetahuan
+
+Materi Uji Teori Sim
+
+Pengetahuan
+Modul 3
+
+Buku Panduan Latihan Ujian Teori Sim C 97
+
+Modul 3 - Pengetahuan
+
+Yang termasuk instrumen perlengkapan jalan
+adalah?
+Sesuai UU No 22 Tahun 2009 Pasal 25
+disebutkan bahwa yang termasuk dalam
+instrumen perlengkapan jalan adalah
+marka jalan, rambu lalu lintas, APILL, alat
+penerangan jalan, alat pengendali dan
+pengawasan jalan, dll.
+
+scan QR untuk melihat video
+
+Siapakah yang harus bertanggung jawab atas
+pengelolaan jalan nasional?
+Kementerian Pekerjaan Umum dan
+Perumahan Rakyat (PUPR) merupakan
+instansi yang bertanggung jawab atas
+pengelolaan jalan nasional, sedangkan Dinas
+Perhubungan bertugas untuk melaksanakan
+urusan pemerintahan daerah bidang
+perhubungan berdasarkan asas otonomi daerah
+dan tugas pembantuan.
+scan QR untuk melihat video
+
+Apa arti rambu disamping?
+Rambu disamping merupakan rambu petunjuk
+batas awal wilayah / memasuki kota Kediri.
+
+scan QR untuk melihat video
+
+98 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Pengetahuan
+
+Apa arti rambu disamping?
+Rambu disamping merupakan rambu wajib
+mengikuti salah satu arah yang ditunjuk.
+
+scan QR untuk melihat video
+
+Apa arti rambu disamping?
+Rambu disamping berarti pengendara
+mendekati jalan buntu.
+
+scan QR untuk melihat video
+
+Apa arti rambu disamping?
+Rambu disamping merupakan rambu larangan
+bagi semua kendaraan bermotor maupun
+tidak bermotor dari kedua arah.
+
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C 99
+
+Modul 3 - Pengetahuan
+
+Salah satu fungsi APILL adalah?
+Salah satu Alat Pemberi Isyarat Lalu Lintas
+(APILL) adalah untuk menghindari kemacetan
+pada persimpangan oleh arus yang
+berlawanan, sehingga kapasitas simpang
+dapat dipertahankan selama keadaan lalu
+lintas memuncak.
+
+scan QR untuk melihat video
+
+Pernyataan yang tepat mengenai penggunaan
+lajur sebelah kiri adalah?
+Lajur kiri diperuntukkan untuk kendaraan
+yang berjalan dengan kecepatan rendah dan
+yang sebelah kanannya untuk kendaraan yang
+berjalan dengan kecepatan lebih tinggi, atau di
+jalan tol antar kota yang memiliki dua lajur, lajur
+kanan hanya diperuntukkan untuk kendaraan
+yang mendahului.
+scan QR untuk melihat video
+
+Jalan dengan marka manakah yang anda pilih
+apabila anda hendak berbelok kekiri?
+Lajur dengan marka A merupakan lajur yang
+harus dipilih ketika pengguna jalan hendak
+berbelok ke kiri.
+
+scan QR untuk melihat video
+
+100 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Pengetahuan
+
+Lampu rem yang pada kendaraan bermotor
+yang sesuai ketentuan adalah?
+Lampu menyala merah dan tidak berkedip
+merupakan kententuan yang harus digunakan
+pada lampu rem.
+
+scan QR untuk melihat video
+
+Tempat untuk mengajukan permohonan
+pembuatan SIM adalah?
+SATPAS (Satuan Penyelenggara Administrasi
+SIM) merupakan unsur pelaksana Polri
+dibidang lalu lintas yang berada di
+lingkungan kantor Kepolisian setempat yang
+bertanggungjawab mengenai SIM pada
+pengemudi.
+
+scan QR untuk melihat video
+
+Pengendara dilarang melawan arus saat
+berkendara di jalan raya karena?
+Pengendara dilarang melawan arus saat
+berkendara karena merupakan tindakan
+yang melanggar aturan berlalu lintas dan
+berkendara melawan arus akan meningkatkan
+kerawanan kecelakaan lantas.
+
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C 101
+
+Modul 3 - Pengetahuan
+
+Dapatkah SIM digunakan oleh yang bukan
+pemilik SIM tersebut?
+SIM hanya berlaku atas nama pemilik. Sehingga
+SIM tidak bisa dipinjam atau digunakan oleh
+orang lain.
+
+scan QR untuk melihat video
+
+Berapa lamakah SIM dapat berlaku?
+Masa berlaku SIM adalah 5 tahun, dan dapat
+diperpanjang sebelum masa berlaku habis.
+
+scan QR untuk melihat video
+
+Apa yang harus dilakukan ketika SIM hilang
+atau rusak?
+Apabila SIM hilang atau rusak, anda dapat
+melakukan permohonan SIM baru ke
+SATPAS terdekat dengan melampirkan surat
+kehilangan dari kantor kepolisian terdekat.
+
+scan QR untuk melihat video
+
+102 Buku Panduan Latihan Ujian Teori Sim C
+
+Modul 3 - Pengetahuan
+
+Apa arti rambu dibawah ini?
+Rambu disamping merupakan rambu
+peringatan apabila terdapat jalan menurun
+curam. Sehingga pengendara wajib berhatihati terhadap kendaraan yang mungkin muncul
+didepan.
+
+scan QR untuk melihat video
+
+Tanda nomor kendaraan bermotor (TNKB)
+dianggap sah apabila?
+TNKB adalah bukti legitimasi pengoperasian
+ranmor berupa pelat atau berbahan lain
+dengan spesifikasi tertentu yang diterbitkan
+Polri.
+
+scan QR untuk melihat video
+
+Fungsi garis utuh berwarna kuning pada tepi
+jalan adalah?
+Berdasarkan Permenhub nomor 34 tahun 2014,
+marka jalan berwarna kuning dinyatakan
+sebagai larangan bagi kendaraan bermotor
+untuk berhenti pada area tersebut. Sehingga,
+fungsi dari garis utuh berwarna kuning pada
+tepi jalan Sebagai tanda larangan berhenti dan
+parkir bagi kendaraan bermotor.
+scan QR untuk melihat video
+
+Buku Panduan Latihan Ujian Teori Sim C 103
+
+Modul 3 - Pengetahuan
+
+Bagaimana ketentuan saat menunjukkan
+STNK saat berkendara di jalan raya?
+Berdasarkan Pasal 106 ayat (5), setiap
+pengendara wajib menunjukkan STNK asli
+saat dilakukan pemeriksaan dan belum bisa
+digantikan oleh dokumen lain.
+
+scan QR untuk melihat video
+
+Bagaimana ketentuan saat menunjukkan SIM
+saat berkendara di jalan raya?
+Berdasarkan Pasal 106 ayat (5), setiap
+pengendara wajib menunjukkan STNK asli
+saat dilakukan pemeriksaan dan belum bisa
+digantikan oleh dokumen lain.
+
+scan QR untuk melihat video
+
+104 Buku Panduan Latihan Ujian Teori Sim C
+
+﻿
+
+Buku Panduan Latihan Ujian Teori Sim C 105
+
+Kata Pengantar
+
+Daftar Pustaka
+Hodawya, H. 20 Lampu Indikator Mobil yang Wajib Diketahui
+agar Berkendara Nyaman. Lifepal.co.id, dapat diakses: https://
+lifepal.co.id/media/indikator-mobil/
+Peraturan Direktur Jenderal Perhubungan Darat Nomor
+: SK.7234/AJ.401/Drjd/2013 Tentang Petunjuk Teknis
+Perlengkapan Jalan
+Peraturan Direktur Jenderal Perhubungan Darat Nomor KP.106/
+AJ.501/DRJD/2019 tentang Petunjuk Teknis Marka Jalan
+Peraturan Pemerintah Republik Indonesia Nomor PP 55 Tahun
+2012 Tentang Kendaraan
+Peraturan Menteri Perhubungan Republik Indonesia Nomor PM
+13 Tahun 2014 Tentang Rambu Lalu Lintas
+Peraturan Menteri Perhubungan Republik Indonesia Nomor PM
+49 Tahun 2014 Tentang Alat Pemberi Isyarat Lalu Lintas
+Peraturan Menteri Perhubungan Republik Indonesia Nomor PM
+34 Tahun 2014 Marka Jalan
+Peraturan Menteri Perhubungan Republik Indonesia Nomor PM
+26 Tahun 2015 Tentang Standar Keselamatan Lalu Lintas Dan
+Angkutan Jalan
+Peraturan Menteri Perhubungan Republik Indonesia Nomor
+PM 67 Tahun 2018 tentang Perubahan Atas Peraturan Menteri
+Perhubungan Nomor 34 Tahun 2014 Tentang Marka Jalan
+VERSTAPPEN, J. F., WARNOCK, T. C. & VERKEER, V. R. 2006.
+Traffic Manual: Driving License B : Complete Theory for Driving
+License B, VERJO.
+
+106 Buku Panduan Latihan Ujian Teori Sim C
+
+Daftar Pustaka
+
+Buku Panduan Latihan Ujian Teori Sim C 107
+
+Tim Penyusun
+
+Tim Penyusun
+TRI JULIANTO DJATIUTOMO, S.I.K
+KOMISARIS BESAR POLISI
+• TRAFFIC SAFETY AND POLICE MANAGEMENT
+TRAINING PROGRAM, SWEDEN
+
+KRISTANTO YOGA DARMAWAN, S.I.K, M.Si.
+AJUN KOMISARIS BESAR POLISI
+• TRAINING OF DRIVERS INSTRUCTORS AND
+EXAMINERS PROGRAMME, SINGAPORE
+• TRAFFIC ENGINEERING AND CONTROLLING
+PROGRAMME, POLITIEACADEMIE NETHERLAND
+
+AGUNG NUGROHO, S.I.K, M.T.
+AJUN KOMISARIS BESAR POLISI
+• PHD IN INSTITUTE FOR TRANSPORT STUDIES,
+UNIVERSITY OF LEEDS, ENGLAND
+
+FAISAL ANDRI PRATOMO, S.H., S.I.K., M.M., M.Si.
+AJUN KOMISARIS BESAR POLISI
+• DRIVING LICENSE ISSUANCE PROGRAMME, SOUTH
+KOREA
+• DRIVING LICENSE ISSUANCE PROGRAMME, JAPAN
+
+108 Buku Panduan Latihan Ujian Teori Sim C
+
+Tim Penyusun
+
+FARHAN ARIF SUMAWIHARJA, S.TR.K, M.SI
+INSPEKTUR POLISI SATU
+• TRAFFIC ENGINEERING AND MANAGEMENT
+WORKSHOP, INSTITUTE OF TRANSPORT STUDIES,
+MONASH UNIVERSITY, AUSTRALIA
+
+ARVIANNO UNGGUL KUNTORO, S.Tr.K., M.Sc.
+INSPEKTUR POLISI DUA
+• URBAN TRANSPORT MSc, UNIVERSITY OF
+GLASGOW, SCOTLAND
+
+AYU DWI RAHMAWATI, S.Tr.K., M.Sc.
+INSPEKTUR POLISI DUA
+• TRANSPORT PLANNING MSc, UNIVERSITY OF
+LEEDS, ENGLAND
+
+DOTI SEKAR MEDINA, S.Tr.K., M.Sc.
+INSPEKTUR POLISI DUA
+• TRANSPORT PLANNING MSc, UNIVERSITY OF
+LEEDS, ENGLAND
+
+Buku Panduan Latihan Ujian Teori Sim C 109
+
+Tim Penyusun
+
+WISNU IMAM TYASHA. S.Tr.K., M.Sc.
+INSPEKTUR POLISI DUA
+• URBAN TRANSPORT MSc, UNIVERSITY OF
+GLASGOW, SCOTLAND
+
+GILANG KUSUMANINGRUM, S.I.K
+INSPEKTUR POLISI SATU
+•• AKADEMI KEPOLISIAN, 2015
+
+RIFTA DIMAS SULISTIYO, S.T.
+INSPEKTUR POLISI SATU
+• SEKOLAH INSPEKTUR POLISI SUMBER SARJANA, 2019
+
+ANDY K.R. GARNA, S.Kom
+KONSULTAN DITREGIDENT KORLANTAS POLRI
+• PRAKTISI TIK
+• AHLI TEKNOLOGI ARTIFICIAL INTELLIGENCE
+
+110 Buku Panduan Latihan Ujian Teori Sim C
+
+

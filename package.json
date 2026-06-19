@@ -1,0 +1,10 @@
+{
+  "name": "simulasi-ujian-sim-c",
+  "version": "1.0.0",
+  "description": "Simulasi Ujian Teori SIM C berdasarkan Buku Panduan Korlantas POLRI",
+  "scripts": {
+    "dev": "npx vite public",
+    "build": "npx vite build public",
+    "preview": "npx vite preview public"
+  }
+}

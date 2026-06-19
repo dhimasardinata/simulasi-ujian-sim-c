@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator Ujian Teori SIM C - Korlantas POLRI</title>
+    <meta name="description" content="Simulasi Ujian Teori SIM C online berdasarkan materi dan soal resmi buku panduan latihan Korlantas POLRI. Lengkap dengan pembahasan dan tracking progres belajar.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo-section">
+                <h1 id="app-logo-title" style="cursor: pointer;">SIM C <span>SIMULATOR</span></h1>
+                <p>Panduan Latihan Ujian Teori SIM C Korlantas POLRI</p>
+            </div>
+            <div class="nav-buttons">
+                <button id="btn-nav-home" class="btn btn-secondary">Beranda</button>
+                <button id="btn-nav-study" class="btn btn-secondary">Mode Belajar</button>
+                <button id="btn-nav-exam" class="btn btn-primary">Simulasi Ujian</button>
+            </div>
+        </header>
+
+        <!-- Main content viewports -->
+        <main>
+            <!-- 1. HOME VIEW -->
+            <div id="home-view" class="view active">
+                <div class="dashboard-grid">
+                    <!-- Hero card -->
+                    <div class="card hero-card">
+                        <h2>Kuasai 100% Materi<br>Ujian Teori SIM C</h2>
+                        <p>Persiapkan diri Anda dengan simulator interaktif yang mencakup seluruh 260 soal resmi dari Buku Panduan Korlantas POLRI terbaru. Berlatihlah di Mode Belajar dan uji kesiapan Anda di Mode Simulasi Ujian.</p>
+                        <div class="action-buttons">
+                            <button id="btn-hero-study" class="btn btn-primary hero-btn">Mulai Belajar</button>
+                            <button id="btn-hero-exam" class="btn btn-success hero-btn">Ikuti Simulasi Ujian</button>
+                        </div>
+                    </div>
+
+                    <!-- Progress & Stats Panel -->
+                    <div class="stats-container">
+                        <!-- Stat 1: Total progress -->
+                        <div class="card stat-card">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-info" style="flex-grow: 1;">
+                                <h4>Progres Belajar</h4>
+                                <p id="txt-stat-mastery">0% <span style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">(0 / 260)</span></p>
+                                <div class="progress-track">
+                                    <div id="bar-stat-mastery" class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stat 2: Last Exam Result -->
+                        <div class="card stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-info">
+                                <h4>Hasil Ujian Terakhir</h4>
+                                <p id="txt-stat-last-score">Belum Ujian</p>
+                                <p id="txt-stat-last-status" style="font-size: 0.9rem; margin-top: 0.25rem; font-weight: 500;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features breakdown -->
+                <div class="features-grid">
+                    <div class="card feature-item">
+                        <h3>⚠️ Persepsi Bahaya</h3>
+                        <p>100 Soal Analisis situasi berkendara. Melatih kepekaan mendeteksi potensi bahaya di jalan raya secara real-time.</p>
+                    </div>
+                    <div class="card feature-item">
+                        <h3>💡 Wawasan</h3>
+                        <p>80 Soal Pemahaman etika berkendara, tata tertib lalu lintas, keselamatan jalan, dan hak-hak pengguna jalan.</p>
+                    </div>
+                    <div class="card feature-item">
+                        <h3>🚦 Pengetahuan</h3>
+                        <p>80 Soal Arti rambu lalu lintas, marka jalan, alat pemberi isyarat lalu lintas (APILL), dan undang-undang lalu lintas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. STUDY VIEW -->
+            <div id="study-view" class="view">
+                <div class="study-layout">
+                    <!-- Left Sidebar Filters and Question browser -->
+                    <div class="card study-sidebar">
+                        <div class="filter-section">
+                            <h3>Kategori Soal</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-category="all">
+                                    Semua Kategori <span class="filter-badge" id="badge-count-all">260</span>
+                                </button>
+                                <button class="filter-btn" data-category="Persepsi Bahaya">
+                                    Persepsi Bahaya <span class="filter-badge" id="badge-count-pb">100</span>
+                                </button>
+                                <button class="filter-btn" data-category="Wawasan">
+                                    Wawasan <span class="filter-badge" id="badge-count-wawasan">80</span>
+                                </button>
+                                <button class="filter-btn" data-category="Pengetahuan">
+                                    Pengetahuan <span class="filter-badge" id="badge-count-pengetahuan">80</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h3>Modul Buku</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-module="all">Semua Modul</button>
+                                <button class="filter-btn" data-module="1">Modul 1</button>
+                                <button class="filter-btn" data-module="2">Modul 2</button>
+                                <button class="filter-btn" data-module="3">Modul 3</button>
+                                <button class="filter-btn" data-module="4">Modul 4</button>
+                            </div>
+                        </div>
+
+                        <div class="question-list-container" id="study-question-list">
+                            <!-- Populated dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Right Main Card Content -->
+                    <div class="card study-content">
+                        <div class="study-card">
+                            <div class="badge-row">
+                                <span id="study-badge-category" class="badge badge-pb">Persepsi Bahaya</span>
+                                <span id="study-badge-module" class="badge badge-module">Modul 1</span>
+                                <span id="study-badge-page" class="badge badge-module">Halaman 80</span>
+                            </div>
+
+                            <h2 id="study-question-title" class="study-question-text">
+                                Terdapat kendaraan parkir di sebelah kiri jalan.
+                            </h2>
+
+                            <div class="media-container" id="study-media-container">
+                                <img id="study-question-image" src="" alt="Ilustrasi Ujian">
+                            </div>
+
+                            <div class="answer-reveal-area">
+                                <button id="btn-reveal-answer" class="btn btn-secondary" style="width: 100%; padding: 1rem;">
+                                    Tampilkan Jawaban Resmi
+                                </button>
+                                <div class="answer-box" id="study-answer-box">
+                                    <div class="answer-title">Pembahasan Resmi Korlantas POLRI:</div>
+                                    <p id="study-answer-text" class="answer-text">
+                                        Pengendara motor harus mengurangi kecepatan untuk mengantisipasi...
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="study-actions">
+                                <div class="status-controls">
+                                    <button id="btn-mark-mastered" class="btn btn-success">Kuasai (Paham)</button>
+                                    <button id="btn-mark-review" class="btn btn-danger">Tandai Belum Paham</button>
+                                </div>
+                                <div class="nav-controls">
+                                    <button id="btn-study-prev" class="btn btn-secondary">◀ Sebelumnya</button>
+                                    <button id="btn-study-next" class="btn btn-secondary">Berikutnya ▶</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. EXAM VIEW -->
+            <div id="exam-view" class="view">
+                <div class="exam-layout">
+                    <!-- Main Quiz Area -->
+                    <div class="card exam-main">
+                        <div class="exam-header-row">
+                            <span id="exam-txt-progress" class="exam-progress-text">Soal 1 dari 30</span>
+                            <div class="badge-row">
+                                <span id="exam-badge-category" class="badge badge-pb">Persepsi Bahaya</span>
+                            </div>
+                            <span id="exam-txt-timer" class="exam-timer">⏱ 30:00</span>
+                        </div>
+
+                        <h2 id="exam-txt-question" class="study-question-text">
+                            Apa tindakan yang harus dilakukan oleh pengendara sepeda motor?
+                        </h2>
+
+                        <div class="media-container" id="exam-media-container">
+                            <img id="exam-question-image" src="" alt="Visual Ujian">
+                        </div>
+
+                        <!-- Multiple choice options list -->
+                        <div class="options-list" id="exam-options-list">
+                            <!-- Populated dynamically by JS -->
+                        </div>
+
+                        <div class="study-actions" style="margin-top: 1rem;">
+                            <button id="btn-exam-prev" class="btn btn-secondary">◀ Sebelumnya</button>
+                            <button id="btn-exam-finish" class="btn btn-danger">Selesai Ujian</button>
+                            <button id="btn-exam-next" class="btn btn-secondary">Berikutnya ▶</button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Grid Navigation Map -->
+                    <div class="card exam-sidebar">
+                        <div class="questions-grid-container">
+                            <h3>Peta Soal Ujian</h3>
+                            <div class="questions-grid" id="exam-grid-map">
+                                <!-- Populated dynamically by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. RESULT VIEW -->
+            <div id="result-view" class="view">
+                <div class="card result-card">
+                    <h2 class="result-status" id="txt-result-status">LULUS</h2>
+                    <div class="result-score-circle" id="circle-result-score">
+                        <span class="score-num" id="txt-result-score">25</span>
+                        <span class="score-total">dari 30 benar</span>
+                    </div>
+                    <p class="result-details-text" id="txt-result-details">
+                        Selamat! Anda telah lulus ujian simulasi teori SIM C dengan skor 83%. Standar kelulusan adalah minimal 70% (21 soal benar).
+                    </p>
+                    <div class="action-buttons">
+                        <button id="btn-result-study" class="btn btn-secondary hero-btn">Kembali Belajar</button>
+                        <button id="btn-result-retry" class="btn btn-primary hero-btn">Ulangi Ujian</button>
+                    </div>
+                </div>
+
+                <!-- Review Section -->
+                <div class="card review-section">
+                    <h2>Review Jawaban Ujian</h2>
+                    <div id="result-review-list" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <!-- Populated dynamically by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Confirm Dialog / Modals -->
+    <div class="modal-overlay" id="confirm-modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Selesai Ujian?</h3>
+            <p id="modal-desc">Apakah Anda yakin ingin menyelesaikan ujian sekarang? Jawaban Anda akan langsung dikalkulasikan dan dinilai.</p>
+            <div class="modal-actions">
+                <button id="btn-modal-cancel" class="btn btn-secondary">Batal</button>
+                <button id="btn-modal-confirm" class="btn btn-danger">Ya, Selesai</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

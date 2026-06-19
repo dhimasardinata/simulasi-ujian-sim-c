@@ -1,0 +1,1822 @@
+[
+  {
+    "module": 1,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan parkir di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat kendaraan parkir dengan kondisi pengemudi mobil masih didalam yang ditandai dengan hidupnya lampu belakang mobil. Pengendara motor harus mengurangi kecepatan untuk mengantisipasi terjadinya kecelakaan dengan mobil yang sedang parkir di sebelah kiri pengendara."
+  },
+  {
+    "module": 1,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat anak kecil yang akan mengambil bola di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat anak-anak yang sedang bermain bola di bahu jalan tersebut . Pengendara motor harus melakukan pengereman untuk mencegah terjadinya kecelakaan dengan anak-anak yang sedang bermain bola."
+  },
+  {
+    "module": 1,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan yang akan putar balik di depan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di jalan dalam kota. Di depan pengendara terdapat mobil yang akan berbalik arah. Pengendara motor harus melakukan pengereman untuk mencegah terjadinya tabrak belakang dengan mobil yang akan berbalik arah tersebut."
+  },
+  {
+    "module": 1,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Anda akan berbelok ke kiri.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di jalan dalam kota. Sementara pengendara akan berbelok ke kiri pada simpang tiga yang akan dilalui. Pengendara motor harus mengurangi kecepatan untuk mencegah terjadinya kecelakaan terutama dengan pejalan kaki yang akan menyeberang jalan."
+  },
+  {
+    "module": 1,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Anda mendekati kendaraan yang sedang mundur.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di jalan dalam kota. Di depan pengendara terdapat mobil yang akan mundur. Pengendara motor harus mengurangi kecepatan untuk mencegah terjadinya tabrak belakang dengan mobil yang akan mundur didepan pengendara."
+  },
+  {
+    "module": 1,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat polisi tidur di hadapan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di kawasan pertokoan. Di depan pengendara terdapat polisi tidur. Pengendara motor harus mengurangi kecepatan untuk mencegah terjadinya tabrak belakang dengan mobil yang akan mundur didepan pengendara."
+  },
+  {
+    "module": 1,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan parkir di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di wilayah perkotaan. Terdapat kendaraan pick-up parkir dengan kondisi pengemudi mobil masih didalam yang ditandai dengan hidupnya lampu belakang mobil. Pengendara motor harus mengurangi kecepatan untuk mengantisipasi terjadinya kecelakaan dengan mobil yang sedang parkir di sebelah kiri pengendara."
+  },
+  {
+    "module": 1,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat genangan air di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 20 km/jam di jalan dalam kota. Di depan pengendara terdapat genangan air yang cukup luas yang dapat mengganggu perjalanan pengendara. Pengendara motor harus mengurangi kecepatan untuk mencegah timbulnya percikan air yang akan mengganggu kenyamanan pengguna jalan lainnya."
+  },
+  {
+    "module": 1,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kemacetan lalu lintas di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di jalan dalam kota. Terdapat kemacetan lalu lintas di jalan yang akan dilewati oleh pengendara. Pengendara motor harus melakukan pengereman dan berhenti sampai kondisi memungkinkan untuk melanjutkan perjalanan kembali."
+  },
+  {
+    "module": 1,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Anda memasuki gang.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 20 km/jam pada kawasan pemukiman. Tidak ada kendaraan lain yang melintas di depan pengendara. Maka dari itu pengendara dapat melanjutkan perjalan dengan kecepatan stabil namun tetap harus memperhatikan kondisi lalu lintas di sekitar pengendara."
+  },
+  {
+    "module": 1,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu larangan di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 25 km/jam di jalan dalam kota. Pengendara tersebut melintas dari jalan pemukiman menuju jalan arteri dalam kota. Di depan pengendara terdapat rambu dilarang berhenti. Sehingga pengendara harus mengurangi kecepatan agar dapat memasuki jalan arteri dalam kota dengan aman."
+  },
+  {
+    "module": 1,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Anda berkendara di lajur 2 dan dalam jarak aman dengan kendaraan lain.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 40 km/jam di jalan dalam kota. Kondisi lalu lintas di depan pengendara terpantau lancar dengan jarak aman antar sesama pengendara. Maka dari itu pengendara dapat melanjutkan perjalan dengan kecepatan stabil namun tetap harus memperhatikan kondisi lalu lintas di sekitar pengendara."
+  },
+  {
+    "module": 1,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat jalan berlubang di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 20 km/jam di jalan dalam kota. Di depan pengendara terdapat lubang dengan genangan air yang cukup luas yang dapat mengganggu perjalanan pengendara. Pengendara motor harus mengurangi kecepatan untuk mencegah timbulnya percikan air yang akan mengganggu kenyamanan pengguna jalan lain dan mengurangi kenyamanan pengendara itu sendiri."
+  },
+  {
+    "module": 1,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pesepeda yang akan menyeberang jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di jalan dalam kota. Pengendara akan berbelok ke kiri pada simpang empat yang akan dilalui. Kondisi di depan pengendara menunjukkan lampu APILL sedang menyala merah dan terdapat pejalan kaki yang sedang menyeberang jalan. Pengendara motor harus melakukan pengereman untuk mencegah terjadinya kecelakaan terutama dengan pejalan kaki yang akan menyeberang jalan."
+  },
+  {
+    "module": 1,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kabut tebal di hadapan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 25 km/jam di jalan dalam kota. Di depan pengendara terdapat kabut yang cukup tebal yang dapat mengganggu pengelihatan pengendara terhadap arus lalu lintas di depan. Maka dari itu pengendara motor harus mengurangi kecepatan untuk mencegah tabrakan dengan kendaraan lain yang sedang melaju di kawasan berkabut tersebut."
+  },
+  {
+    "module": 1,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat palang kereta api di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di jalan dalam kota. Di depan pengendara terdapat kereta api yang akan melintas yang ditandai dengan telah ditutupnya palang pintu kereta api. Pengendara motor harus melakukan pengereman dan berhenti sampai seluruh gerbong kereta selesai melintas dan diperbolehkan melanjutkan perjalanan saat kondisi sudah dianggap aman untuk melintasi rel kereta api."
+  },
+  {
+    "module": 1,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pasar tumpah di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 20 km/jam di jalan dalam kota. Di depan pengendara terdapat masyarakat yang sedang beraktivitas di pasar tumpah pada sisi kanan dan kiri bahu jalan. Pengendara motor harus mengurangi kecepatan dan berkendara dengan hati hati untuk mengantisipasi terserempetnya masyarakat yang sedang beraktivitas dengan pengendara yang sedang melintas."
+  },
+  {
+    "module": 1,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu peringatan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 20 km/jam. Didepan pengendara terdapat rambu yang memperingatkan pengendara agar berhati-hati akan adanya potensi bahaya di persimpangan empat jalan. Rambu ini menginformasikan bila suatu persimpangan arus di jalan utama (mayor) bersimpangan dengan jalan kecil (minor), maka kendaraan yang berada di jalan utama mendapat hak terlebih dahulu. Maka pengendara harus mengurangi kecepatan untuk mengantisipasi terjadinya kecelakaan di simpang empat tersebut."
+  },
+  {
+    "module": 1,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Anda akan berbelok ke kiri.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam. Pengendara akan berbelok ke kiri pada simpang tiga terdekat. Terdapat cermin cembung jalan yang menunjukkan bahwa ada mobil yang akan melintas searah dengan pengendara motor. Maka pengendara harus melakukan pengereman untuk mengantisipasi terjadinya kecelakaan di simpang empat tersebut."
+  },
+  {
+    "module": 1,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat asap tebal di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di jalan dalam kota. Di depan pengendara terdapat asap hasil pembakaran limbah masyarakat yang cukup tebal yang dapat mengganggu pengelihatan pengendara terhadap arus lalu lintas di depan. Maka dari itu pengendara motor harus mengurangi kecepatan untuk mencegah tabrakan dengan kendaraan lain yang sedang melaju di kawasan tersebut."
+  },
+  {
+    "module": 1,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat angkutan kota yang berhenti di depan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di jalan dalam kota. Di depan pengendara terdapat angkutan kota yang sedang melakukan penjemputan penumpang. Pengendara motor harus melakukan pengereman untuk menghindari insiden tabrak belakang dengan angkutan kota tersebut."
+  },
+  {
+    "module": 1,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat beberapa pesepeda yang akan memasuki lajur Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 50 km/jam di jalan dalam kota. Pengendara akan berbelok ke kanan pada persimpangan lampu APILL terdekat dengan kondisi di depan pengendara terdapat bebeapa pesepeda yang memasuki lajur pengendara motor. Sehingga pengendara motor harus melakukan pengereman untuk memberi jarak dengan pesepeda yang berada di depan pengendara untuk agar kedua pengguna jalan dapat terhindar dari kecelakaan lalu lintas."
+  },
+  {
+    "module": 1,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kegiatan bongkar muat barang di sisi kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 30 km/jam di jalan dalam kota. Kondisi di depan pengendara menggambarkan seseorang yang sedang melakukan kegiatan bongkar muat barang yang akan menyeberang dan terdapat mobil yang akan melintas dari arah berlawanan pengendara motor. Sehingga, pengendara motor harus melakukan pengereman dan berhenti sejenak untuk memberi kesempatan orang tersebut selesai menyeberang dan mobil telah melintas dari arah yang berlawanan dari pengendara ."
+  },
+  {
+    "module": 1,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pesepeda yang akan menyeberang jalan.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 40 km/jam di jalan dalam kota. Di depan pengendara terdapat pesepeda yang sedang menyeberang jalan. Pengendara motor harus mengurangi kecepatan agar pengendara dapat memberikan kesempatan pada pesepeda untuk menyeberangi jalan raya tersebut."
+  },
+  {
+    "module": 1,
+    "page": 92,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu peringatan di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai sepeda motor dengan kecepatan 80 km/jam di jalan dalam kota. Di depan pengendara terdapat arus lalu lintas kendaraan yang normal dengan model jalan raya yang terbagi menjadi dua jalur. Pengendara motor harus mengurangi kecepatan karena pengendara telah melebihi batas maksimum kecepatan melintas pada wilayah jalan dalam kota."
+  },
+  {
+    "module": 1,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Kegunaan garis stop pada Video dibawah ini adalah?",
+    "explanation": "Pengendara sepeda motor mendekati marka garis utuh atau garis berhenti, maka dari itu pengendara tersebut segera mengurangi kecepatan dan berhenti sebelum garis tersebut. kegunaan dari marka garis utuh atau garis berhenti adalah sebagai tanda batas berhenti kendaraan bermotor saat APILL menunjukan lampu merah."
+  },
+  {
+    "module": 1,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Dalam hal terjadi kondisi kemacetan lalu lintas yang tidak memungkinkan gerak kendaraan dipersimpangan empat fungsi mana yang harus diutamakan dari pada alat pemberi isyarat alat lalu lintas yang bersifat perintah atau larangan?",
+    "explanation": "Pada simpang empat jalan raya yang dianggap padat lalu lintas, kerap ditemukan marka jalan berbentuk segi empat dengan warna garis kuning yang mencolok. Marka tersebut bernama yellow box junction. Yellow Box Junction bertujuan mencegah penumpukan kendaraan di persimpangan yang diakibatkan pengguna jalan yang tidak mau mengalah, jika masih terdapat kendaraan dari jalur lain berada dalam Yellow Box Junction, kendaraan lain dilarang melintasi marka kotak kuning tersebut, meski jalurnya sudah mendapati lampu hijau. Secara hukum, Yellow Box Junction menjadi marka prioritas yang fungsinya paling diutamakan dibanding alat pemberi isyarat lalu lintas dan rambu lainnya. Hal ini tertulis dalam Undang-Undang Nomor 22 Tahun 2009 tentang Lalu Lintas dan Angkutan Jalan (LLAJ), tepatnya pada Pasal 103 ayat 3."
+  },
+  {
+    "module": 1,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Manfaat penggunaan helm dengan Benar adalah?",
+    "explanation": "Pengendara sepeda motor wajib menggunakan helm dengan baik dan benar dengan tujuan untuk melindungi kepala saat terjadi benturan keras."
+  },
+  {
+    "module": 1,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang harus menunggu dan memberi kesempatan menyeberang dahulu kepada pejalan kaki?",
+    "explanation": "Pejalan kaki berhak mendapatkan prioritas pada saat menyeberang jalan di tempat penyeberangan, sehingga kendaraan bermotor harus memberikan kesempatan untuk pejalan kaki menyeberang."
+  },
+  {
+    "module": 1,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Langkah - langkah Pengendara sepeda motor untuk lebih terlihat oleh pengguna jalan lain saat berhenti atau saat akan memasuki persimpangan adalah?",
+    "explanation": "Demi keselamatan dalam berkendara, langkah langkah yang harus dilakukan pengendara sepeda motor saat berhenti atau saat akan memasuki persimpangan adalah dengan memposisikan diri, sehingga pengguna jalan lain dapat melihat pengendara dengan jelas dari jarak tertentu."
+  },
+  {
+    "module": 1,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Seperti terlihat pada video ini posisi berhenti sepeda motor saat berada di persimpangan atau traffic light yang paling Benar adalah nomor 2?",
+    "explanation": "Salah satu tata cara berkendara untuk pengendara sepeda motor ketika berada ataupun melewati APILL (Alat Pemberi Isyarat Lalu Lintas) di persimpangan jalan adalah dengan memposisikan kendaraan di jalur yang tepat dan tidak menghalangi pengendara lain. Beberapa persimpangan berlaku untuk pengendara kendaraan bermotor berbelok kiri langsung."
+  },
+  {
+    "module": 1,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Apa yang harus dilakukan oleh pengendara sepeda motor bila mendekati alur penyebrangan pejalan kaki atau zebra cross?",
+    "explanation": "Pejalan kaki berhak mendapatkan prioritas pada saat menyeberang jalan di tempat penyeberangan atau zebra cross, sehingga kendaraan bermotor harus mengurangi kecepatannya dan memberikan kesempatan untuk pejalan kaki menyeberang."
+  },
+  {
+    "module": 1,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Kewajiban pengendara sepeda motor di jalan antara lain?",
+    "explanation": "Demi keselamatan dalam berkendara, pengendara sepeda motor wajib untuk menyalakan lampu utama pada siang dan malam hari. Hal ini bertujuan untuk memberikan penyinaran yang ideal terhadap jalan bagi pengendara sepeda motor pada malam hari dan untuk mempermudah pengguna jalan lain untuk melihat keberadaan pengendara sepeda motor pada siang hari."
+  },
+  {
+    "module": 1,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Faktor apa yang menentukan jarak yang harus Anda pelihara antara kendaraan Anda dan kendaraan di depan Anda?",
+    "explanation": "Untuk mengurangi peluang kecelakaan dalam berkendara, salah satu faktor yang mempengaruhi hal tersebut adalah menentukan jarak aman antar pengguna jalan lainnya. Jarak aman dalam berkendara dapat ditentukan dengan kecepatan kendaraan dan jarak berhenti apabila di rem."
+  },
+  {
+    "module": 1,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Apa yang harus dilakukan oleh pengendara sepeda motor nomor 3?",
+    "explanation": "Untuk mengurangi tingkat kemacetan di persimpangan, ada beberapa aturan yang harus di patuhi, salah satunya adalah dengan memberikan hak utama kepada Kendaraan yang datang dari arah depan dan/atau dari arah cabang persimpangan yang lain jika hal itu dinyatakan dengan rambu lalu lintas atau marka jalan."
+  },
+  {
+    "module": 1,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang harus menunggu?",
+    "explanation": "Untuk mengurangi tingkat kemacetan di persimpangan, ada beberapa aturan yang harus di patuhi, salah satunya adalah dengan memberikan hak utama kepada Kendaraan yang datang dari arah depan dan/atau dari arah cabang persimpangan yang lain jika hal itu dinyatakan dengan rambu lalu lintas atau marka jalan."
+  },
+  {
+    "module": 1,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Pengaturan yang dilakukan petugas Polisi lalu lintas di bawah ini berarti?",
+    "explanation": "Gerakan pengaturan yang dilakukan petugas polisi lalu lintas di samping artinya adalah lalu lintas dari arah depan dan belakang petugas berhenti."
+  },
+  {
+    "module": 1,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Penggunaan handphone atau hp seperti video dibawah ini tidak diperkenankan karena?",
+    "explanation": "Menggunakan telepon seluler dilarang saat berkendara karena dapat mengganggu konsentrasi."
+  },
+  {
+    "module": 1,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Teknik pengereman sepeda motor yang baik dan efektif pada kecepatan tinggi adalah?",
+    "explanation": "Teknik pengereman sepeda motor yang baik dan efektif pada kecepatan tinggi adalah dengan teknik pengereman pumped atau pompa, yaitu dengan cara pedal rem diinjak, dilepas dan di injak lagi secara cepat dengan posisi badan condong ke depan."
+  },
+  {
+    "module": 1,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Pada jalan yang terus menerus menurun, pemakaian rem yang terlalu lama mengakibatkan?",
+    "explanation": "Pada jalan yang terus menerus menurun, pemakaian rem yang terlalu lama dapat mengakibatkan kampas rem akan panas dan menyebabkan rem tidak bekerja dengan sempurna."
+  },
+  {
+    "module": 1,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Lampu pengatur lalu lintas menyala merah. Pengemudi kendaraan Wajib?",
+    "explanation": "APIL berwarna merah menandakan bahwa setiap pengendara wajib berhenti sebelum garis stop."
+  },
+  {
+    "module": 1,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Setelah SIM habis masa berlakunya, maka agar jangan sampai melanggar ketentuan, Anda harus melakukan?",
+    "explanation": "Ketika masa berlaku SIM pengendara habis, maka pengendara harus mengajukan permohonan penerbitan SIM baru ke Satpas."
+  },
+  {
+    "module": 1,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Apa yang harus dilakukan oleh pengendara sepeda motor No.3?",
+    "explanation": "Untuk mengurangi tingkat kemacetan di persimpangan, ada beberapa aturan yang harus di patuhi, salah satunya adalah dengan memberikan hak utama kepada Kendaraan yang datang dari arah depan dan/atau dari arah cabang persimpangan yang lain jika hal itu dinyatakan dengan rambu lalu lintas atau marka jalan."
+  },
+  {
+    "module": 1,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang diperintahkan untuk berhenti atas isyarat gerakan tangan yang dilakukan oleh Polisi lalu lintas seperti video di bawah ini?",
+    "explanation": "Gerakan pengaturan lalu lintas di samping berarti menghentikan arus dari segala arah, jadi kendaraan nomor 1, 2, dan 3 harus berhenti."
+  },
+  {
+    "module": 1,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Kewajiban pengendara sepeda motor di jalan antara lain?",
+    "explanation": "Demi keselamatan dalam berkendara, pengendara sepeda motor wajib untuk menyalakan lampu utama pada siang dan malam hari. Hal ini bertujuan untuk memberikan penyinaran yang ideal terhadap jalan bagi pengendara sepeda motor pada malam hari dan untuk mempermudah pengguna jalan lain untuk melihat keberadaan pengendara sepeda motor pada siang hari."
+  },
+  {
+    "module": 1,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan bagi pengendara untuk parkir di sekitar rambu tersebut."
+  },
+  {
+    "module": 1,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu seperti video di bawah ini?",
+    "explanation": "Rambu di samping merupakan rambu peringatan bahwa akan ada jalan menyempit."
+  },
+  {
+    "module": 1,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Pada video rambu di bawah ini rambu mana yang menyatakan prioritas?",
+    "explanation": "Gambar 2 merupakan rambu yang menyatakan prioritas."
+  },
+  {
+    "module": 1,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa akibat yang mungkin terjadi bila tidak memperhatikan rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu peringatan bahwa kendaraan mungkin patah sumbu, pegas atau muatan rusak."
+  },
+  {
+    "module": 1,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu akhir larangan berkendara melebihi batas kecepatan maksimum 40 km/jam."
+  },
+  {
+    "module": 1,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa yang harus anda lakukan jika melihat rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan bagi pengendara untuk mengemudi melebihi batas kecepatan maksimum 60 km/jam."
+  },
+  {
+    "module": 1,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Perbuatan apa yang dilarang oleh rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan bagi pengendara untuk berhenti di sekitar rambu tersebut."
+  },
+  {
+    "module": 1,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan bagi pengendara untuk berputar arah."
+  },
+  {
+    "module": 1,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu yang mengharuskan pengendara untuk berhenti."
+  },
+  {
+    "module": 1,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Bahaya apa yang dinyatakan rambu ini sewaktu musim hujan?",
+    "explanation": "Rambu di samping merupakan rambu peringatan bahaya tergelincir karena jalan licin."
+  },
+  {
+    "module": 1,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Video rambu mana di bawah ini yang menunjukan prioritas atas lalu lintas dari arah depan?",
+    "explanation": "Gambar 2 merupakan rambu yang menunjukkan prioritas atas lalu lintas dari arah depan."
+  },
+  {
+    "module": 1,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan untuk mendahului kendaraan di depan."
+  },
+  {
+    "module": 1,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apa arti Rambu seperti video di bawah ini?",
+    "explanation": "Rambu di samping merupakan rambu peringatan bahwa akan ada persimpangan 4 (empat)."
+  },
+  {
+    "module": 1,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Untuk mengendarai sepeda motor besar diatas 500 cc pengendara wajib memiliki SIM?",
+    "explanation": "Untuk mengendarai sepeda motor besar diatas 500 cc pengendara wajib memiliki SIM C-II."
+  },
+  {
+    "module": 1,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan belok kanan."
+  },
+  {
+    "module": 1,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu di bawah ini?",
+    "explanation": "Rambu di samping merupakan rambu perintah untuk pengendara mematuhi batas kecepatan yang diijinkan minimal 30 km/jam."
+  },
+  {
+    "module": 1,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan masuk bagi semua kendaraan bermotor roda dua."
+  },
+  {
+    "module": 1,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu peringatan bahwa akan ada tikungan tajam ke kanan."
+  },
+  {
+    "module": 1,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu di samping merupakan rambu petunjuk untuk pengendara wajib berjalan di sebelah kiri rambu ini."
+  },
+  {
+    "module": 1,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu di bawah ini?",
+    "explanation": "Rambu di samping merupakan rambu larangan masuk bagi semua kendaraan bermotor."
+  },
+  {
+    "module": 2,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan yang parkir di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam di wilayah pemukiman. Terdapat kendaraan yang parkir di sisi kiri jalan. Pengendara dapat mempertahankan kecepatan karena motor melaju dengan kecepatan yang rendah dan kondisi lalu lintas yang tidak terlalu ramai."
+  },
+  {
+    "module": 2,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat hewan peliharaan di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat hewan peliharaan di depan kendaraan. Pengendara harus melakukan pengereman dan menghindar agar tidak menabrak hewan tersebut."
+  },
+  {
+    "module": 2,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan lain yang akan memasuki jalur Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat kendaraan mobil yang memasuki lajur. Pengendara dapat mempertahankan kecepatan karena berada dalam kecepatan dan jarak yang aman dengan pengendara lainnya."
+  },
+  {
+    "module": 2,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kerumunan orang di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/jam di wilayah pemukiman. Terdapat pedagang gerobak dan kerumunan di sisi kiri jalan. Pengendara harus mengurangi kecepatan agar dapat menjaga jarak aman dengan kerumunan."
+  },
+  {
+    "module": 2,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat truk barang yang parkir di sisi kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah pemukiman. Terdapat truk barang yang parkir di sisi kiri jalan. Pengendara harus melakukan pengereman karena kendaraan berada terlalu dekat dan melaju melebihi batas kecepatan."
+  },
+  {
+    "module": 2,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pesepeda di jalur anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/ jam di wilayah pemukiman. Terdapat pesepeda di lajur yang sama dan lalu lintas ramai. Pengendara harus mengurangi kecepatan untuk menjaga keamanan dan keselamatan bersama."
+  },
+  {
+    "module": 2,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat perbaikan jalan di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam di wilayah pemukiman. Terdapat perbaikan jalan di depan kendaraan. Pengendara harus melakukan pengereman untuk mengantisipasi sisa material di sekitar jalan dan menjaga kendali pada motor."
+  },
+  {
+    "module": 2,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Ketika anda akan berbelok ke kanan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat lampu lalu lintas dan pengendara hendak berbelok ke kanan. Pengendara harus melakukan pengereman untuk mengantisipasi kendaraan yang datang dari arah lain sebelum berbelok."
+  },
+  {
+    "module": 2,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan lain yang akan memasuki jalur Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat kendaraan lain yang memasuki lajur. Pengendara harus mengurangi kecepatan untuk menjaga jarak aman."
+  },
+  {
+    "module": 2,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan yang parkir di sebelah kiri dan kanan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/jam di wilayah pemukiman. Terdapat kendaraan yang parkir di sebelah kiri dan kanan jalan serta lalu lintas yang padat. Pengendara motor harus melakukan pengereman karena jarak cukup dekat dan tidak ada ruang untuk mendahului kendaraan di depan."
+  },
+  {
+    "module": 2,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pedagang keliling di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/ jam di wilayah pemukiman. Terdapat pedagang keliling di sisi kiri jalan. Pengendara harus mengurangi kecepatan untuk mengantisipasi keberadaan pedagang keliling yang menggunakan lajur yang sama."
+  },
+  {
+    "module": 2,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/jam di wilayah pemukiman. Terdapat rambu bundaran di depan kendaraan. Pengendara harus melakukan pengereman karena melaju dengan kecepatan yang tinggi dan berada terlalu dekat dengan kendaraan lain yang akan melewati bundaran."
+  },
+  {
+    "module": 2,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat truk yang sedang melakukan kegiatan bongkar muat barang.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat truk yang melakukan bongkar muat barang. Pengendara harus melakukan pengereman untuk menjaga jarak aman dan ruang sebelum mendahului truk tersebut."
+  },
+  {
+    "module": 2,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan parkir di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah pemukiman. Terdapat kendaraan yang parkir di sisi kiri jalan. Pengendara harus mengurangi kecepatan untuk mengantisipasi kemungkinan pengendara yang keluar dari mobil yang sedang terparkir."
+  },
+  {
+    "module": 2,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Anda mendekati lampu lalu lintas.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat lampu lalu lintas yang menyala kuning. Pengendara harus melakukan pengereman untuk mengantisipasi lampu menyala merah dan berhenti sebelum marka garis."
+  },
+  {
+    "module": 2,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat asap tebal di hadapan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/ jam di wilayah pemukiman. Terdapat asap tebal di depan kendaraan. Pengendara harus mengurangi kecepatan untuk mengantisipasi keterbatasan jarak pandang saat melewati jalan yang ditutupi asap tebal."
+  },
+  {
+    "module": 2,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan parkir di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah pemukiman. Terdapat kendaraan parkir di sisi kiri jalan dan pengendara motor yang akan memasuki lajur. Pengendara harus mengurangi kecepatan untuk mengantisipasi pengendara yang turun dari mobil dan keberadaan motor yang akan berbelok."
+  },
+  {
+    "module": 2,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Anda mendekati zona selamat sekolah.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat zona selamat sekolah. Pengendara harus melakukan pengereman untuk memberikan kesempatan kepada anak sekolah yang menyeberang jalan."
+  },
+  {
+    "module": 2,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu peringatan di depan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat rambu peringatan yang menyatakan jalan berbelok dan menurun. Pengendara harus mengurangi kecepatan sebelum mendekati rambu tersebut."
+  },
+  {
+    "module": 2,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat truk pengangkut sampah di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah pemukiman. Terdapat truk pengangkut sampah di sisi kiri jalan. Pengendara harus mengurangi kecepatan untuk mengantisipasi truk yang akan memasuki lajur."
+  },
+  {
+    "module": 2,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Anda akan berbelok ke kiri.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah perkotaan. Kendaraan akan berbelok ke kiri. Pengendara harus melakukan pengereman untuk mengantisipasi datangnya kendaraan dari segala arah sebelum berbelok."
+  },
+  {
+    "module": 2,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kelompok pesepeda di sebelah kiri kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat kelompok pesepeda pada lajur sepeda. Pengendara tidak harus melakukan apapun karena berada pada lajur masing-masing."
+  },
+  {
+    "module": 2,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu peringatan di sebelah kiri kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat rambu peringatan yang menyatakan adanya zebracross atau marka garis penyeberangan pejalan kaki. Pengendara harus melakukan pengereman untuk memberikan kesempatan kepada pejalan kaki yang akan menyeberang jalan."
+  },
+  {
+    "module": 2,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kerumunan orang di sebelah kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah pemukiman. Terdapat pedagang keliling di sisi kiri jalan. Pengendara harus mengurangi kecepatan untuk mengantisipasi keberadaan pedagang keliling dan kerumunan yang sedang berkumpul."
+  },
+  {
+    "module": 2,
+    "page": 92,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu larangan di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah pemukiman. Terdapat rambu yang menyatakan batas maksimum dan speed bumps. Pengendara harus mengurangi kecepatan karena telah melebihi kecepatan maksimum dan akan melewati speed bumps."
+  },
+  {
+    "module": 2,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Apa arti isyarat pengaturan tangan yang dilakukan polisi?",
+    "explanation": "Isyarat pengaturan tangan yang dilakukan polisi lalu lintas pada video berarti kendaraan No.2 dan No.3 berhenti."
+  },
+  {
+    "module": 2,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Pelanggaran yang bisa ditindak polisi lalu lintas adalah pelanggaran berpotensi kecelakaan, kemacetan dan kelengkapan administrasi Benar atau Salahkah pernyataan tersebut?",
+    "explanation": "Pelanggaran yang bisa ditindak polisi lalu lintas adalah pelanggaran yang berpotensi terhadap kecelakaan dan kemacetan serta kurang nya kelengkapan administrasi pengendara."
+  },
+  {
+    "module": 2,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Bagaimana aturan yang Benar bagi pengendara sepeda motor?",
+    "explanation": "Pengendara sepeda motor hanya boleh mengangkut penumpang tidak lebih dari 1 orang."
+  },
+  {
+    "module": 2,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Kendaraan yang dibolehkan berada dilajur sebelah kanan kecuali?",
+    "explanation": "Kendaraan yang dibolehkan berada dilajur sebelah kanan adalah kendaraan yang akan berbelok kekanan, memutar arah dan kendaraan yang akan mendahului kendaraan lain."
+  },
+  {
+    "module": 2,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Pengendara motor yang sedang melaju dengan cepat disaat cuaca mendung seperti akan turun hujan ,kemudian hujan pun turun dengan cukup deras pengendara motor tetap melanjutkan perjalanan walaupun dengan keadaan hujan deras dan mengurangi kecepatan kendaraannya, Benarkah pengemudi sepeda motor tersebut?",
+    "explanation": "Pengendara sepeda motor harus mengurangi kecepatan nya pada saat situasi hujan."
+  },
+  {
+    "module": 2,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Untuk mengendarai sepeda motor besar diatas 500 cc pengendara wajib memiliki SIM?",
+    "explanation": "Untuk mengendarai sepeda motor besar diatas 500 cc pengendara wajib memiliki SIM C-II."
+  },
+  {
+    "module": 2,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Jika kendaraan akan memasuki jalur utama ,sebaiknya kurangi kecepatan perhatikan arus yang melaju disamping kanan dan juga?",
+    "explanation": "Jika kendaraan akan memasuki jalur utama ,sebaiknya kurangi kecepatan perhatikan arus yang melaju disamping kanan, cek Blind spot dan upayakan kendaraan melambung jangan memotong lajur secara tiba tiba."
+  },
+  {
+    "module": 2,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Pada waktu lampu pengatur lalu lintas berganti menjadi hijau, seorang penyebrang jalan masih berada di atas “zebra cross”, maka yang mendapat kesempatan berjalan terlebih dahulu adalah?",
+    "explanation": "Pada waktu lampu pengatur lalu lintas berganti menjadi hijau, seorang penyebrang jalan masih berada di atas “zebra cross”, maka yang mendapat kesempatan berjalan terlebih dahulu adalah pejalan kaki yang masih berada di atas zebra cross."
+  },
+  {
+    "module": 2,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Apa yang harus dilakukan pengendara tersebut?",
+    "explanation": "Pada situasi di video, pengendara harus mengurangi kecepatan dengan melepas gas dan melakukan pengereman secara perlahan."
+  },
+  {
+    "module": 2,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Teknik pengereman sepeda motor yang baik dan efektif pada kecepatan tinggi adalah?",
+    "explanation": "Teknik pengereman sepeda motor yang baik dan efektif pada kecepatan tinggi adalah Pengereman teknik Rem pumped (pompa) dengan cara pedal rem diinjak, dilepas dan di injak lagi secara cepat dengan posisi badan condong ke depan."
+  },
+  {
+    "module": 2,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Sebaiknya pengendara motor menggunakan pakaian yang berwarna?",
+    "explanation": "Sebaiknya pengendara motor menggunakan pakaian yang berwana terang agar keberadaanya dapat di mudah untuk di lihat oleh pengendara lain."
+  },
+  {
+    "module": 2,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Manakah pernyataan dibawah ini yang Benar dari Kasus kecelakaan lalu lintas dengan kerugiaan materil?",
+    "explanation": "Kasus kecelakaan lalu lintas dengan kerugiaan materil dapat diselesaikan secara damai di antara para pihak yang terlibat tanpa melalui proses peradilan."
+  },
+  {
+    "module": 2,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Saat mengemudi ditikungan apa yang harus dilakukan pengemudi tersebut?",
+    "explanation": "Saat mengemudi ditikungan yang harus dilakukan pengemudi adalah mengurangi kecepatan."
+  },
+  {
+    "module": 2,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang harus menunggu?",
+    "explanation": "Kendaraan yang harus menunggu pada situasi di video adalah kendaraan No. 2."
+  },
+  {
+    "module": 2,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Anda sebagai pengemudi ojek online dan tidak paham dengan daerah yang anda tuju, apa yang harus anda lakukan?",
+    "explanation": "Sebagai pengendara ojek online dan tidak paham dengan daerah yang dituju , yang harus pengendara lakukan adalah berhenti di kiri dan buka hp untuk melihat peta."
+  },
+  {
+    "module": 2,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Apa yang dilakukan oleh pesepeda dan apa yang pengemudi lakukan saat anda berkendara di bundaran?",
+    "explanation": "Tata cara berkendara yang benar di bundaran adalah pesepeda wajib berjalan dijalur sepeda dan pengendara memberikan prioritas ruang gerak kepada pesepeda."
+  },
+  {
+    "module": 2,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Cara pemakaian rem yang baik pada umumnya adalah?",
+    "explanation": "Cara pemakaian rem yang baik pada umumnya adalah menginjak pedal rem dengan halus beberapa kali sebelum berhenti betul agar Kendaraan yang ada di belakang mengerti bahwa kita sedang mengerem."
+  },
+  {
+    "module": 2,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Seperti terlihat pada video ini posisi berhenti sepeda motor yang akan berbelok ke kanan, manakah yang paling Benar?",
+    "explanation": "Pada situasi di video, posisi berhenti sepeda motor yang akan berbelok ke kanan, yang paling benar adalah posisi 1."
+  },
+  {
+    "module": 2,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Untuk mendapatkan sim setiap orang harus memenuhi Persyaratan Usia, Administratif, Kesehatan dan Lulus Ujian. Adapun Syarat usia Pemohon SIM C adalah?",
+    "explanation": "Untuk mendapatkan sim setiap orang harus memenuhi Persyaratan Usia, Administratif, Kesehatan dan Lulus Ujian. Adapun Syarat usia Pemohon SIM C adalah telah berusia 17 tahun."
+  },
+  {
+    "module": 2,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Tanda nomor kendaraan bermotor (TNKB) dianggap sah apabila?",
+    "explanation": "Tanda nomor kendaraan bermotor (TNKB) dianggap sah apabila diperoleh dari Polisi lalu lintas yang berhak mengeluarkan STNK dan TNKB."
+  },
+  {
+    "module": 2,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu disamping merupakan rambu larangan kendaraan untuk berbalik arah. Sehingga pengendara tidak diperbolehkan berbalik arah pada U-turn yang terdapat rambu tersebut."
+  },
+  {
+    "module": 2,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Sebagai pemilik SIM C anda dapat mengemudikan?",
+    "explanation": "Berdasarkan Peraturan Kepolisian Nomor 5 tahun 2021 tentang Penerbitan dan Penandaan SIM, penggunaan SIM C ditujukan untuk mengemudikan kendaraan bermotor jenis sepeda motor dengan dengan kapasitas silinder mesin sampai dengan 250 cc."
+  },
+  {
+    "module": 2,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Surat ijin mengemudi C berlaku untuk mengemudikan?",
+    "explanation": "Berdasarkan Peraturan Kepolisian Nomor 5 tahun 2021 tentang Penerbitan dan Penandaan SIM, penggunaan SIM C ditujukan untuk mengemudikan kendaraan bermotor jenis sepeda motor dengan dengan kapasitas silinder mesin sampai dengan 250 cc."
+  },
+  {
+    "module": 2,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Pada video rambu dibawah ini rambu mana yang menyatakan prioritas?",
+    "explanation": "Rambu 1 dan rambu 2 merupakan rambu petunjuk, sedangkan untuk rambu 3 adalah rambu peringatan dimana kendaraan yang berada di jalan utama wajib diberikan prioritas di jalan."
+  },
+  {
+    "module": 2,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu dibawah ini?",
+    "explanation": "Rambu tersebut adalah rambu peringatan bahwa didepan terdapat persimpangan bundaran dimana kendaraan yang sedang berputar wajib diberikan prioritas."
+  },
+  {
+    "module": 2,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu tersebut adalah rambu larangan dimana sepeda motor dilarang masuk. Sehingga kendaraan bermotor jenis sepeda motor dilarang masuk di jalan yang terdapat rambu tersebut."
+  },
+  {
+    "module": 2,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Bahaya apa yang dinyatakan rambu ini sewaktu musim hujan?",
+    "explanation": "Rambu tersebut adalah rambu peringatan bahwa jalanan licin saat musim hujan. Sehingga kendaraan rawan tergelincir karena jalan licin."
+  },
+  {
+    "module": 2,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu tersebut adalah rambu larangan untuk mendahului kendaraan di depan. Sehingga, dimulai dari rambu tersebut, kendaraan dibelakang dilarang untuk mendahului kendaraan di depan."
+  },
+  {
+    "module": 2,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu ini?",
+    "explanation": "Rambu tersebut adalah rambu isyarat berakhirnya larangan. Sehingga dimulai dari rambu tersebut adalah batas akhir kecepatan maksimum 40 km/jam."
+  },
+  {
+    "module": 2,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu dibawah ini?",
+    "explanation": "Rambu tersebut adalah rambu larangan dimana mobil sedan dan sepeda motor dilarang masuk kedalam jalan tersebut."
+  },
+  {
+    "module": 2,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu seperti video dibawah ini?",
+    "explanation": "Rambu tersebut adalah rambu petunjuk bahwa didepan terdapat rumah sakit."
+  },
+  {
+    "module": 2,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu dibawah ini?",
+    "explanation": "Rambu tersebut adalah rambu petunjuk dimana kendaraan diijinkan untuk memacu kecepatan minimal 30 km/jam di jalan tersebut."
+  },
+  {
+    "module": 2,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apa yang dimaksud dengan nomor ukuran kecil yang berada di bawah NRKB?",
+    "explanation": "Angka kecil yang terdapat pada TNKB kendaraan menunjukkan bulan dan tahun berlakunya TNKB."
+  },
+  {
+    "module": 2,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Pernyataan yang tepat mengenai penggunaan lajur sebelah kanan adalah?",
+    "explanation": "Lajur sebelah kanan merupakan lajur untuk kendaraan dengan kecepatan yang lebih tinggi, kendaraan yang akan mendahului, berbelok ke kanan dan berbalik arah. Untuk kendaraan besar dengan kecepatan rendah berada pada lajur yang paling kiri dan Busway memiliki jalur khusus serta halte untuk menurunkan penumpang."
+  },
+  {
+    "module": 2,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Yang termasuk rambu lalu lintas adalah?",
+    "explanation": "Macam rambu yang terdapat di jalan raya meliputi rambu peringatan, rambu petunjuk, rambu larangan, rambu perintah, rambu papan tambahan dan rambu nomor rute."
+  },
+  {
+    "module": 2,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Langkah yang dilakukan dalam proses pembuatan SIM adalah?",
+    "explanation": "Dua tipe ujian yang harus dilewati saat seseorang akan membuat SIM adalah ujian teori dan ujian praktik."
+  },
+  {
+    "module": 2,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Yang manakan dibawah ini yang merupakan fasilitas untuk pejalan kaki?",
+    "explanation": "Beberapa fasilitas untuk pejalan kaki adalah zebra cross, trotoar, jembatan penyeberangan, terowongan penyeberangan dan tempat penyeberangan yang ditandai dengan rambu rambu."
+  },
+  {
+    "module": 2,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Berapa jumlah maksimal orang yang diperbolehkan berkendara dalam satu motor?",
+    "explanation": "Dalam UU No 22 Tahun 2002 pasal 106 diatur bahwa jumlah maksimal orang yang diperbolehkan untuk menaiki motor adalah dua orang, terdiri dari satu pengendara dan satu penumpang."
+  },
+  {
+    "module": 2,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "waktu berlakunya STCK pada kendaraan adalah?",
+    "explanation": "Masa berlaku STCK pada kendaraan adalah 14 hari dan dapat diperpanjang. STCK dapat digunakan sampai dengan STNK kendaraan terbit."
+  },
+  {
+    "module": 2,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Syarat yang paling utama yang harus dimiliki seseorang saat mengajukan permohonan SIM adalah?",
+    "explanation": "Syarat yang paling utama seseorang dapat mengajukan peemohonan SIM adalah pemohon tersebut sudah memiliki kemampuan untuk mengemudikan kendaraan bermotor. Kemampuan mengemudi merupakan kemampuan mengendalikan dan bagaimana mengoperasikan suatu kendaraan yang dapat membantu untuk menghindari masalah lalu lintas."
+  },
+  {
+    "module": 3,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk di sebelah kiri kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan adanya persimpangan jalan dan lampu sein yang menyatakan bahwa kendaraan akan berbelok ke kiri. Pengendara harus mengurangi kecepatan sebelum memasuki tikungan."
+  },
+  {
+    "module": 3,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pesepeda melaju di jalur sepeda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat pesepeda pada jalur sepeda. Pengendara tidak melakukan apapun karena keduanya dapat melintas berdampingan dengan jarak yang aman."
+  },
+  {
+    "module": 3,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat bus pada jalur busway.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat bus pada jalur busway. Pengendara tidak harus melakukan apapun karena masing-masing kendaraan berada pada jalur yang semestinya dengan jarak yang aman."
+  },
+  {
+    "module": 3,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pengendara sepeda motor di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat motor pada sisi kiri kendaraan. Pengendara menyalakan lampu sein ke kiri dengan jarak cukup dekat dari pertigaan sehingga harus mengurangi kecepatan."
+  },
+  {
+    "module": 3,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pengendara sepeda motor di lajur sebelah kiri kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat pengendara sepeda motor di lajur sebelah kiri. Pengendara tidak perlu melakukan apapun karena tidak ada kendaraan lain di depan yang menghambat lalu lintas."
+  },
+  {
+    "module": 3,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat tikungan di depan kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat rambu yang menyatakan jalan berbelok ke kiri. Pengendara hendak berbelok ke kiri dan mengantisipasi lalu lintas dari arah lain sehingga harus melakukan pengereman."
+  },
+  {
+    "module": 3,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/ jam di wilayah permukiman. Terdapat rambu yang menyatakan adanya bundaran. Pengendara harus mengurangi kecepatan saat memasuki bundaran untuk menjaga jarak aman dengan kendaraan lain."
+  },
+  {
+    "module": 3,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pejalan kaki akan menyebrang jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah perkotaan. Terdapat pejalan kaki yang menyeberang jalan sehingga pengendara harus melakukan pengereman untuk menjaga jarak aman."
+  },
+  {
+    "module": 3,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pejalan kaki sedang berlari menyebrang jalan secara tiba-tiba.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam di wilayah perkotaan. Terdapat Pejalan kaki yang menyeberang jalan dan jarak terlalu dekat sehingga harus melakukan pengereman."
+  },
+  {
+    "module": 3,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Jalan Bercabang.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat persimpangan jalan bercabang di depan kendaraan. Pengendara harus mengurangi kecepatan saat memasuki jalur untuk mengatur jarak aman dengan kendaraan lain."
+  },
+  {
+    "module": 3,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Traffic Light atau Lampu Lalu Lintas.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah perkotaan. Kendaraan anda akan mendekati Lampu merah sehingga anda harus melakukan pengereman dan berhenti dibelakang marka garis."
+  },
+  {
+    "module": 3,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu di sebelah kiri Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 55 km/jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan batas kecepatan. Pengendara harus mengurangi kecepatan karena telah melebihi kecepatan yang ditentukan."
+  },
+  {
+    "module": 3,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Truk yang datang dari arah berlawanan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/jam di wilayah perkotaan. Terdapat truk dari arah berlawanan. Pengendara harus melakukan pengereman untuk menjaga jarak aman."
+  },
+  {
+    "module": 3,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Kemacetan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat kemacetan di depan kendaraan. Pengendara harus melakukan pengereman untuk mengantisipasi situasi lalu lintas dan menjaga jarak agar tetap aman."
+  },
+  {
+    "module": 3,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Kendaraan yang keluar dari parkiran.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat kendaraan yang akan keluar dari parkiran. Pengendara harus melakukan pengereman untuk menghindari terjadinya tabrakan."
+  },
+  {
+    "module": 3,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Truk dari arah yang berlawanan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat truk dari arah yang berlawanan. Pengendara tidak harus melakukan apapun karena kendaraan berada dalam jalur masing-masing dengan jarak yang aman."
+  },
+  {
+    "module": 3,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pejalan kaki akan menyebrang jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 20 km/jam di wilayah permukiman. Terdapat pejalan kaki yang akan menyeberang jalan. Pengendara harus melakukan pengereman dan memberikan prioritas kepada pejalan kaki."
+  },
+  {
+    "module": 3,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pengendara sepeda motor.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat motor di sisi kiri yang akan memasuki lajur. Pengendara harus melakukan pengereman untuk memberikan jarak yang aman."
+  },
+  {
+    "module": 3,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pesepeda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 25 km/ jam di wilayah perkotaan. Terdapat pesepeda di depan kendaraan. Pengendara harus mengurangi kecepatan untuk memberikan prioritas jalan kepada pesepeda."
+  },
+  {
+    "module": 3,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Persimpangan jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat peseda yang akan melewati persimpangan. Pengendara tidak harus melakukan apapun karena berada pada jarak yang aman."
+  },
+  {
+    "module": 3,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pesepeda dan Bus.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah perkotaan. Terdapat pesepeda di sisi kiri dan bus dari arah berlawanan. Pengendara harus melakukan pengereman untuk memberikan prioritas kepada pesepeda."
+  },
+  {
+    "module": 3,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Pesepeda dan Bus.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat pesepeda di sisi kiri dan bus dari arah berlawanan. Pengendara harus melakukan pengereman untuk memberikan prioritas kepada pesepeda."
+  },
+  {
+    "module": 3,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk di sisi kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/ jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan adanya belokkan ke kanan. Pengendara harus mengurangi kecepatan untuk menjaga keseimbangan dan kendali motor saat berbelok."
+  },
+  {
+    "module": 3,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat Perbaikan jalan",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/ jam di wilayah perkotaan. Terdapat perbaikan pada sisi kiri jalan. Pengendara harus mengurangi kecepatan untuk mengantisipasi sisa material yang dapat mengganggu keseimbangan motor saat melintas."
+  },
+  {
+    "module": 3,
+    "page": 92,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk di sisi kiri jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/ jam di wilayah perkotaan. Terdapat rambu petunjuk yang menyatakan adanya belokkan ke kiri. Pengendara harus mengurangi kecepatan untuk menjaga keseimbangan dan kendali motor saat berbelok."
+  },
+  {
+    "module": 3,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Kendaran mana yang duluan jalan?",
+    "explanation": "Pada situasi di video, kendaraan yang jalan duluan adalah kendaraan no.1."
+  },
+  {
+    "module": 3,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Speed gun dan speed camera adalah alat yang digunakan oleh polri dalam melaksanakan penegakan hukum batas kecepatan, Benar atau Salahkan pernyataan tersebut?",
+    "explanation": "Speed gun dan speed camera adalah alat yang digunakan oleh polri dalam melaksanakan penegakan hukum batas kecepatan."
+  },
+  {
+    "module": 3,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Teknik pengereman yang baik dan efektif pada jalan licin dan berair adalah?",
+    "explanation": "Teknik pengereman yang baik dan efektif pada jalan licin dan berair adalah pengereman kombinasi, dengan Rem Depan 80% dan belakang 20% secara bersamaan."
+  },
+  {
+    "module": 3,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Pengendara motor 1 sedang melaju dari arah barat pengendara motor 2 sedang melaju dari arah timur lalu pengendara motor 1 dan 2 berpapasan dan 2 kendaraan tersebut memberi ruang cukup pada saat berpapasan dan memperlambat kendaraan, Benarkah pengendara motor tersebut?",
+    "explanation": "Pengendara motor 1 sedang melaju dari arah barat pengendara motor 2 sedang melaju dari arah timur lalu pengendara motor 1 dan 2 berpapasan. Dalam situasi tersebut, kedua pengendara harus memberi ruang cukup pada saat berpapasan dan memperlambat kendaraan."
+  },
+  {
+    "module": 3,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Dalam hal terjadi kondisi kemacetan lalu lintas yang tidak memungkinkan gerak kendaraan dipersimpangan empat fungsi mana yang harus diutamakan dari pada alat pemberi isyarat lalu lintas yang bersifat perintah atau larangan?",
+    "explanation": "Dalam kondisi kemacetan lalu lintas yang tidak memungkinkan gerak kendaraan dipersimpangan, pengendara harus mengikuti penggunaan dari marka kotak kuning (yellow box)"
+  },
+  {
+    "module": 3,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Teknik mengemudi sepeda motor yang baik pada saat gerakan membelok adalah?",
+    "explanation": "Teknik mengemudi sepeda motor yang baik pada saat gerakan berbelok adalah memiringkan posisi sepeda motor dan pengemudi ke arah pusat tikungan yang sesuai dengan kecepatan dan ketajaman tikungan."
+  },
+  {
+    "module": 3,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Siapa yang melaksanakan penindakan menggunakan e-tilang dan ETLE?",
+    "explanation": "Yang berhak melaksanakan penindakan menggunakan e-tilang dan ETLE adalah Kepolisian Negara Republik Indonesia."
+  },
+  {
+    "module": 3,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang diperintah kan untuk berhenti atas isyarat gerakan tangan yang dilakukan oleh polisi lalu lintas seperti video dibawah ini?",
+    "explanation": "Kendaraan 1,2,3 harus berhenti atas isyarat gerakan tangan yang dilakukan oleh polisi lalu lintas pada video."
+  },
+  {
+    "module": 3,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Pengemudi sepeda motor wajib memberikan tanda klakson kepada sesama pengguna jalan saat akan mendahului , Benarkah pengemudi sepeda motor kuning tersebut?",
+    "explanation": "Salah, Klakson bukan tanda untuk mendahului."
+  },
+  {
+    "module": 3,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Penerimaan negara bukan pajak atau PNBP tilang dikelola oleh kejaksaan agung, Benar atau Salahkan pernyataan tersebut?",
+    "explanation": "Salah, PNBP tilang dikelola pantera pengadilan."
+  },
+  {
+    "module": 3,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Pengemudi kendaraan bermotor wajib menggunakan jalur sebelah kanan jika melewati atau mendahului kendaraan didepannya pengemudi sepeda motor merah menggunakan jalur kanan untuk mendahului sepeda motor kuning, Benarkah pengemudi sepeda motor tersebut?",
+    "explanation": "Pada situasi di video, hal yang harus di lakukan pengendara motor merah untuk menyalip pengendara motor kuning adalah dengan menggunakan lajur kanan."
+  },
+  {
+    "module": 3,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Pengemudi dan penumpang sepeda motor wajib menggunakan helm yang aman berstandar sni Benarkah pengemudi sepeda motor tersebut?",
+    "explanation": "Pengemudi dan penumpang sepeda motor wajib menggunakan helm yang aman berstandar SNI."
+  },
+  {
+    "module": 3,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Pemilik sim akan diuji teori dan praktik kembali bila masa berlaku sim yang dimilikinya telah habis masa berlakunya dan tidak diperpanjang dalam batas waktu?",
+    "explanation": "Pemilik sim akan diuji teori dan praktik kembali bila masa berlaku sim yang dimilikinya telah habis masa berlakunya dan tidak diperpanjang dalam batas waktu lebih dari 1 (satu) hari."
+  },
+  {
+    "module": 3,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Benarkah yang dilakukan pengendara tersebut?",
+    "explanation": "Pada situasi di video, yang di lakukan pengendara salah."
+  },
+  {
+    "module": 3,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Dari sebelah mana seharusnya anda melewati kendaraan yang sedang membelok ke kanan?",
+    "explanation": "Pada situasi di video, pengendara mobil berbelok ke kanan, yang harus di lakukan pengendara motor adalah tetap di belakang kendaraan yang di depan."
+  },
+  {
+    "module": 3,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Apabila traffic light tidak berfungsi dengan baik seluruh kendaraan akan berjalan lurus seperti video di bawah ini maka urut-urutan prioritas adalah?",
+    "explanation": "Pada situasi di video, traffic light tidak berfungsi dengan baik seluruh kendaraan akan berjalan lurus maka urutan kendaraan yang menjadi prioritas adalah kendaraan 2, 3, dan 1."
+  },
+  {
+    "module": 3,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Penggunaan perseneling yang baik pada saat berkendara dijalan menurun yang panjang dan curam adalah?",
+    "explanation": "Penggunaan perseneling yang baik pada saat berkendara dijalan menurun yang panjang dan curam adalah menggunakan perseneling 2."
+  },
+  {
+    "module": 3,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Benarkah yang dilakukan oleh pengendara motor tersebut?",
+    "explanation": "Hal yang dilakukan oleh pengendara motor tersebut pada situasi di video adalah salah, karena suara knalpot yang bising dapat mengganggu ketertiban umum."
+  },
+  {
+    "module": 3,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Batas kecepatan maksimal untuk kawasan perkotaan adalah?",
+    "explanation": "Batas kecepatan maksimal untuk kawasan perkotaan paling tinggi 50 km/jam."
+  },
+  {
+    "module": 3,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Apa yang anda lakukan ketika ada mobil pemadam kebakaran yang akan melintas?",
+    "explanation": "Yang harus anda lakukan ketika ada mobil pemadam kebakaran yang akan melintas adalah memberikan prioritas dengan memperlambat kendaraan kemudian bergeser ke lajur kiri/ kanan untuk memberikan jalan bagi prioritas."
+  },
+  {
+    "module": 3,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Yang termasuk instrumen perlengkapan jalan adalah?",
+    "explanation": "Sesuai UU No 22 Tahun 2009 Pasal 25 disebutkan bahwa yang termasuk dalam instrumen perlengkapan jalan adalah marka jalan, rambu lalu lintas, APILL, alat penerangan jalan, alat pengendali dan pengawasan jalan, dll."
+  },
+  {
+    "module": 3,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Siapakah yang harus bertanggung jawab atas pengelolaan jalan nasional?",
+    "explanation": "Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR) merupakan instansi yang bertanggung jawab atas pengelolaan jalan nasional, sedangkan Dinas Perhubungan bertugas untuk melaksanakan urusan pemerintahan daerah bidang perhubungan berdasarkan asas otonomi daerah dan tugas pembantuan."
+  },
+  {
+    "module": 3,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu disamping?",
+    "explanation": "Rambu disamping merupakan rambu petunjuk batas awal wilayah / memasuki kota Kediri."
+  },
+  {
+    "module": 3,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu disamping?",
+    "explanation": "Rambu disamping merupakan rambu wajib mengikuti salah satu arah yang ditunjuk."
+  },
+  {
+    "module": 3,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu disamping?",
+    "explanation": "Rambu disamping berarti pengendara mendekati jalan buntu."
+  },
+  {
+    "module": 3,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu disamping?",
+    "explanation": "Rambu disamping merupakan rambu larangan bagi semua kendaraan bermotor maupun tidak bermotor dari kedua arah."
+  },
+  {
+    "module": 3,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Salah satu fungsi APILL adalah?",
+    "explanation": "Salah satu Alat Pemberi Isyarat Lalu Lintas (APILL) adalah untuk menghindari kemacetan pada persimpangan oleh arus yang berlawanan, sehingga kapasitas simpang dapat dipertahankan selama keadaan lalu lintas memuncak."
+  },
+  {
+    "module": 3,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Pernyataan yang tepat mengenai penggunaan lajur sebelah kiri adalah?",
+    "explanation": "Lajur kiri diperuntukkan untuk kendaraan yang berjalan dengan kecepatan rendah dan yang sebelah kanannya untuk kendaraan yang berjalan dengan kecepatan lebih tinggi, atau di jalan tol antar kota yang memiliki dua lajur, lajur kanan hanya diperuntukkan untuk kendaraan yang mendahului."
+  },
+  {
+    "module": 3,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Jalan dengan marka manakah yang anda pilih apabila anda hendak berbelok kekiri?",
+    "explanation": "Lajur dengan marka A merupakan lajur yang harus dipilih ketika pengguna jalan hendak berbelok ke kiri."
+  },
+  {
+    "module": 3,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Lampu rem yang pada kendaraan bermotor yang sesuai ketentuan adalah?",
+    "explanation": "Lampu menyala merah dan tidak berkedip merupakan kententuan yang harus digunakan pada lampu rem."
+  },
+  {
+    "module": 3,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Tempat untuk mengajukan permohonan pembuatan SIM adalah?",
+    "explanation": "SATPAS (Satuan Penyelenggara Administrasi SIM) merupakan unsur pelaksana Polri dibidang lalu lintas yang berada di lingkungan kantor Kepolisian setempat yang bertanggungjawab mengenai SIM pada pengemudi."
+  },
+  {
+    "module": 3,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Pengendara dilarang melawan arus saat berkendara di jalan raya karena?",
+    "explanation": "Pengendara dilarang melawan arus saat berkendara karena merupakan tindakan yang melanggar aturan berlalu lintas dan berkendara melawan arus akan meningkatkan kerawanan kecelakaan lantas."
+  },
+  {
+    "module": 3,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Dapatkah SIM digunakan oleh yang bukan pemilik SIM tersebut?",
+    "explanation": "SIM hanya berlaku atas nama pemilik. Sehingga SIM tidak bisa dipinjam atau digunakan oleh orang lain."
+  },
+  {
+    "module": 3,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Berapa lamakah SIM dapat berlaku?",
+    "explanation": "Masa berlaku SIM adalah 5 tahun, dan dapat diperpanjang sebelum masa berlaku habis."
+  },
+  {
+    "module": 3,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apa yang harus dilakukan ketika SIM hilang atau rusak?",
+    "explanation": "Apabila SIM hilang atau rusak, anda dapat melakukan permohonan SIM baru ke SATPAS terdekat dengan melampirkan surat kehilangan dari kantor kepolisian terdekat."
+  },
+  {
+    "module": 3,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apa arti rambu dibawah ini?",
+    "explanation": "Rambu disamping merupakan rambu peringatan apabila terdapat jalan menurun curam. Sehingga pengendara wajib berhatihati terhadap kendaraan yang mungkin muncul didepan."
+  },
+  {
+    "module": 3,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Tanda nomor kendaraan bermotor (TNKB) dianggap sah apabila?",
+    "explanation": "TNKB adalah bukti legitimasi pengoperasian ranmor berupa pelat atau berbahan lain dengan spesifikasi tertentu yang diterbitkan Polri."
+  },
+  {
+    "module": 3,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Fungsi garis utuh berwarna kuning pada tepi jalan adalah?",
+    "explanation": "Berdasarkan Permenhub nomor 34 tahun 2014, marka jalan berwarna kuning dinyatakan sebagai larangan bagi kendaraan bermotor untuk berhenti pada area tersebut. Sehingga, fungsi dari garis utuh berwarna kuning pada tepi jalan Sebagai tanda larangan berhenti dan parkir bagi kendaraan bermotor."
+  },
+  {
+    "module": 3,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Bagaimana ketentuan saat menunjukkan STNK saat berkendara di jalan raya?",
+    "explanation": "Berdasarkan Pasal 106 ayat (5), setiap pengendara wajib menunjukkan STNK asli saat dilakukan pemeriksaan dan belum bisa digantikan oleh dokumen lain."
+  },
+  {
+    "module": 3,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Bagaimana ketentuan saat menunjukkan SIM saat berkendara di jalan raya?",
+    "explanation": "Berdasarkan Pasal 106 ayat (5), setiap pengendara wajib menunjukkan STNK asli saat dilakukan pemeriksaan dan belum bisa digantikan oleh dokumen lain."
+  },
+  {
+    "module": 4,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat terowongan kurang pencahayaan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Pengendara berkendara di dalam terowongan dalam kondisi kurang pencahayaan. Pengendara harus mengurangi kecepatan untuk menjaga jarak aman dengan kendaraan lain."
+  },
+  {
+    "module": 4,
+    "page": 80,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat zebra cross.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah perkotaan. Terdapat marka garis untuk menyeberang jalan. Pengendara harus melakukan pengereman karena akan mendekati garis ini untuk mengantisipasi pejalan kaki yang akan menyeberang jalan."
+  },
+  {
+    "module": 4,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat lampu lalu lintas.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat lampu lalu lintas yang menyala merah. Pengendara harus melakukan pengereman dan berhenti di belakang marka garis."
+  },
+  {
+    "module": 4,
+    "page": 81,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat zona sekolah.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/jam di wilayah perkotaan. Terdapat zona selamat sekolah. Saat mendekati zona ini, pengendara harus melakukan pengereman untuk mengantisipasi adanya anak sekolah yang menyeberang jalan."
+  },
+  {
+    "module": 4,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat jalan berlubang.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat jalan yang berlubang. Pengendara harus melakukan pengereman saat mendekati jalanan berlubang untuk menjaga keseimbangan kendaraan."
+  },
+  {
+    "module": 4,
+    "page": 82,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat tanjakan jalan layang.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat tanjakan jalan layang di depan pengendara. Pengendara tidak harus melakukan apapun karena kecepatan kendaraan cukup untuk memasuki tanjakan jalan layang."
+  },
+  {
+    "module": 4,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan di depan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah perkotaan. Terdapat truk tangki bahan bakar minyak dengan jarak yang dekat. Pengendara harus melakukan pengereman karena posisi tangki bensin masih di jalan."
+  },
+  {
+    "module": 4,
+    "page": 83,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat rambu petunjuk di sebelah kiri kendaraan Anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 60 km/jam di wilayah perkotaan. Terdapat rambu di sisi kiri jalan yang menyatakan batas kecepatan maksimum. Pengendara harus mengurangi kecepatan karena telah melebihi batas kecepatan."
+  },
+  {
+    "module": 4,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat ambulans di depan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah perkotaan. Terdapat ambulans yang sedang berhenti dan petugas sedang menangani pasien. Pengendara harus melakukan pengereman untuk memberikan kesempatan dan jarak aman untuk berhenti."
+  },
+  {
+    "module": 4,
+    "page": 84,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat bundaran.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah perkotaan. Terdapat bundaran di depan kendaraan. Pengendara harus mengurangi kecepatan saat mendekati bundaran."
+  },
+  {
+    "module": 4,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat mobil yang berpindah lajur di depan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/ jam di wilayah perkotaan. Terdapat kendaraan mobil yang sedang berpindah lajur dan sudah berada di tengah marka garis putus-putus sehingga pengendara harus mengurangi kecepatan dan menjaga jarak aman."
+  },
+  {
+    "module": 4,
+    "page": 85,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat delman di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 45 km/jam di wilayah perkotaan. Terdapat delman yang menepi dengan jarak yang dekat di depan kendaraan sehingga harus melakukan pengereman untuk menjaga jarak aman."
+  },
+  {
+    "module": 4,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat bus di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 50 km/ jam di wilayah perkotaan. Terdapat bus di depan kendaraan anda. Pengendara berkendara dengan kecepatan maksimum sehingga harus mengurangi kecepatan untuk menjaga jarak aman."
+  },
+  {
+    "module": 4,
+    "page": 86,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat bus di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 45 km/ jam di wilayah perkotaan. Terdapat bus yg berhenti mendadak dan dan berada sangat dekat di depan kendaraan. Pengendara harus melakukan pengereman agar tidak terjadi tabrakan."
+  },
+  {
+    "module": 4,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat bus di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/jam di wilayah perkotaan. Terdapat bus di depan kendaraan. Pengendara berkendara di belakang bus dengan kecepatan minimum dan jarak yang aman, sehingga tidak perlu melakukan apapun."
+  },
+  {
+    "module": 4,
+    "page": 87,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat belokan tajam ke kanan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah permukiman. Terdapat tikungan ke kanan dan jalan menurun. Pengendara akan berbelok ke kanan dalam keadaan jalan menurun, sehingga harus mengurangi kecepatan."
+  },
+  {
+    "module": 4,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat pertigaan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/ jam di wilayah permukiman. Terdapat pertigaan di depan kendaraan. Pengendara akan berbelok ke kiri saat di pertigaan dan dihadapkan dengan kendaraan yang akan jalan lurus, sehingga harus melakukan pengereman."
+  },
+  {
+    "module": 4,
+    "page": 88,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat mobil yang datang dari arah depan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/jam di wilayah permukiman. Terdapat jalan yang sempit dan datang mobil dari arah depan, sehingga pengendara harus mengurangi kecepatan."
+  },
+  {
+    "module": 4,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat seorang pria yang melaksanakan olahraga lari.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 35 km/ jam di wilayah permukiman. Terdapat seorang pria yang berolahraga lari di sisi kiri jalan. Pengendara tidak perlu melakukan apapun karena aktivitas tersebut tidak menganggu lalu lintas kendaraan Anda."
+  },
+  {
+    "module": 4,
+    "page": 89,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat anak kecil menyeberang jalan menggunakan skuter.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah permukiman. Terdapat anak kecil yang bermain skuter dan hendak menyeberang jalan, sehingga pengendara harus melakukan pengereman."
+  },
+  {
+    "module": 4,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat kendaraan yang datang dari arah depan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 45 km/jam di wilayah permukiman. Terdapat jalan yang berkelok. Pengendara yang berkendara di jalan permukiman yang berkelok, harus mengurangi kecepatan untuk mengantisipasi kendaraan yang datang dari arah berlawanan."
+  },
+  {
+    "module": 4,
+    "page": 90,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat persimpangan di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 40 km/jam di wilayah permukiman. Terdapat persimpangan di depan kendaraan. Pengendara harus mengurangi kecepatan karena berkendara mendekati persimpangan."
+  },
+  {
+    "module": 4,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat petugas kebersihan di sisi jalan.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 45 km/ jam di wilayah permukiman. Terdapat petugas kebersihan yg berhenti di sisi kiri jalan, secara bersamaan datang kendaraan dari arah depan. Sehingga pengendara harus mengurangi kecepatan."
+  },
+  {
+    "module": 4,
+    "page": 91,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat perbaikan jalan di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/jam di wilayah permukiman. Terdapat perbaikan jalan di depan kendaraan. Pengendara akan melewati perbaikan jalan dan menunggu arus lalu lintas dari arah berlawanan sehingga perlu melakukan pengereman."
+  },
+  {
+    "module": 4,
+    "page": 92,
+    "category": "Persepsi Bahaya",
+    "question": "Terdapat becak di depan kendaraan anda.",
+    "explanation": "Pengendara sedang mengendarai motor dengan kecepatan 30 km/ jam di wilayah permukiman. Terdapat becak di depan kendaraan. Pengendara harus mengurangi kecepatan untuk mengantisipasi jarak aman dengan becak."
+  },
+  {
+    "module": 4,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Pengereman mendadak dijalan yang licin terutama pada kecepatan tinggi akan mengakibatkan?",
+    "explanation": "Pengereman mendadak dijalan yang licin terutama pada kecepatan tinggi akan mengakibatkan kendaraan akan slip (tergelincir)."
+  },
+  {
+    "module": 4,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Pada video dibawah ini kendaraan mana yang terakhir meninggalkan persimpangan?",
+    "explanation": "Pada situasi di video, kendaraan yang terakhir meninggalkan persimpangan adalah kendaraan No. 1."
+  },
+  {
+    "module": 4,
+    "page": 94,
+    "category": "Wawasan",
+    "question": "Anda diwajibkan menggunakan lampu penunjuk arah kecuali?",
+    "explanation": "Anda diwajibkan menggunakan lampu penunjuk arah kecuali kendaraan akan berjalan lurus."
+  },
+  {
+    "module": 4,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Marka jalan berupa tanda garis membujur yang utuh berwarna kuning pada bahu atau bingkai jalan menyatakan?",
+    "explanation": "Marka jalan berupa tanda garis membujur yang utuh berwarna kuning pada bahu atau bingkai jalan memiliki arti dilarang berhenti pada daerah tersebut."
+  },
+  {
+    "module": 4,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Benarkah yang dilakukan oleh pengendara tersebut?",
+    "explanation": "Pada situasi di video, hal yang di lakukan oleh pengendara motor tersebut adalah benar, pengendara motor harus memastikan penggunaan helm yang baik dan benar sebelum berkendara."
+  },
+  {
+    "module": 4,
+    "page": 95,
+    "category": "Wawasan",
+    "question": "Pengemudi kendaraan bermotor wajib menepikan kendaraan lalu berhenti bila akan menggunakan hp atau handphone dijalan , pengemudi kendaraan kuning menerima telpon penting dari keluarga ,pengemudi kendaraan kuning menepi lalu berhenti untuk menerima telpon tersebut ,Benarkah pengemudi sepeda motor kuning tersebut?",
+    "explanation": "Pada situasi di video, hal yang di lakukan oleh pengendara motor tersebut adalah benar, ketika akan menerima panggilan telepon, pengendara wajib menepi ke tempat yang aman."
+  },
+  {
+    "module": 4,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Mengapa anda harus menjaga jarak lebih jauh dibelakang kendaraan lain pada permukaan jalan yang basah dari pada jalan yang kering?",
+    "explanation": "Pengendara anda harus menjaga jarak lebih jauh dibelakang kendaraan lain pada permukaan jalan yang basah dari pada jalan yang kering karena jarak berhenti apabila di rem lebih panjang di atas jalan yang basah."
+  },
+  {
+    "module": 4,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Langkah - langkah Pengendara sepeda motor untuk lebih terlihat oleh pengguna jalan lain saat berhenti atau saat akan memasuki persimpangan adalah?",
+    "explanation": "Langkah - langkah Pengendara sepeda motor untuk lebih terlihat oleh pengguna jalan lain saat berhenti atau saat akan memasuki persimpangan adalah memposisikan diri pengendara, sehingga pengguna jalan lain dapat melihat anda dengan jelas dari jarak tertentu."
+  },
+  {
+    "module": 4,
+    "page": 96,
+    "category": "Wawasan",
+    "question": "Kapan pengendara sepeda motor nomor 3 dapat berbelok ke kanan melewati persimpangan?",
+    "explanation": "Pada situasi di video, pengendara sepeda motor nomor 3 dapat berbelok ke kanan melewati persimpangan setelah kendaraan 1 dan 2."
+  },
+  {
+    "module": 4,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Pada video dibawah ini kendaraan mana yang terakhir meninggalkan persimpangan?",
+    "explanation": "Pada situasi di video, kendaraan yang terakhir meninggalkan persimpangan adalah kendaraan no.1."
+  },
+  {
+    "module": 4,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Kendaraan mana yang mendapat prioritas untuk berjalan lebih dahulu?",
+    "explanation": "Pada situasi di video, kendaraan yang mendapat prioritas untuk berjalan lebih dahulu adalah kendaraan no.2."
+  },
+  {
+    "module": 4,
+    "page": 97,
+    "category": "Wawasan",
+    "question": "Electronic Traffic Law Enforcement atau ETLE adalah penegakan hukum pelanggaran lalu lintas secara elektronik , Benar atau Salahkah pernyataan tersebut?",
+    "explanation": "Electronic Traffic Law Enforcement atau ETLE adalah penegakan hukum pelanggaran lalu lintas secara elektronik."
+  },
+  {
+    "module": 4,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Pencabutan SIM seseorang oleh hakim berakibat?",
+    "explanation": "Pencabutan SIM seseorang oleh hakim berakibat orang tersebut untuk sementara waktu tidak boleh mengendarai sepeda motor sampai batas putusan hakim berakhir."
+  },
+  {
+    "module": 4,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Pengaturan yang dilakukan petugas polisi lalu lintas dibawah ini berarti?",
+    "explanation": "Pengaturan yang dilakukan petugas polisi lalu lintas pada situasi di video berarti lalu lintas dari arah depan dan belakang petugas berhenti."
+  },
+  {
+    "module": 4,
+    "page": 98,
+    "category": "Wawasan",
+    "question": "Setiap kendaraan bermotor yang dioprasikan di jalan wajib dilengkapi dengan perlengkapan kendaraan bermotor?",
+    "explanation": "Setiap kendaraan bermotor yang dioperasikan di jalan wajib dilengkapi dengan perlengkapan kendaraan bermotor."
+  },
+  {
+    "module": 4,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Benarkah tanda nomor kendaraan tersebut?",
+    "explanation": "Tanda nomor kendaraan pada video salah, karena angka penyusun plat tidak boleh diawali oleh angka 0."
+  },
+  {
+    "module": 4,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Pada situasi seperti video dibawah ini apa yang harus dilakukan oleh kendaraan nomor 2?",
+    "explanation": "Situasi pada video, yang harus dilakukan oleh kendaraan nomor 2 adalah berhenti dan memberikan prioritas kepada kendaraan no.1."
+  },
+  {
+    "module": 4,
+    "page": 99,
+    "category": "Wawasan",
+    "question": "Bagaimana aturan menggunakan helm yang baik dan Benar?",
+    "explanation": "Pada video, yang merupakan aturan pemakaian helm dengan baik dan benar adalah gambar A."
+  },
+  {
+    "module": 4,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Pengguna jalan yang mendapatkan hak utama untuk didahulukan adalah?",
+    "explanation": "Pengguna jalan yang mendapatakan hak utama untuk didahulukan adalah pemadam kebakaran, ambulance mengangkut orang sakit dan kendaraan pertolongan kecelakaan, kendaraan pimpinan lembaga negara, pejabat asing, iring-iringan jenazah dan konvoi."
+  },
+  {
+    "module": 4,
+    "page": 100,
+    "category": "Wawasan",
+    "question": "Kapan pengendara sepeda motor dapat berbelok ke kanan melewati persimpangan?",
+    "explanation": "Pada situasi di video, pengendara sepeda motor dapat berbelok ke kanan melewati persimpangan setelah kendaraan 2."
+  },
+  {
+    "module": 4,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apabila anda berniat untuk mengubah warna kendaraan yang berbeda dengan warna cat bawaan kendaraan tersebut, dokumen manakah yang harus anda ubah?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait BPKB dan STNK dilakukan di SAMSAT terkait dengan perubahan identitas kendaraan bermotor."
+  },
+  {
+    "module": 4,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Tempat untuk mengajukan permohonan pembuatan STNK adalah?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait STNK dilakukan di SAMSAT. Selain itu, Korlantas Polri telah meluncurkan aplikasi SIGNAL untuk pengesahan STNK secara online."
+  },
+  {
+    "module": 4,
+    "page": 102,
+    "category": "Pengetahuan",
+    "question": "Apabila anda berniat untuk mengubah bentuk kendaraan yang berbeda dengan warna bentuk bawaan kendaraan tersebut, dokumen manakah yang harus anda ubah?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 Tahun 2015, bahwa pemilik kendaraan yang melakukan modifikasi terhadap kendaraan yang dimilikinya, wajib melakukan regident ulang untuk perubahan identitas kendaraan pada BPKB dan STNK."
+  },
+  {
+    "module": 4,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Berapa lama masa berlaku STNK?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa masa berlaku STNK selama 5 tahun dan wajib dilakukan registrasi ulang setelah masa berlaku tersebut."
+  },
+  {
+    "module": 4,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Kapan anda wajib melunasi pembayaran pajak kendaraan bermotor?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa masa berlaku pengesahan STNK selama 1 tahun dan wajib dilakukan registrasi ulang setelah masa berlaku tersebut."
+  },
+  {
+    "module": 4,
+    "page": 103,
+    "category": "Pengetahuan",
+    "question": "Manakah yang harus dipatuhi oleh pengguna jalan, APILL atau isyarat oleh petugas kepolisian?",
+    "explanation": "Berdasarkan kewenangan diskresi kepolisian yang tercantum dalam pasal 18 UU nomor 22 tahun 2022 dan Pasal 34 ayat 2 PP Nomor 43 Tahun 1993, bahwa isyarat petugas kepolisian wajib diutamakan dibandingkan APILL."
+  },
+  {
+    "module": 4,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Dimanakah anda melakukan pengesahan STNK kendaraan bermotor?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait STNK dilakukan di SAMSAT. Selain itu, Korlantas Polri telah meluncurkan aplikasi SIGNAL untuk pengesahan STNK secara online."
+  },
+  {
+    "module": 4,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Siapakah yang wajib mengenakan helm saat berkendara kendaraan bermotor?",
+    "explanation": "Berdasarkan UU no.22 Tahun 2009 tentang Lalu Lintas dan Angkutan Pasal 106 ayat 7 dan 8, bahwa setiap orang yang mengemudikan dan penumpang sepeda motor wajib menggunakan helm sesuai Standar Nasional Indonesia."
+  },
+  {
+    "module": 4,
+    "page": 104,
+    "category": "Pengetahuan",
+    "question": "Apabila TNKB kendaraan bermotor rusak, maka pemilik kendaraan bermotor wajib melakukan?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait TNKB dilakukan di SAMSAT."
+  },
+  {
+    "module": 4,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apakah kendaraan pribadi diperbolehkan menggunakan strobo?",
+    "explanation": "Berdasarkan Undang - Undang nomor 22 tahun 2009 Pasal 134 dan 135, penggunaan strobo hanya diperuntukkan bagi kendaraan yang termasuk dalam golongan kendaraan yang mendapatkan hak utama. Sehingga, kendaraan pribadi tidak diperbolehkan menggunakan strobo."
+  },
+  {
+    "module": 4,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apakah kendaraan pribadi diperbolehkan menggunakan sirine?",
+    "explanation": "Berdasarkan Undang - Undang nomor 22 tahun 2009 Pasal 134 dan 135, penggunaan sirine hanya diperuntukkan bagi kendaraan yang termasuk dalam golongan kendaraan yang mendapatkan hak utama. Sehingga, kendaraan pribadi tidak diperbolehkan menggunakan sirine."
+  },
+  {
+    "module": 4,
+    "page": 105,
+    "category": "Pengetahuan",
+    "question": "Apabila STNK kendaraan bermotor hilang atau rusak, maka pemilik kendaraan bermotor wajib melakukan?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait STNK dilakukan di SAMSAT."
+  },
+  {
+    "module": 4,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apabila BPKB kendaraan bermotor hilang atau rusak, maka pemilik kendaraan bermotor wajib melakukan?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa pengurusan terkait BPKB dilakukan di SAMSAT."
+  },
+  {
+    "module": 4,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apakah fungsi dari BPKB untuk kendaraan bermotor?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa BPKB adalah dokumen pemberi legitimasi kepemilikan Ranmor yang diterbitkan Polri dan berisi identitas Ranmor dan pemilik, yang berlaku selama Ranmor tidak dipindahtangankan."
+  },
+  {
+    "module": 4,
+    "page": 106,
+    "category": "Pengetahuan",
+    "question": "Apakah fungsi dari STNK untuk kendaraan bermotor?",
+    "explanation": "Berdasarkan Peraturan Presiden nomor 5 tahun 2015, bahwa STNK adalah dokumen pengoperasian Ranmor yang berbentuk surat atau bentuk lain yang diterbitkan Polri yang berisi identitas pemilik, identitas Ranmor dan masa berlaku termasuk pengesahannya."
+  },
+  {
+    "module": 4,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apakah fungsi dari SIM bagi pengendara kendaraan bermotor?",
+    "explanation": "Berdasarkan Peraturan Kepolisian nomor 5 tahun 2021, SIM adalah bukti legitimasi kompetensi pengemudi sesuai jenis dan golongan SIM yang dimilikinya setelah memenuhi persyaratan administrasi, usia, kesehatan jasmani maupun rohani, serta dinyatakan lulus melalui proses pengujian."
+  },
+  {
+    "module": 4,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Apakah SIM dapat dipindah tangankan dalam penggunaan kendaraan bermotor di jalan raya?",
+    "explanation": "Berdasarkan Peraturan Kepolisian nomor 5 tahun 2021, SIM tidak diperbolehkan untuk dipindahtangkan karena hanya dapat digunakan oleh individu yang tercatat identitasnya pada SIM tersebut."
+  },
+  {
+    "module": 4,
+    "page": 107,
+    "category": "Pengetahuan",
+    "question": "Manakah yang harus dipatuhi oleh pengguna jalan, APILL atau isyarat oleh petugas kepolisian?",
+    "explanation": "Berdasarkan kewenangan diskresi kepolisian yang tercantum dalam pasal 18 UU nomor 22 tahun 2022 dan Pasal 34 ayat 2 PP Nomor 43 Tahun 1993, bahwa isyarat petugas kepolisian wajib diutamakan dibandingkan APILL."
+  },
+  {
+    "module": 4,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Berapakah besaran PNBP untuk pendaftaran SIM C baru?",
+    "explanation": "Berdasarkan Peraturan Kepolisian nomor 5 tahun 2021, PNBP SIM untuk pendaftaran SIM C baru sebesar Rp. 100.000."
+  },
+  {
+    "module": 4,
+    "page": 108,
+    "category": "Pengetahuan",
+    "question": "Berapakah besaran PNBP untuk pendaftaran SIM C perpanjangan?",
+    "explanation": "Berdasarkan Peraturan Kepolisian nomor 5 tahun 2021, PNBP SIM untuk pendaftaran SIM C perpanjangan sebesar Rp. 75.000."
+  }
+]
