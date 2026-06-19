@@ -575,76 +575,80 @@ function updateStudyButtonStates() {
 }
 
 // ==================== REFERENCE MATERIAL VIEW ====================
+// ==================== REFERENCE MATERIAL VIEW ====================
 const referenceData = {
     peringatan: {
         title: "Rambu Peringatan (Warning Signs)",
         intro: "Rambu peringatan digunakan untuk memberikan informasi peringatan kepada pengguna jalan tentang adanya bahaya di jalan raya di depan mereka. Ciri khas rambu ini adalah berbentuk belah ketupat, dengan warna dasar kuning, garis tepi hitam, dan lambang atau huruf berwarna hitam.",
         items: [
-            { icon: "⚠️", title: "Tikungan Tajam", desc: "Memberi peringatan kepada pengendara bahwa akan ada tikungan tajam ke arah tertentu di depan mereka. Kecepatan harus dikurangi." },
-            { icon: "⚠️", title: "Turunan Curam", desc: "Peringatan jalan menurun tajam di depan. Pengendara disarankan untuk menggunakan perseneling rendah untuk pengereman mesin (engine brake)." },
-            { icon: "⚠️", title: "Jalan Licin", desc: "Peringatan jalan di depan rawan licin saat basah atau musim hujan. Hindari pengereman mendadak untuk mencegah selip ban." },
-            { icon: "⚠️", title: "Penyempitan Jalan", desc: "Peringatan bahwa jalan di depan menyempit dari sisi kiri, kanan, atau kedua sisi. Bersiap mengurangi kecepatan dan mengalah." },
-            { icon: "⚠️", title: "Zebra Cross / Pejalan Kaki", desc: "Peringatan banyak pejalan kaki menyeberang jalan. Pengendara motor wajib memprioritaskan pejalan kaki di zebra cross." },
-            { icon: "⚠️", title: "Perlintasan Kereta Api", desc: "Peringatan perlintasan sebidang rel kereta api di depan. Kurangi kecepatan dan tengok kanan-kiri sebelum menyeberang." }
+            { image: "images/m1_p107_2.png", title: "Tikungan Tajam Ke Kanan", desc: "Memberi peringatan kepada pengendara bahwa akan ada tikungan tajam ke arah kanan di depan. Pengendara wajib mengurangi kecepatan sebelum memasuki belokan." },
+            { image: "images/m1_p102_1.png", title: "Penyempitan Badan Jalan", desc: "Peringatan bahwa jalan di depan akan menyempit dari sisi kiri, sisi kanan, atau kedua sisi. Bersiap mengurangi kecepatan dan berbagi lajur." },
+            { image: "images/m1_p105_0.png", title: "Permukaan Jalan Licin", desc: "Peringatan bahwa permukaan jalan di depan rawan licin (terutama saat basah/hujan). Pengendara harus memperlambat motor dan menghindari pengereman mendadak." },
+            { image: "images/m1_p87_1.png", title: "Perlintasan Kereta Api", desc: "Peringatan bahwa di depan terdapat perlintasan sebidang rel kereta api (dengan atau tanpa pintu perlintasan). Kurangi kecepatan dan berhati-hati." },
+            { image: "images/m1_p106_0.png", title: "Persimpangan Empat Lengan", desc: "Peringatan bahwa di depan terdapat persimpangan jalan bersilang empat. Pengendara wajib memperlambat kendaraan dan meningkatkan kewaspadaan." },
+            { image: "images/m3_p107_0.png", title: "Jalan Menurun Curam", desc: "Peringatan bahwa jalan di depan memiliki turunan yang curam. Pengendara wajib bersiap mengendalikan laju sepeda motor dengan rem depan-belakang dan engine brake." },
+            { image: "images/m2_p103_1.png", title: "Persimpangan Bundaran", desc: "Peringatan bahwa terdapat persimpangan yang dilengkapi bundaran lalu lintas di depan. Pengendara wajib mendahulukan kendaraan yang sudah berada di dalam bundaran." }
         ]
     },
     larangan: {
         title: "Rambu Larangan (Prohibition Signs)",
         intro: "Rambu larangan melarang pengguna jalan melakukan tindakan tertentu untuk menjaga keselamatan bersama. Ciri khas rambu larangan adalah berbentuk lingkaran, dengan warna dasar putih, garis tepi berwarna merah, dan lambang atau kata-kata berwarna hitam/merah.",
         items: [
-            { icon: "🚫", title: "Larangan Parkir (P Coret)", desc: "Dilarang memarkirkan kendaraan di sepanjang area setelah rambu ini terpasang hingga rambu pembatal terdekat." },
-            { icon: "🚫", title: "Larangan Berhenti (S Coret)", desc: "Dilarang menghentikan kendaraan bermotor sekecil apa pun di area jalan ini karena berpotensi memicu kemacetan parah." },
-            { icon: "🚫", title: "Larangan Masuk", desc: "Kendaraan bermotor dilarang melintasi atau masuk ke jalan ini (biasanya jalan satu arah / one-way)." },
-            { icon: "🚫", title: "Larangan Belok", desc: "Dilarang berbelok ke arah kiri, kanan, atau berputar balik pada simpang yang telah ditentukan rambu tersebut." },
-            { icon: "🚫", title: "Batas Kecepatan Maksimum", desc: "Dilarang berkendara melebihi kecepatan tertulis (misal: 40 km/jam di dalam wilayah perkotaan atau pemukiman padat)." }
+            { image: "images/m1_p102_0.png", title: "Larangan Parkir", desc: "Dilarang memarkirkan kendaraan bermotor di area sepanjang jalan setelah rambu ini dipasang hingga rambu pembatal terdekat." },
+            { image: "images/m1_p85_0.png", title: "Larangan Berhenti", desc: "Dilarang menghentikan kendaraan bermotor sekecil apa pun di sepanjang area jalan setelah rambu ini terpasang." },
+            { image: "images/m2_p102_0.png", title: "Larangan Putar Balik", desc: "Dilarang memutar balik arah kendaraan bermotor pada persimpangan atau bukaan median jalan di area setelah rambu ini." },
+            { image: "images/m1_p106_2.png", title: "Larangan Belok Kanan", desc: "Dilarang membelokkan kendaraan ke arah kanan pada persimpangan di depan demi kelancaran lalu lintas." },
+            { image: "images/m1_p107_1.png", title: "Larangan Masuk Sepeda Motor", desc: "Dilarang masuk bagi semua kendaraan bermotor roda dua (sepeda motor) pada lajur atau kawasan jalan tertentu." },
+            { image: "images/m1_p108_1.png", title: "Larangan Masuk Kendaraan Bermotor", desc: "Dilarang masuk bagi semua kendaraan bermotor baik roda dua maupun roda empat dari arah rambu ini dipasang." },
+            { image: "images/m1_p103_2.png", title: "Larangan Kecepatan Maksimum 60 km/jam", desc: "Dilarang melajukan kendaraan bermotor melebihi kecepatan maksimum 60 kilometer per jam demi keselamatan di area tersebut." },
+            { image: "images/m1_p103_1.png", title: "Batas Akhir Larangan Kecepatan", desc: "Menandakan batas akhir berlakunya larangan kecepatan maksimum sebelumnya, pengendara kembali ke batas kecepatan umum." }
         ]
     },
     perintah: {
         title: "Rambu Perintah (Mandatory Signs)",
         intro: "Rambu perintah mewajibkan tindakan tertentu yang harus dilakukan oleh pengguna jalan demi kelancaran lalu lintas. Ciri khas rambu perintah adalah berbentuk lingkaran, berwarna dasar biru, garis tepi berwarna putih, dan lambang berwarna putih.",
         items: [
-            { icon: "🔵", title: "Perintah Wajib Belok", desc: "Wajib berbelok ke kiri atau ke kanan pada simpang di depan sesuai dengan arah panah penunjuk." },
-            { icon: "🔵", title: "Lajur Sepeda Motor", desc: "Wajib menggunakan lajur atau jalan khusus sepeda motor yang telah ditentukan marka dan rambu tersebut." },
-            { icon: "🔵", title: "Kecepatan Minimum", desc: "Wajib melaju dengan kecepatan minimum tertulis (biasanya di jalan tol atau jalan layang cepat)." },
-            { icon: "🔵", title: "Perintah Mengikuti Arah", desc: "Pengendara wajib lurus terus atau berputar di bundaran sebelum melanjutkan perjalanan ke simpang cabang lainnya." }
+            { image: "images/m1_p107_0.png", title: "Perintah Batas Kecepatan Minimum", desc: "Perintah bagi pengguna jalan untuk melaju dengan kecepatan minimal sesuai angka tertulis (misal: 30 km/jam) demi kelancaran." },
+            { image: "images/m1_p108_0.png", title: "Perintah Memasuki Lajur Kiri", desc: "Perintah wajib bagi pengendara untuk berjalan di lajur atau sebelah kiri rambu ini (menghindari pulau jalan atau median)." },
+            { image: "images/m3_p103_0.png", title: "Perintah Wajib Mengikuti Arah", desc: "Pengendara wajib mengikuti salah satu arah yang ditunjuk oleh panah perintah (misalnya berbelok ke arah kiri atau kanan)." }
         ]
     },
     petunjuk: {
         title: "Rambu Petunjuk (Directional & Info Signs)",
         intro: "Rambu petunjuk memberikan arah jalan, batas daerah, letak fasilitas umum, atau informasi rute perjalanan bagi pengendara. Rambu petunjuk jalan arah rute biasanya berbentuk persegi/panjang berwarna hijau atau biru.",
         items: [
-            { icon: "🟢", title: "Petunjuk Arah Rute", desc: "Memberi informasi arah kota, wilayah, atau jalan di simpang depan (warna hijau untuk tol/non-tol, biru untuk daerah administrasi)." },
-            { icon: "ℹ️", title: "Fasilitas Umum", desc: "Menunjukkan keberadaan SPBU, rumah sakit, tempat ibadah, tempat istirahat, atau pos polisi lalu lintas terdekat." },
-            { icon: "🟢", title: "Batas Wilayah", desc: "Menandakan pintu gerbang masuk kota, kabupaten, atau batas wilayah provinsi." }
+            { image: "images/m2_p105_1.png", title: "Petunjuk Rumah Sakit", desc: "Menunjukkan keberadaan rumah sakit atau fasilitas pelayanan kesehatan darurat di dekat jalan raya tersebut." },
+            { image: "images/m3_p102_2.png", title: "Petunjuk Batas Wilayah", desc: "Menunjukkan batas administratif wilayah kota atau kabupaten yang sedang dimasuki oleh pengendara (misal: Batas Kota Kediri)." },
+            { image: "images/m3_p103_1.png", title: "Petunjuk Jalan Buntu", desc: "Memberikan informasi kepada pengendara bahwa lajur jalan di depan merupakan jalan buntu (tidak dapat ditembus/dilalui terus)." },
+            { image: "images/m1_p105_1.png", title: "Petunjuk Prioritas Arah Depan", desc: "Menunjukkan bahwa kendaraan dari arah Anda berhak mendapatkan prioritas utama saat melewati jalan menyempit." }
         ]
     },
     marka: {
         title: "Marka Jalan (Road Markings)",
         intro: "Marka jalan adalah tanda yang berada di permukaan jalan raya yang berfungsi mengatur dan menuntun pergerakan arus lalu lintas.",
         items: [
-            { icon: "➖", title: "Garis Membujur Utuh", desc: "Berfungsi sebagai larangan bagi kendaraan melintasi garis tersebut. Dilarang mendahului kendaraan lain di area ini." },
-            { icon: "---", title: "Garis Membujur Putus-Putus", desc: "Berfungsi mengarahkan lalu lintas dan diperbolehkan melintasi garis tersebut untuk berpindah lajur atau mendahului jika aman." },
-            { icon: "🟨", title: "Yellow Box Junction (YBJ)", desc: "Marka kotak kuning di persimpangan. Dilarang masuk ke area kotak kuning jika kondisi jalan di depan macet, meskipun lampu hijau." },
-            { icon: "🦓", title: "Zebra Cross", desc: "Marka garis membujur warna putih-hitam sebagai fasilitas penyeberangan jalan bagi pejalan kaki." }
+            { image: "images/m1_p94_0.png", title: "Marka Garis Utuh / Garis Stop", desc: "Berfungsi sebagai batas berhenti kendaraan saat Alat Pemberi Isyarat Lalu Lintas (APILL) menyala merah. Dilarang melintasi garis utuh membujur ini." },
+            { image: "images/m1_p94_1.png", title: "Yellow Box Junction (YBJ)", desc: "Marka kotak kuning di persimpangan. Dilarang masuk ke dalam kotak kuning jika kondisi jalan keluar simpang macet, meskipun lampu hijau." },
+            { image: "images/m4_p80_1.png", title: "Zebra Cross", desc: "Marka garis membujur putih-hitam sebagai penanda area penyeberangan jalan yang memberikan prioritas utama kepada pejalan kaki." }
         ]
     },
     apill: {
         title: "APILL (Alat Pemberi Isyarat Lalu Lintas)",
         intro: "APILL atau lampu lalu lintas adalah alat elektronik yang dipasang di simpang jalan untuk mengatur giliran gerak kendaraan secara tertib.",
         items: [
-            { icon: "🔴", title: "Lampu Merah", desc: "Wajib berhenti penuh di belakang marka garis stop sebelum lampu menyala menjadi hijau kembali." },
-            { icon: "🟡", title: "Lampu Kuning", desc: "Pengendara bersiap untuk berhenti (jika masih jauh dari garis stop) atau berhati-hati melintasi simpang." },
-            { icon: "🟢", title: "Lampu Hijau", desc: "Kendaraan diperbolehkan jalan dengan tetap memperhatikan keselamatan dari arah persimpangan lainnya." }
+            { image: "images/m3_p85_0.png", title: "Alat Pemberi Isyarat Lalu Lintas", desc: "Lampu pengatur persimpangan. Lampu Merah wajib berhenti penuh di belakang garis stop. Kuning bersiap berhenti atau hati-hati. Hijau diperbolehkan melaju." }
         ]
     },
     kendaraan: {
         title: "Komponen Kendaraan Bermotor (SIM C)",
         intro: "Sebelum berkendara, pengendara sepeda motor wajib memeriksa komponen kelengkapan kendaraan bermotor sesuai standar keselamatan jalan raya.",
         items: [
-            { icon: "🛵", title: "Lampu Sein (Penunjuk Arah)", desc: "Berwarna kuning tua kelap-kelip. Wajib dinyalakan minimal 30 meter sebelum berbelok atau berpindah lajur." },
-            { icon: "🛵", title: "Kaca Spion", desc: "Membantu melihat area blind spot di belakang pengendara agar aman saat berpindah lajur atau memutar arah." },
-            { icon: "🛵", title: "Kondisi Ban Motor", desc: "Ketebalan alur ban minimal 1mm. Ban yang botak/halus dapat mengurangi daya cengkeram jalan dan memicu selip ban." },
-            { icon: "⚙️", title: "Indikator Check Engine", desc: "Lampu indikator di panel speedometer. Jika terus menyala, menunjukkan kerusakan pada sistem mesin/injeksi motor." }
+            { image: "images/ref_spion.png", title: "Kaca Spion Motor", desc: "Wajib terpasang ganda di kiri dan kanan. Berfungsi membantu melihat area blind spot di belakang pengendara agar aman saat berpindah lajur." },
+            { image: "images/ref_ban.png", title: "Kondisi Fisik Ban", desc: "Wajib memeriksa ketebalan alur ban (minimal 1mm) dan tekanan angin. Ban botak/halus dapat memicu slip saat jalan licin/hujan." },
+            { image: "images/m4_p94_2.png", title: "Lampu Penunjuk Arah (Sein)", desc: "Lampu kuning kelap-kelip wajib dinyalakan minimal 30 meter sebelum berbelok atau berpindah lajur sebagai isyarat pengendara lain." },
+            { image: "images/ref_speedometer.png", title: "Speedometer (Penunjuk Kecepatan)", desc: "Alat penunjuk kecepatan wajib terpasang dan berfungsi dengan baik agar pengendara dapat menjaga laju kendaraan sesuai batas kecepatan." },
+            { image: "images/ref_klakson.png", title: "Klakson Motor", desc: "Alat pemberi isyarat suara wajib berfungsi baik dengan intensitas kebisingan suara di antara 83 desibel hingga 118 desibel." },
+            { image: "images/ref_helm.png", title: "Helm Standar (SNI)", desc: "Setiap pengendara dan penumpang sepeda motor wajib menggunakan helm berstandar nasional Indonesia (SNI) demi keselamatan kepala." }
         ]
     }
 };
@@ -664,9 +668,11 @@ function renderReferenceMaterial(sectionKey) {
     data.items.forEach(item => {
         html += `
             <div class="ref-card">
-                <div class="ref-sign-icon">${item.icon}</div>
-                <h3 class="ref-sign-title">${item.title}</h3>
-                <p class="ref-sign-desc">${item.desc}</p>
+                <div class="ref-sign-icon" style="width: 120px; height: 120px; margin: 0 auto 0.5rem auto; background: rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color);">
+                    <img src="${item.image}" alt="${item.title}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+                <h3 class="ref-sign-title" style="text-align: center; margin-top: 0.5rem;">${item.title}</h3>
+                <p class="ref-sign-desc" style="text-align: justify; font-size: 0.88rem; line-height: 1.4; color: var(--text-secondary);">${item.desc}</p>
             </div>
         `;
     });
@@ -678,6 +684,7 @@ function renderReferenceMaterial(sectionKey) {
     
     panel.innerHTML = html;
 }
+
 
 // ==================== EXAM MODE LOGIC ====================
 function startNewExam() {
