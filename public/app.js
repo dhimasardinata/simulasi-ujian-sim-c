@@ -570,6 +570,8 @@ function renderQuestionList() {
         return;
     }
     
+    const fragment = document.createDocumentFragment();
+    
     state.filteredQuestions.forEach((q, index) => {
         const item = document.createElement('div');
         item.className = 'question-list-item';
@@ -609,8 +611,10 @@ function renderQuestionList() {
             }
         });
         
-        listContainer.appendChild(item);
+        fragment.appendChild(item);
     });
+    
+    listContainer.appendChild(fragment);
     
     const activeItem = listContainer.querySelector('.question-list-item.active');
     if (activeItem) {
@@ -778,7 +782,7 @@ function renderReferenceMaterial(sectionKey) {
         html += `
             <div class="ref-card">
                 <div class="ref-sign-icon-container">
-                    <img src="${item.image}" alt="${item.title}" class="ref-sign-image">
+                    <img src="${item.image}" alt="${item.title}" class="ref-sign-image" loading="lazy">
                 </div>
                 <h3 class="ref-sign-title">${item.title}</h3>
                 <p class="ref-sign-desc">${item.desc}</p>
