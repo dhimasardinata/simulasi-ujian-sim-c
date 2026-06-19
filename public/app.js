@@ -142,31 +142,50 @@ function updateDashboardStats() {
 
 // Navigation / View Switching
 function switchView(viewName) {
-    Object.values(views).forEach(v => v.classList.remove('active'));
-    Object.values(navButtons).forEach(b => b.classList.remove('btn-primary'));
-    Object.values(navButtons).forEach(b => b.classList.add('btn-secondary'));
+    const viewsList = ['home', 'study', 'reference', 'exam', 'result'];
+    const currentIndex = viewsList.indexOf(state.currentView || 'home');
+    const newIndex = viewsList.indexOf(viewName);
+    const direction = newIndex >= currentIndex ? 'forward' : 'backward';
     
-    if (views[viewName]) {
-        views[viewName].classList.add('active');
+    state.currentView = viewName;
+
+    const updateDOM = () => {
+        Object.values(views).forEach(v => v.classList.remove('active'));
+        Object.values(navButtons).forEach(b => b.classList.remove('btn-primary'));
+        Object.values(navButtons).forEach(b => b.classList.add('btn-secondary'));
+        
+        if (views[viewName]) {
+            views[viewName].classList.add('active');
+        }
+        
+        if (navButtons[viewName]) {
+            navButtons[viewName].classList.remove('btn-secondary');
+            navButtons[viewName].classList.add('btn-primary');
+        }
+        
+        // Stop exam timer if exiting exam view
+        if (viewName !== 'exam' && state.examTimerInterval) {
+            clearInterval(state.examTimerInterval);
+            state.examTimerInterval = null;
+        }
+        
+        // Stop confetti loop if leaving result view
+        if (viewName !== 'result') {
+            stopConfetti();
+        }
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    if (!document.startViewTransition) {
+        updateDOM();
+        return;
     }
-    
-    if (navButtons[viewName]) {
-        navButtons[viewName].classList.remove('btn-secondary');
-        navButtons[viewName].classList.add('btn-primary');
-    }
-    
-    // Stop exam timer if exiting exam view
-    if (viewName !== 'exam' && state.examTimerInterval) {
-        clearInterval(state.examTimerInterval);
-        state.examTimerInterval = null;
-    }
-    
-    // Stop confetti loop if leaving result view
-    if (viewName !== 'result') {
-        stopConfetti();
-    }
-    
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    document.startViewTransition({
+        update: updateDOM,
+        types: [direction]
+    });
 }
 
 // ==================== WEB AUDIO API (NO-ASSET SOUND ENGINE) ====================

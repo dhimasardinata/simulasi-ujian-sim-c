@@ -134,6 +134,9 @@ header {
     transition: var(--transition-bounce);
     border: 1px solid transparent;
     text-decoration: none;
+    
+    /* MANDATORY: Apply identity transformation to prevent unexpected shifts in stacking contexts */
+    translate: 0px;
 }
 
 .btn-primary {
@@ -143,7 +146,7 @@ header {
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
+    translate: 0 -3px;
     box-shadow: 0 8px 25px var(--primary-glow);
 }
 
@@ -155,7 +158,7 @@ header {
 
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+    translate: 0 -2px;
 }
 
 .btn-danger {
@@ -167,7 +170,7 @@ header {
 .btn-danger:hover {
     background: var(--accent-rose);
     color: white;
-    transform: translateY(-2px);
+    translate: 0 -2px;
     box-shadow: 0 4px 15px var(--accent-rose-glow);
 }
 
@@ -180,7 +183,7 @@ header {
 .btn-success:hover {
     background: var(--accent-emerald);
     color: white;
-    transform: translateY(-2px);
+    translate: 0 -2px;
     box-shadow: 0 4px 15px var(--accent-emerald-glow);
 }
 
@@ -1210,12 +1213,15 @@ header {
     transition: var(--transition-smooth);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
+    
+    /* MANDATORY: Apply identity transformation to prevent unexpected shifts in stacking contexts */
+    translate: 0px;
 }
 
 .ref-card:hover {
     border-color: rgba(99, 102, 241, 0.35);
     background: rgba(16, 20, 38, 0.7);
-    transform: translateY(-4px);
+    translate: 0 -4px;
     box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
 }
 
@@ -1231,12 +1237,15 @@ header {
     justify-content: center;
     border: 1px solid var(--border-color);
     transition: var(--transition-smooth);
+    
+    /* MANDATORY: Apply identity transformation */
+    scale: 1;
 }
 
 .ref-card:hover .ref-sign-icon-container {
     background: rgba(255, 255, 255, 0.04);
     border-color: rgba(99, 102, 241, 0.3);
-    transform: scale(1.03);
+    scale: 1.03;
 }
 
 .ref-sign-image {
@@ -1244,10 +1253,13 @@ header {
     max-height: 90%;
     object-fit: contain;
     transition: var(--transition-smooth);
+    
+    /* MANDATORY: Apply identity transformation */
+    scale: 1;
 }
 
 .ref-card:hover .ref-sign-image {
-    transform: scale(1.05);
+    scale: 1.05;
 }
 
 .ref-sign-title {
@@ -1548,6 +1560,51 @@ select:focus-visible,
     .nav-buttons .btn {
         padding: 0.65rem 0.75rem !important;
         font-size: 0.85rem !important;
+    }
+}
+
+/* ==================== DIRECTIONAL VIEW TRANSITIONS ==================== */
+@keyframes slide-to-left {
+    to { transform: translateX(-30px); opacity: 0; }
+}
+
+@keyframes slide-from-right {
+    from { transform: translateX(30px); opacity: 0; }
+}
+
+@keyframes slide-to-right {
+    to { transform: translateX(30px); opacity: 0; }
+}
+
+@keyframes slide-from-left {
+    from { transform: translateX(-30px); opacity: 0; }
+}
+
+/* Apply transition animation parameters for smooth transition flow */
+::view-transition-group(root) {
+    animation: 0.25s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Active transitions for forward (navigating right) */
+html:active-view-transition-type(forward)::view-transition-old(root) {
+    animation-name: slide-to-left;
+}
+html:active-view-transition-type(forward)::view-transition-new(root) {
+    animation-name: slide-from-right;
+}
+
+/* Active transitions for backward (navigating left) */
+html:active-view-transition-type(backward)::view-transition-old(root) {
+    animation-name: slide-to-right;
+}
+html:active-view-transition-type(backward)::view-transition-new(root) {
+    animation-name: slide-from-left;
+}
+
+/* Reduced motion support for accessibility compliance */
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(root) {
+        animation: none !important;
     }
 }
 
